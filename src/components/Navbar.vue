@@ -10,6 +10,9 @@
         </li>
       </ul>
     </div>
+    <a class="navbar-brand mr-0" href="https://github/mccrush" target="_blank">
+      <img src="/img/github.png" width="24" height="24" alt="Github/mccrush" title="Github/mccrush">
+    </a>
   </nav>
 </template>
 

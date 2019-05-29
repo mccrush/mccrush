@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="container">
     <Navbar v-if="pageArr[0]" :pageArr="pageArr"/>
     <router-view v-if="pageArr[0]" :pageArr="pageArr"/>
   </div>
@@ -40,5 +40,9 @@ export default {
 #app {
   text-align: left;
   color: #2c3e50;
+}
+
+.container {
+  max-width: 730px;
 }
 </style>
