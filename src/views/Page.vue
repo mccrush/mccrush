@@ -4,6 +4,7 @@
       <h1>{{pageObj.title}}</h1>
       <p class="description">{{pageObj.description}}</p>
       <div class="content" v-html="pageObj.content"></div>
+      <button class="btn btn-success">Yeah!</button>
     </div>
     <!-- <img alt="Vue logo" src="../assets/logo.png" width="150"> -->
     <!-- <HelloWorld v-if="pageObj.title" :msg="'Welcome to ' + pageObj.title"/> -->
