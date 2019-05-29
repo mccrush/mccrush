@@ -2,16 +2,19 @@
   <div id="app" class="container">
     <Navbar v-if="pageArr[0]" :pageArr="pageArr"/>
     <router-view v-if="pageArr[0]" :pageArr="pageArr"/>
+    <Foot/>
   </div>
 </template>
 
 <script>
 import { db } from "@/main.js";
 import Navbar from "@/components/Navbar.vue";
+import Foot from "@/components/Foot.vue";
 
 export default {
   components: {
-    Navbar
+    Navbar,
+    Foot
   },
   data() {
     return {
