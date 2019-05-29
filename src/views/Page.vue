@@ -1,7 +1,7 @@
 <template>
   <div class="row mt-3">
     <div class="col">
-      <h1>{{pageObj.title}}</h1>
+      <h2>{{pageObj.title}}</h2>
       <p class="description">{{pageObj.description}}</p>
       <div class="content" v-html="pageObj.content"></div>
       <button class="btn btn-success">Yeah!</button>
