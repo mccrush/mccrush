@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to App"/>
+    <HelloWorld v-if="pageObj.title" :msg="'Welcome to' + pageObj.title"/>
   </div>
 </template>
 
@@ -13,6 +13,17 @@ export default {
   name: "app",
   components: {
     HelloWorld
+  },
+  props: {
+    pageArr: Array
+  },
+  data() {
+    return {
+      pageObj: {}
+    };
+  },
+  created() {
+    this.pageObj = this.pageArr.find(item => item.alias == "app");
   }
 };
 </script>

@@ -1,14 +1,43 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link>|
+      <router-link to="/home">Home</router-link>|
       <router-link to="/app">App</router-link>|
       <router-link to="/edu">Edu</router-link>|
       <router-link to="/gtd">Gtd</router-link>
     </div>
-    <router-view/>
+    <router-view v-if="pageArr[0]" :pageArr="pageArr"/>
   </div>
 </template>
+
+<script>
+import { db } from "@/main.js";
+
+export default {
+  data() {
+    return {
+      pageArr: []
+    };
+  },
+  created() {
+    // Получение naprav
+    // Рабочий вариант получения данных
+    db.collection("page")
+      .get()
+      .then(querySnapshot => {
+        querySnapshot.forEach(doc => {
+          this.pageArr.push(doc.data());
+          //console.log(`${doc.id} => ${doc.data().alias}`);
+        });
+        //console.log("this.pageArr:", this.pageArr);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }
+};
+</script>
+
 
 <style>
 #app {
