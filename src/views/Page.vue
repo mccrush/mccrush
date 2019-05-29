@@ -1,6 +1,6 @@
 <template>
-  <div class="row">
-    <div class="col-12">
+  <div class="row mt-3">
+    <div class="col">
       <h1>{{pageObj.title}}</h1>
       <p class="description">{{pageObj.description}}</p>
       <div class="content" v-html="pageObj.content"></div>

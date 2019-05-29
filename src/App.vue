@@ -40,9 +40,6 @@ export default {
 #app {
   text-align: left;
   color: #2c3e50;
-}
-
-.container {
   max-width: 730px;
 }
 </style>
