@@ -20,8 +20,6 @@ export default {
     };
   },
   created() {
-    // Получение naprav
-    // Рабочий вариант получения данных
     db.collection("page")
       .get()
       .then(querySnapshot => {
