@@ -1,19 +1,18 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/home">Home</router-link>|
-      <router-link to="/app">App</router-link>|
-      <router-link to="/edu">Edu</router-link>|
-      <router-link to="/gtd">Gtd</router-link>
-    </div>
+    <Navbar v-if="pageArr[0]" :pageArr="pageArr"/>
     <router-view v-if="pageArr[0]" :pageArr="pageArr"/>
   </div>
 </template>
 
 <script>
 import { db } from "@/main.js";
+import Navbar from "@/components/Navbar.vue";
 
 export default {
+  components: {
+    Navbar
+  },
   data() {
     return {
       pageArr: []
@@ -39,22 +38,7 @@ export default {
 
 <style>
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  text-align: left;
   color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>
