@@ -5,14 +5,17 @@
         <router-link class="navbar-brand" to="/home">
           <img src="/img/logo.png" width="70" height="30" alt="Write Code!">
         </router-link>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item" v-for="item in menuArr" :key="'k-'+item.alias">
-              <router-link :to="'/'+item.alias">&nbsp;{{item.title}}&nbsp;</router-link>
+              <router-link :to="'/'+item.alias" data-toggle="collapse" data-target="#navbarSupportedContent">&nbsp;{{item.title}}&nbsp;</router-link>
             </li>
           </ul>
         </div>
-        <a class="navbar-brand mr-0" href="https://github/mccrush" target="_blank">
+        <a class="navbar-brand mr-0 d-none d-sm-block" href="https://github/mccrush" target="_blank">
           <img src="/img/github.png" width="24" height="24" alt="Github/mccrush" title="Github/mccrush">
         </a>
       </nav>
@@ -58,5 +61,31 @@ export default {
 .nav-item a.router-link-exact-active {
   color: #212529;
   border-bottom: 2px solid red;
+}
+
+@media (max-width: 576px) {
+  .nav-item {
+    padding: 15px 0 0 0;
+    margin-top: 0;
+    border-bottom: none;
+  }
+
+  .nav-item a {
+    color: #212529;
+    margin-top: -20px;
+    padding-bottom: 18px;
+    border-bottom: none;
+  }
+
+  .nav-item a:hover {
+    color: #212529;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  .nav-item a.router-link-exact-active {
+    color: #212529;
+    border-bottom: none;
+  }
 }
 </style>
