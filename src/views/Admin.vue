@@ -1,11 +1,10 @@
 <template>
   <div class="row mt-3">
-    <div class="col">
-      <h2>{{pageObj.title}}</h2>
-      <p class="description">{{pageObj.description}}</p>
-      <div class="content" v-html="pageObj.content"></div>
-      <button class="btn btn-success" data-toggle="collapse" data-target="#navbarSupportedContent">Yeah!</button>
+    <div class="col-3">
+      <h2>Admin</h2>
+      <AdminListRazdel :pageArr="pageArr"/>
     </div>
+    <div class="col-9">Forms</div>
     <!-- <img alt="Vue logo" src="../assets/logo.png" width="150"> -->
     <!-- <HelloWorld v-if="pageObj.title" :msg="'Welcome to ' + pageObj.title"/> -->
   </div>
@@ -13,12 +12,12 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import AdminListRazdel from "@/components/AdminListRazdel.vue";
 
 export default {
-  name: "page",
+  name: "admin",
   components: {
-    HelloWorld
+    AdminListRazdel
   },
   props: {
     pageArr: Array

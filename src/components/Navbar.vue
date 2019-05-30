@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item" v-for="item in menuArr" :key="'k-'+item.alias">
-              <router-link :to="'/'+item.alias" data-toggle="collapse" data-target="#navbarSupportedContent">&nbsp;{{item.title}}&nbsp;</router-link>
+              <router-link :to="'/'+item.alias">&nbsp;{{item.title}}&nbsp;</router-link>
             </li>
           </ul>
         </div>
