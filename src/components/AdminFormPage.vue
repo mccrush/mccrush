@@ -22,7 +22,7 @@
             <button class="btn btn-block btn-light" @click.prevent="clearForm">Очистить поля</button>
           </div>
           <div class="col-6">
-            <button class="btn btn-block btn-success" @click.prevent="saveForm">{{buttonSave}}</button>
+            <button class="btn btn-block" :class="buttonSaveBg" @click.prevent="saveForm">{{buttonSaveText}}</button>
           </div>
         </div>
       </form>
@@ -42,7 +42,8 @@ export default {
         content: "",
         dateUpdate: Date().toString()
       },
-      buttonSave: "Сохранено"
+      buttonSaveBg: "btn-success",
+      buttonSaveText: "Сохранено"
     };
   },
   created() {
@@ -64,12 +65,12 @@ export default {
     // }
     clearForm() {},
     editingForm() {
-      this.buttonSave = "Сохранить";
-      return this.buttonSave;
+      this.buttonSaveBg = "btn-warning";
+      this.buttonSaveText = "Сохранить";
     },
     saveForm() {
-      this.buttonSave = "Сохранено";
-      return this.buttonSave;
+      this.buttonSaveBg = "btn-success";
+      this.buttonSaveText = "Сохранено";
     }
   }
 };
