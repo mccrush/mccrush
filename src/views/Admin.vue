@@ -8,7 +8,10 @@
     <div class="col-2 border-right">
       <AdminListRazdel :itogArr="itogArr"/>
     </div>
-    <div class="col-10">Forms</div>
+    <div class="col-10">
+      <AdminFormPage/>
+    </div>
+
     <!-- <img alt="Vue logo" src="../assets/logo.png" width="150"> -->
     <!-- <HelloWorld v-if="pageObj.title" :msg="'Welcome to ' + pageObj.title"/> -->
   </div>
@@ -17,11 +20,13 @@
 <script>
 // @ is an alias to /src
 import AdminListRazdel from "@/components/AdminListRazdel.vue";
+import AdminFormPage from "@/components/AdminFormPage.vue";
 
 export default {
   name: "admin",
   components: {
-    AdminListRazdel
+    AdminListRazdel,
+    AdminFormPage
   },
   props: {
     pageArr: Array,
@@ -29,7 +34,7 @@ export default {
   },
   data() {
     return {
-      pageObj: {},
+      formObj: {},
       itogArr: []
     };
   },
