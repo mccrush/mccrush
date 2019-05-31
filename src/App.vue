@@ -1,20 +1,20 @@
 <template>
   <div id="app" class="container">
-    <Navbar v-if="pageArr[0]" :pageArr="pageArr"/>
+    <AppNavbar v-if="pageArr[0]" :pageArr="pageArr"/>
     <router-view v-if="pageArr[0]" :pageArr="pageArr" :appArr="appArr"/>
-    <Foot/>
+    <AppFoot/>
   </div>
 </template>
 
 <script>
 import { db } from "@/main.js";
-import Navbar from "@/components/Navbar.vue";
-import Foot from "@/components/Foot.vue";
+import AppNavbar from "@/components/AppNavbar.vue";
+import AppFoot from "@/components/AppFoot.vue";
 
 export default {
   components: {
-    Navbar,
-    Foot
+    AppNavbar,
+    AppFoot
   },
   data() {
     return {
