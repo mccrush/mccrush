@@ -63,7 +63,14 @@ export default {
     //   let yyyy = this.dateNow.getFullYear();
     //   return (this.dateNow = dd + "." + mm + "." + yyyy);
     // }
-    clearForm() {},
+    clearForm() {
+      if (confirm("Точно очистить?")) {
+        for (let key in this.itemObj) {
+          this.itemObj[key] = "";
+        }
+      }
+      return false;
+    },
     editingForm() {
       this.buttonSaveBg = "btn-warning";
       this.buttonSaveText = "Сохранить";
