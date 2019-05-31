@@ -68,6 +68,7 @@ export default {
         for (let key in this.itemObj) {
           this.itemObj[key] = "";
         }
+        this.itemObj.dateUpdate = Date().toString();
       }
       return false;
     },
