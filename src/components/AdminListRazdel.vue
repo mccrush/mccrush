@@ -1,24 +1,20 @@
 <template>
-  <div class="row mt-3">
-    <div class="col">
-      <h2>AdminListRazdel</h2>
-    </div>
-    <!-- <img alt="Vue logo" src="../assets/logo.png" width="150"> -->
-    <!-- <HelloWorld v-if="pageObj.title" :msg="'Welcome to ' + pageObj.title"/> -->
-  </div>
+  <ul class="list-unstyled">
+    <li v-for="(item, index) in itogArr" :key="'ki'+index">
+      <a href="#">{{item.title}}</a>
+    </li>
+  </ul>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+//import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
   name: "adminListRazdel",
-  components: {
-    HelloWorld
-  },
+  components: {},
   props: {
-    pageArr: Array
+    itogArr: Array
   },
   data() {
     return {
@@ -26,7 +22,7 @@ export default {
     };
   },
   created() {
-    this.getPageObg(this.$route.params.alias);
+    //this.getPageObg(this.$route.params.alias);
   },
   methods: {
     getPageObg(match) {
@@ -35,7 +31,7 @@ export default {
   },
   watch: {
     $route(to, from) {
-      this.getPageObg(to.params.alias);
+      //this.getPageObg(to.params.alias);
     }
   }
 };

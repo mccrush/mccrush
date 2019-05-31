@@ -18,10 +18,10 @@ export default new Router({
       path: '/',
       redirect: '/home'
     },
-    // {
-    //   path: '/adm/:razdel',
-    //   name: 'admin',
-    //   component: Admin
-    // },
+    {
+      path: '/adm/:razdel',
+      name: 'admin',
+      component: Admin
+    },
   ]
 })

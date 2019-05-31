@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container">
     <Navbar v-if="pageArr[0]" :pageArr="pageArr"/>
-    <router-view v-if="pageArr[0]" :pageArr="pageArr"/>
+    <router-view v-if="pageArr[0]" :pageArr="pageArr" :appArr="appArr"/>
     <Foot/>
   </div>
 </template>
@@ -18,7 +18,8 @@ export default {
   },
   data() {
     return {
-      pageArr: []
+      pageArr: [],
+      appArr: []
     };
   },
   created() {
@@ -30,6 +31,19 @@ export default {
           //console.log(`${doc.id} => ${doc.data().alias}`);
         });
         //console.log("this.pageArr:", this.pageArr);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+
+    db.collection("app")
+      .get()
+      .then(querySnapshot => {
+        querySnapshot.forEach(doc => {
+          this.appArr.push(doc.data());
+          //console.log(`${doc.id} => ${doc.data().alias}`);
+        });
+        //console.log("this.appArr:", this.appArr);
       })
       .catch(error => {
         console.log(error);
