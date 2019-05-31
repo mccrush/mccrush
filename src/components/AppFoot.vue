@@ -2,7 +2,10 @@
   <div class="row">
     <div class="col">
       <footer class="footer border-top mt-3 pt-2">
-        <p>mccrush.ru &copy; {{tecYear}}</p>
+        <p>
+          &copy; {{tecYear}} mccrush.ru&nbsp;&nbsp;|&nbsp;&nbsp;
+          <span class="showem" @click="showEmail">{{email}}</span>
+        </p>
       </footer>
     </div>
   </div>
@@ -13,11 +16,17 @@ export default {
   name: "foot",
   data() {
     return {
-      tecYear: ""
+      tecYear: "",
+      email: "Показать email"
     };
   },
   created() {
     this.tecYear = new Date().getFullYear();
+  },
+  methods: {
+    showEmail() {
+      this.email = "mccrush2027@gmail.com";
+    }
   }
 };
 </script>
@@ -26,5 +35,9 @@ export default {
 <style scoped>
 .footer {
   font-size: 0.9rem;
+}
+
+.showem {
+  cursor: pointer;
 }
 </style>
