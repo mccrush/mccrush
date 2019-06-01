@@ -74,7 +74,7 @@ export default {
       store.commit("changeAuthStatus");
       //this.isAuth = true;
     } else {
-      store.commit("changeAuthStatus");
+      //store.commit("changeAuthStatus");
       //this.isAuth = false;
     }
     //
