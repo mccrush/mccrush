@@ -89,8 +89,21 @@ export default {
       this.buttonSaveText = "Сохранить";
     },
     saveForm() {
-      this.buttonSaveBg = "btn-success";
-      this.buttonSaveText = "Сохранено";
+      this.buttonSaveBg = "btn-warning";
+      this.buttonSaveText = "Сохраняется...";
+      db.collection("page")
+        .doc(this.$route.query.id)
+        .set(this.itemObj)
+        .then(function() {
+          console.log("Document successfully written!");
+          this.buttonSaveBg = "btn-success";
+          this.buttonSaveText = "Сохранено";
+        })
+        .catch(function(error) {
+          console.error("Error writing document: ", error);
+          //this.buttonSaveBg = "btn-danger";
+          //this.buttonSaveText = "Сохранить";
+        });
     }
   },
   watch: {
