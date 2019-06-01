@@ -42,6 +42,7 @@ export default {
   data() {
     return {
       dateNow: new Date(),
+      tecId: this.$route.query.id,
       itemObj: {
         title: "",
         description: "",
@@ -92,7 +93,7 @@ export default {
       this.buttonSaveBg = "btn-warning";
       this.buttonSaveText = "Сохраняется...";
       db.collection("page")
-        .doc(this.$route.query.id)
+        .doc(this.tecId)
         .set(this.itemObj)
         .then(function() {
           console.log("Document successfully written!");
@@ -118,11 +119,4 @@ export default {
 
 
 <style scoped>
-.footer {
-  font-size: 0.9rem;
-}
-
-.showem {
-  cursor: pointer;
-}
 </style>
