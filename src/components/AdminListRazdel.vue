@@ -1,7 +1,7 @@
 <template>
   <ul class="list-unstyled">
     <li v-for="(item, index) in itogArr" :key="'ki'+index">
-      <router-link :to="'?alias='+item.alias">{{item.title}}</router-link>
+      <router-link :to="'?alias='+item.alias+'&id='+idArr[index]">{{item.title}}</router-link>
     </li>
   </ul>
 </template>

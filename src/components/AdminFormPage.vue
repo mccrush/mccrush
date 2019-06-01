@@ -96,6 +96,7 @@ export default {
   watch: {
     $route(to, from) {
       this.getPageObg(to.query.alias);
+      console.log("id=", to.query.id);
       //this.getPageObg(to.params.alias);
     }
   }
