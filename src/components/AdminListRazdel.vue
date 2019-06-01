@@ -1,7 +1,7 @@
 <template>
   <ul class="list-unstyled">
     <li v-for="(item, index) in itogArr" :key="'ki'+index">
-      <a href="#">{{item.title}}</a>
+      <router-link :to="'?id='+idArr[index]">{{item.title}}</router-link>
     </li>
   </ul>
 </template>
@@ -14,7 +14,8 @@ export default {
   name: "adminListRazdel",
   components: {},
   props: {
-    itogArr: Array
+    itogArr: Array,
+    idArr: Array
   },
   data() {
     return {

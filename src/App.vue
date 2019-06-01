@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container">
     <AppNavbar v-if="pageArr[0]" :pageArr="pageArr"/>
-    <router-view v-if="pageArr[0]" :pageArr="pageArr" :appArr="appArr"/>
+    <router-view v-if="pageArr[0]" :pageArr="pageArr" :pageId="pageId" :appArr="appArr" :appId="appId"/>
     <AppFoot/>
   </div>
 </template>
@@ -19,7 +19,9 @@ export default {
   data() {
     return {
       pageArr: [],
-      appArr: []
+      pageId: [],
+      appArr: [],
+      appId: []
     };
   },
   created() {
@@ -27,10 +29,11 @@ export default {
       .get()
       .then(querySnapshot => {
         querySnapshot.forEach(doc => {
+          this.pageId.push(doc.id);
           this.pageArr.push(doc.data());
           //console.log(`${doc.id} => ${doc.data().alias}`);
         });
-        //console.log("this.pageArr:", this.pageArr);
+        console.log("this.pageArr:", this.pageArr);
       })
       .catch(error => {
         console.log(error);
@@ -40,6 +43,7 @@ export default {
       .get()
       .then(querySnapshot => {
         querySnapshot.forEach(doc => {
+          this.appId.push(doc.id);
           this.appArr.push(doc.data());
           //console.log(`${doc.id} => ${doc.data().alias}`);
         });

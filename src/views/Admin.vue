@@ -1,12 +1,13 @@
 <template>
   <div class="row mt-3">
     <div class="col-12">
-      <router-link to="/adm/page">Page</router-link>&nbsp;|
+      <router-link to="/adm/page">Page</router-link>&nbsp;
+      <small>|</small>&nbsp;
       <router-link to="/adm/app">App</router-link>
       <hr>
     </div>
     <div class="col-2 border-right">
-      <AdminListRazdel :itogArr="itogArr"/>
+      <AdminListRazdel :itogArr="itogArr" :idArr="idArr"/>
     </div>
     <div class="col-10">
       <AdminFormPage/>
@@ -30,12 +31,15 @@ export default {
   },
   props: {
     pageArr: Array,
-    appArr: Array
+    pageId: Array,
+    appArr: Array,
+    appId: Array
   },
   data() {
     return {
       formObj: {},
-      itogArr: []
+      itogArr: [],
+      idArr: []
     };
   },
   created() {
@@ -48,6 +52,7 @@ export default {
     },
     getItogArr(arr) {
       this.itogArr = arr == "page" ? this.pageArr : this.appArr;
+      this.idArr = arr == "page" ? this.pageId : this.appId;
     }
   },
   watch: {

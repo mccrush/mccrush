@@ -3,7 +3,8 @@
     <div class="col">
       <footer class="footer border-top mt-3 pt-2">
         <p>
-          &copy; {{tecYear}} mccrush.ru&nbsp;&nbsp;|&nbsp;&nbsp;
+          &copy; {{tecYear}} mccrush.ru&nbsp;&nbsp;
+          <small>|</small>&nbsp;&nbsp;
           <span class="showem" @click="showEmail">{{email}}</span>
         </p>
       </footer>
