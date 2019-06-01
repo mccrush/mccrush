@@ -1,6 +1,6 @@
 <template>
   <div class="row mt-3">
-    <div v-if="isAuth==false" class="col-12">
+    <div v-if="!authStatus" class="col-12">
       <div class="row mt-2">
         <div class="col-4"></div>
         <div class="col-4 pt-3 pb-3 border bg-light">
@@ -20,16 +20,17 @@
         <div class="col-4"></div>
       </div>
     </div>
-    <div v-if="isAuth==true" class="col-12">
+    <div v-if="authStatus" class="col-12">
       <router-link to="/adm/page">Page</router-link>&nbsp;
       <small>|</small>&nbsp;
       <router-link to="/adm/app">App</router-link>
       <hr>
     </div>
-    <div v-if="isAuth==true" class="col-2 border-right">
+    <div v-if="authStatus" class="col-2 border-right">
       <AdminListRazdel :itogArr="itogArr" :idArr="idArr"/>
+      authStatus = {{authStatus}}
     </div>
-    <div v-if="isAuth==true" class="col-10">
+    <div v-if="authStatus" class="col-10">
       <AdminFormPage v-if="this.$route.query.alias" :itogArr="itogArr" :idArr="idArr"/>
     </div>
 
@@ -41,6 +42,7 @@
 <script>
 // @ is an alias to /src
 import { auth } from "@/main.js";
+import { store } from "@/store.js";
 import AdminListRazdel from "@/components/AdminListRazdel.vue";
 import AdminFormPage from "@/components/AdminFormPage.vue";
 
@@ -60,26 +62,32 @@ export default {
     return {
       uEmail: null,
       uPassword: null,
-      isAuth: false,
+      authStatus: store.state.authStatus,
       formObj: {},
       itogArr: [],
       idArr: []
+      //test: "2"
     };
   },
   created() {
     if (auth.currentUser) {
-      this.isAuth = true;
+      store.commit("changeAuthStatus");
+      //this.isAuth = true;
     } else {
-      this.isAuth = false;
+      store.commit("changeAuthStatus");
+      //this.isAuth = false;
     }
     //
     auth.onAuthStateChanged(function(user) {
       if (user) {
         console.log("Статус пользователя изменен на Авторизован");
-        this.isAuth = true;
+        //this.isAuth = true;
+        store.commit("changeAuthStatus");
       } else {
-        console.log("Статус пользовтеля - Вышел!");
-        this.isAuth = false;
+        console.log("Ad:Статус пользовтеля - Вышел!");
+        store.commit("changeAuthStatus");
+        //this.test = "5";
+        //this.isAuth = false;
       }
     });
     //this.getPageObg(this.$route.params.alias);

@@ -13,11 +13,11 @@
             <li class="nav-item" v-for="item in menuArr" :key="'k-'+item.alias">
               <router-link :to="'/'+item.alias">&nbsp;{{item.title}}&nbsp;</router-link>
             </li>
-            <li class="nav-item" v-if="isAuth==true">
+            <li class="nav-item" v-if="authStatus">
               &nbsp;
               <router-link :to="'/adm/page'" class="text-muted">Панель</router-link>&nbsp;
             </li>
-            <li class="nav-item" v-if="isAuth==true">
+            <li class="nav-item" v-if="authStatus">
               &nbsp;
               <span class="text-muted spanout" @click="logOut()">Выйти</span>&nbsp;
             </li>
@@ -33,6 +33,7 @@
 
 <script>
 import { auth } from "@/main.js";
+import { store } from "@/store.js";
 
 export default {
   name: "navbar",
@@ -42,19 +43,20 @@ export default {
   data() {
     return {
       menuArr: [],
-      isAuth: false
+      authStatus: store.state.authStatus
     };
   },
   created() {
+    console.log("store.state.authStatus:", store.state.authStatus);
     this.menuArr = this.pageArr.filter(function(item, i) {
       return i > 0;
     });
     //
-    if (auth.currentUser) {
-      this.isAuth = true;
-    } else {
-      this.isAuth = false;
-    }
+    // if (auth.currentUser) {
+    //   this.isAuth = store.state.authStatus;
+    // } else {
+    //   this.isAuth = false;
+    // }
   },
   methods: {
     logOut() {
@@ -63,7 +65,8 @@ export default {
         .signOut()
         .then(function() {
           // Sign-out successful.
-          this.isAuth = false;
+          store.commit("changeAuthStatus");
+          //this.isAuth = false;
         })
         .catch(function(error) {
           // An error happened.

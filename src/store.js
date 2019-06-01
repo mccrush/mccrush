@@ -3,12 +3,15 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-export default new Vuex.Store({
+export const store = new Vuex.Store({
   state: {
-
+    authStatus: true
   },
   mutations: {
-
+    changeAuthStatus(state) {
+      state.authStatus = state.authStatus ? false : state.authStatus;
+      //console.log("after mutations, store.state.authStatus:", store.state.authStatus);
+    }
   },
   actions: {
 
