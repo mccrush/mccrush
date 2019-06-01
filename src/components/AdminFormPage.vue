@@ -97,14 +97,14 @@ export default {
         .set(this.itemObj)
         .then(function() {
           console.log("Document successfully written!");
-          this.buttonSaveBg = "btn-success";
-          this.buttonSaveText = "Сохранено";
         })
         .catch(function(error) {
           console.error("Error writing document: ", error);
           //this.buttonSaveBg = "btn-danger";
           //this.buttonSaveText = "Сохранить";
         });
+      this.buttonSaveBg = "btn-success";
+      this.buttonSaveText = "Сохранено";
     }
   },
   watch: {

@@ -13,6 +13,14 @@
             <li class="nav-item" v-for="item in menuArr" :key="'k-'+item.alias">
               <router-link :to="'/'+item.alias">&nbsp;{{item.title}}&nbsp;</router-link>
             </li>
+            <li class="nav-item" v-if="isAuth==true">
+              &nbsp;
+              <router-link :to="'/adm/page'" class="text-muted">Панель</router-link>&nbsp;
+            </li>
+            <li class="nav-item" v-if="isAuth==true">
+              &nbsp;
+              <span class="text-muted spanout" @click="logOut()">Выйти</span>&nbsp;
+            </li>
           </ul>
         </div>
         <a class="navbar-brand mr-0 d-none d-sm-block" href="https://github/mccrush" target="_blank">
@@ -24,6 +32,8 @@
 </template>
 
 <script>
+import { auth } from "@/main.js";
+
 export default {
   name: "navbar",
   props: {
@@ -31,13 +41,34 @@ export default {
   },
   data() {
     return {
-      menuArr: []
+      menuArr: [],
+      isAuth: false
     };
   },
   created() {
     this.menuArr = this.pageArr.filter(function(item, i) {
       return i > 0;
     });
+    //
+    if (auth.currentUser) {
+      this.isAuth = true;
+    } else {
+      this.isAuth = false;
+    }
+  },
+  methods: {
+    logOut() {
+      console.log("Metod srabotal");
+      auth
+        .signOut()
+        .then(function() {
+          // Sign-out successful.
+          this.isAuth = false;
+        })
+        .catch(function(error) {
+          // An error happened.
+        });
+    }
   }
 };
 </script>
@@ -87,5 +118,13 @@ export default {
     color: #212529;
     border-bottom: none;
   }
+}
+
+.spanout {
+  cursor: pointer;
+}
+
+.spanout:hover {
+  text-decoration: underline;
 }
 </style>
