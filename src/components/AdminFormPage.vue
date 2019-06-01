@@ -31,8 +31,14 @@
 </template>
 
 <script>
+import { db } from "@/main.js";
+
 export default {
   name: "adminFormPage",
+  props: {
+    itogArr: Array,
+    idArr: Array
+  },
   data() {
     return {
       dateNow: new Date(),
@@ -47,10 +53,16 @@ export default {
     };
   },
   created() {
+    if (this.$route.query.alias) {
+      this.getPageObg(this.$route.query.alias);
+    }
     //this.tecYear = new Date().getFullYear();
-    console.log("date:", this.itemObj.dateUpdate);
+    //console.log("date:", this.itemObj.dateUpdate);
   },
   methods: {
+    getPageObg(match) {
+      this.itemObj = this.itogArr.find(item => item.alias == match);
+    },
     // createFullDate() {
     //   let dd =
     //     this.dateNow.getDate() < 10
@@ -79,6 +91,12 @@ export default {
     saveForm() {
       this.buttonSaveBg = "btn-success";
       this.buttonSaveText = "Сохранено";
+    }
+  },
+  watch: {
+    $route(to, from) {
+      this.getPageObg(to.query.alias);
+      //this.getPageObg(to.params.alias);
     }
   }
 };

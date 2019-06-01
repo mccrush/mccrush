@@ -10,7 +10,7 @@
       <AdminListRazdel :itogArr="itogArr" :idArr="idArr"/>
     </div>
     <div class="col-10">
-      <AdminFormPage/>
+      <AdminFormPage v-if="this.$route.query.alias" :itogArr="itogArr" :idArr="idArr"/>
     </div>
 
     <!-- <img alt="Vue logo" src="../assets/logo.png" width="150"> -->
