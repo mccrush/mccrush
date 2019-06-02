@@ -5,7 +5,6 @@
       <p class="description">{{pageObj.description}}</p>
       <hr>
       <div class="content" v-html="pageObj.content"></div>
-      <button class="btn btn-success" data-toggle="collapse" data-target="#navbarSupportedContent">Yeah!</button>
     </div>
     <!-- <img alt="Vue logo" src="../assets/logo.png" width="150"> -->
     <!-- <HelloWorld v-if="pageObj.title" :msg="'Welcome to ' + pageObj.title"/> -->
