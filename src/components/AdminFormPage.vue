@@ -14,7 +14,7 @@
         </div>
         <div class="form-group">
           <label for="itemContent">Контент страницы</label>
-          <textarea class="form-control" id="itemContent" aria-describedby="contentHelp" placeholder="Заполните содержимое страницы" rows="5" v-model="itemObj.content" @focus="editingForm()" @blur="saveForm()"></textarea>
+          <editor api-key="hanxollva4phpflvvnv1lje4y82fvprrkqrmpqeclw066js2" :init="{plugins: 'wordcount'}" class="form-control" id="itemContent" aria-describedby="contentHelp" placeholder="Заполните содержимое страницы" rows="5" v-model="itemObj.content" @focus="editingForm()" @blur="saveForm()"></editor>
           <small id="contentHelp" class="form-text text-muted">Как в Worde</small>
         </div>
         <div class="row">
@@ -32,9 +32,13 @@
 
 <script>
 import { db } from "@/main.js";
+import Editor from "@tinymce/tinymce-vue";
 
 export default {
   name: "adminFormPage",
+  components: {
+    editor: Editor // <- Important part
+  },
   props: {
     itogArr: Array,
     idArr: Array
