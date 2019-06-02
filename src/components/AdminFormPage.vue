@@ -14,7 +14,15 @@
         </div>
         <div class="form-group">
           <label for="itemContent">Контент страницы</label>
-          <editor api-key="hanxollva4phpflvvnv1lje4y82fvprrkqrmpqeclw066js2" :init="{plugins: 'wordcount'}" class="form-control" id="itemContent" aria-describedby="contentHelp" placeholder="Заполните содержимое страницы" rows="5" v-model="itemObj.content" @focus="editingForm()" @blur="saveForm()"></editor>
+          <editor api-key="hanxollva4phpflvvnv1lje4y82fvprrkqrmpqeclw066js2" :init="{height: 350,
+  menubar: true,
+  plugins: [
+    'advlist autolink lists link image charmap print preview anchor textcolor',
+    'searchreplace visualblocks code fullscreen',
+    'insertdatetime media table paste code help wordcount'
+  ],
+  toolbar: 'undo redo | formatselect | bold italic forecolor | link | numlist bullist | alignleft aligncenter alignright alignjustify |code removeformat',
+  }" class="form-control" id="itemContent" aria-describedby="contentHelp" placeholder="Заполните содержимое страницы" rows="5" v-model="itemObj.content" @focus="editingForm()" @blur="saveForm()"></editor>
           <small id="contentHelp" class="form-text text-muted">Как в Worde</small>
         </div>
         <div class="row">
