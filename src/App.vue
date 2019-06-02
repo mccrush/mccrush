@@ -1,5 +1,8 @@
 <template>
   <div id="app" class="container">
+    <div v-if="!pageArr[0]" class="spinner-grow text-danger mt-3" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
     <AppNavbar v-if="pageArr[0]" :pageArr="pageArr"/>
     <router-view v-if="pageArr[0]" :pageArr="pageArr" :pageId="pageId" :appArr="appArr" :appId="appId"/>
     <AppFoot/>
@@ -47,6 +50,7 @@ export default {
           this.appArr.push(doc.data());
           //console.log(`${doc.id} => ${doc.data().alias}`);
         });
+
         //console.log("this.appArr:", this.appArr);
       })
       .catch(error => {
