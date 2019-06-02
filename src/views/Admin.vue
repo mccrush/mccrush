@@ -42,7 +42,6 @@
 <script>
 // @ is an alias to /src
 import { auth } from "@/main.js";
-import { store } from "@/store.js";
 import AdminListRazdel from "@/components/AdminListRazdel.vue";
 import AdminFormPage from "@/components/AdminFormPage.vue";
 
@@ -62,7 +61,7 @@ export default {
     return {
       uEmail: null,
       uPassword: null,
-      authStatus: store.state.authStatus,
+      //authStatus: store.state.authStatus,
       formObj: {},
       itogArr: [],
       idArr: []
@@ -71,7 +70,7 @@ export default {
   },
   created() {
     if (auth.currentUser) {
-      store.commit("changeAuthStatus");
+      //this.$store.commit("changeAuthStatus", true);
       //this.isAuth = true;
     } else {
       //store.commit("changeAuthStatus");
@@ -82,10 +81,10 @@ export default {
       if (user) {
         console.log("Статус пользователя изменен на Авторизован");
         //this.isAuth = true;
-        store.commit("changeAuthStatus");
+        //this.$store.commit("changeAuthStatus", true);
       } else {
         console.log("Ad:Статус пользовтеля - Вышел!");
-        store.commit("changeAuthStatus");
+        this.$store.commit("changeAuthStatus", false);
         //this.test = "5";
         //this.isAuth = false;
       }
@@ -122,6 +121,11 @@ export default {
     $route(to, from) {
       //this.getPageObg(to.params.alias);
       this.getItogArr(to.params.razdel);
+    }
+  },
+  computed: {
+    authStatus() {
+      return this.$store.state.authStatus;
     }
   }
 };

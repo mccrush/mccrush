@@ -33,7 +33,6 @@
 
 <script>
 import { auth } from "@/main.js";
-import { store } from "@/store.js";
 
 export default {
   name: "navbar",
@@ -42,15 +41,16 @@ export default {
   },
   data() {
     return {
-      menuArr: [],
-      authStatus: store.state.authStatus
+      menuArr: []
+      //authStatus: store.state.authStatus
     };
   },
   created() {
-    console.log("store.state.authStatus:", store.state.authStatus);
+    //console.log("store.state.authStatus:", store.state.authStatus);
     this.menuArr = this.pageArr.filter(function(item, i) {
       return i > 0;
     });
+    //
     //
     // if (auth.currentUser) {
     //   this.isAuth = store.state.authStatus;
@@ -65,12 +65,17 @@ export default {
         .signOut()
         .then(function() {
           // Sign-out successful.
-          store.commit("changeAuthStatus");
+          //this.$store.commit("changeAuthStatus", false);
           //this.isAuth = false;
         })
         .catch(function(error) {
           // An error happened.
         });
+    }
+  },
+  computed: {
+    authStatus() {
+      return this.$store.state.authStatus;
     }
   }
 };

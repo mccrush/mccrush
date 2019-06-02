@@ -33,7 +33,7 @@ export default {
           this.pageArr.push(doc.data());
           //console.log(`${doc.id} => ${doc.data().alias}`);
         });
-        console.log("this.pageArr:", this.pageArr);
+        //console.log("this.pageArr:", this.pageArr);
       })
       .catch(error => {
         console.log(error);
