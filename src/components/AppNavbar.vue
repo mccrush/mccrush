@@ -41,43 +41,29 @@ export default {
   },
   data() {
     return {
-      menuArr: []
-      //authStatus: store.state.authStatus
+      menuArr: [],
+      authStatus: auth.currentUser
     };
   },
   created() {
-    //console.log("store.state.authStatus:", store.state.authStatus);
     this.menuArr = this.pageArr.filter(function(item, i) {
       return i > 0;
     });
-    //
-    //
-    // if (auth.currentUser) {
-    //   this.isAuth = store.state.authStatus;
-    // } else {
-    //   this.isAuth = false;
-    // }
   },
   methods: {
     logOut() {
-      console.log("Metod srabotal");
       auth
         .signOut()
         .then(function() {
+          document.location.reload();
           // Sign-out successful.
-          //this.$store.commit("changeAuthStatus", false);
-          //this.isAuth = false;
         })
         .catch(function(error) {
           // An error happened.
         });
     }
   },
-  computed: {
-    authStatus() {
-      return this.$store.state.authStatus;
-    }
-  }
+  computed: {}
 };
 </script>
 

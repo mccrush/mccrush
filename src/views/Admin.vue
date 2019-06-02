@@ -28,7 +28,6 @@
     </div>
     <div v-if="authStatus" class="col-2 border-right">
       <AdminListRazdel :itogArr="itogArr" :idArr="idArr"/>
-      authStatus = {{authStatus}}
     </div>
     <div v-if="authStatus" class="col-10">
       <AdminFormPage v-if="this.$route.query.alias" :itogArr="itogArr" :idArr="idArr"/>
@@ -61,35 +60,13 @@ export default {
     return {
       uEmail: null,
       uPassword: null,
-      //authStatus: store.state.authStatus,
+      authStatus: auth.currentUser,
       formObj: {},
       itogArr: [],
       idArr: []
-      //test: "2"
     };
   },
   created() {
-    if (auth.currentUser) {
-      //this.$store.commit("changeAuthStatus", true);
-      //this.isAuth = true;
-    } else {
-      //store.commit("changeAuthStatus");
-      //this.isAuth = false;
-    }
-    //
-    auth.onAuthStateChanged(function(user) {
-      if (user) {
-        console.log("Статус пользователя изменен на Авторизован");
-        //this.isAuth = true;
-        //this.$store.commit("changeAuthStatus", true);
-      } else {
-        console.log("Ad:Статус пользовтеля - Вышел!");
-        this.$store.commit("changeAuthStatus", false);
-        //this.test = "5";
-        //this.isAuth = false;
-      }
-    });
-    //this.getPageObg(this.$route.params.alias);
     this.getItogArr(this.$route.params.razdel);
   },
   methods: {
@@ -97,10 +74,7 @@ export default {
       auth
         .signInWithEmailAndPassword(this.uEmail, this.uPassword)
         .then(function(user) {
-          console.log("Авторизация прошла успешно");
-          //this.isAuth = true;
-          //sessionStorage.setItem(uid, user.uid);
-          //console.log("in metd this.isAuth =", this.isAuth);
+          document.location.reload();
         })
         .catch(function(error) {
           // Handle Errors here.
@@ -119,14 +93,9 @@ export default {
   },
   watch: {
     $route(to, from) {
-      //this.getPageObg(to.params.alias);
       this.getItogArr(to.params.razdel);
     }
   },
-  computed: {
-    authStatus() {
-      return this.$store.state.authStatus;
-    }
-  }
+  computed: {}
 };
 </script>
