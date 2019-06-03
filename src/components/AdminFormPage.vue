@@ -2,10 +2,21 @@
   <div class="row">
     <div class="col">
       <form>
-        <div class="form-group">
-          <label for="itemTitle">Заголовок страницы</label>
-          <input type="text" class="form-control" id="itemTitle" aria-describedby="titleHelp" placeholder="Введите заголовок страницы" maxlength="20" v-model="itemObj.title" @focus="editingForm()" @blur="saveForm()">
-          <small id="titleHelp" class="form-text text-muted">Длина не более 20 символов</small>
+        <div class="row">
+          <div class="col-8">
+            <div class="form-group">
+              <label for="itemTitle">Заголовок страницы</label>
+              <input type="text" class="form-control" id="itemTitle" aria-describedby="titleHelp" placeholder="Введите заголовок страницы" maxlength="60" v-model="itemObj.title" @focus="editingForm()" @blur="saveForm()">
+              <small id="titleHelp" class="form-text text-muted">Длина не более 20 символов</small>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label for="itemAlias">Алиас</label>
+              <input type="text" class="form-control" id="itemAlias" aria-describedby="aliasHelp" placeholder="Введите заголовок страницы" maxlength="10" v-model="itemObj.alias" @focus="editingForm()" @blur="saveForm()">
+              <small id="aliasHelp" class="form-text text-muted">Латиницей!</small>
+            </div>
+          </div>
         </div>
         <div class="form-group">
           <label for="itemDescription">Описание страницы</label>
@@ -67,6 +78,7 @@ export default {
       dateNow: new Date(),
       tecId: this.$route.query.id,
       itemObj: {
+        alias: "",
         title: "",
         description: "",
         content: "",
