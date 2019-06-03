@@ -12,7 +12,7 @@
           <div class="col-3">
             <div class="form-group">
               <label for="itemAlias">Алиас</label>
-              <input type="text" class="form-control" id="itemAlias" aria-describedby="aliasHelp" placeholder="Введите алиас" maxlength="10" v-model="itemObj.alias" @focus="editingForm()">
+              <input type="text" class="form-control" id="itemAlias" aria-describedby="aliasHelp" placeholder="Введите алиас" maxlength="60" v-model="itemObj.alias" @focus="editingForm()">
             </div>
           </div>
         </div>
@@ -72,10 +72,13 @@
           <small id="contentHelp" class="form-text text-muted">Как в Worde</small>
         </div>
         <div class="row">
-          <div class="col-6">
+          <div class="col-3">
+            <button v-if="this.tecId" class="btn btn-block btn-danger" @click.prevent="deleteForm">Удалить</button>
+          </div>
+          <div class="col-4">
             <button class="btn btn-block btn-light" @click.prevent="clearForm">Очистить поля</button>
           </div>
-          <div class="col-6">
+          <div class="col-5">
             <button class="btn btn-block" :class="buttonSaveBg" @click.prevent="saveForm">{{buttonSaveText}}</button>
           </div>
         </div>
@@ -139,6 +142,23 @@ export default {
     //   let yyyy = this.dateNow.getFullYear();
     //   return (this.dateNow = dd + "." + mm + "." + yyyy);
     // }
+    deleteForm() {
+      console.log("this.tecId =", this.tecId);
+      if (confirm("Точно удалить?")) {
+        db.collection("app")
+          .doc(this.tecId)
+          .delete()
+          .then(function() {
+            console.log("Document successfully deleted!");
+            document.location.replace("/adm/app");
+            //this.$router.replace("/adm/page");
+          })
+          .catch(function(error) {
+            console.error("Error removing document: ", error);
+          });
+      }
+      return false;
+    },
     clearForm() {
       if (confirm("Точно очистить?")) {
         for (let key in this.itemObj) {
@@ -153,9 +173,10 @@ export default {
       this.buttonSaveText = "Сохранить";
     },
     saveForm() {
-      this.tecId = this.tecId ? this.tecId : db.collection("page").doc().id;
       this.buttonSaveBg = "btn-warning";
       this.buttonSaveText = "Сохраняется...";
+      this.tecId = this.tecId ? this.tecId : db.collection("page").doc().id;
+      console.log("this.tecId =", this.tecId);
       db.collection("app")
         .doc(this.tecId)
         .set(this.itemObj)
