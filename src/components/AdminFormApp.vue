@@ -5,9 +5,9 @@
         <div class="row">
           <div class="col-6">
             <div class="form-group">
-              <label for="itemTitle">Заголовок страницы</label>
+              <label for="itemTitle">Название приложения</label>
               <input type="text" class="form-control" id="itemTitle" aria-describedby="titleHelp" placeholder="Введите заголовок страницы" maxlength="60" v-model="itemObj.title" @focus="editingForm()" @blur="saveForm()">
-              <small id="titleHelp" class="form-text text-muted">Длина не более 20 символов</small>
+              <small id="titleHelp" class="form-text text-muted">Длина не более 60 символов</small>
             </div>
           </div>
           <div class="col-3">
@@ -25,13 +25,36 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-5">
+            <div class="form-group">
+              <label for="itemLink">Ссылка приложения</label>
+              <input type="text" class="form-control" id="itemLink" aria-describedby="linkHelp" placeholder="Введите заголовок страницы" v-model="itemObj.link" @focus="editingForm()" @blur="saveForm()">
+              <small id="linkHelp" class="form-text text-muted">URL</small>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="form-group">
+              <label for="itemGithub">Ссылка Github</label>
+              <input type="text" class="form-control" id="itemGithub" aria-describedby="githubHelp" placeholder="Введите заголовок страницы" v-model="itemObj.github" @focus="editingForm()" @blur="saveForm()">
+              <small id="githubHelp" class="form-text text-muted">URL</small>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="itemVersion">Версия</label>
+              <input type="text" class="form-control" id="itemVersion" aria-describedby="versioneHelp" placeholder="Введите заголовок страницы" v-model="itemObj.version" @focus="editingForm()" @blur="saveForm()">
+              <small id="versioneHelp" class="form-text text-muted">Ну версия</small>
+            </div>
+          </div>
+        </div>
         <div class="form-group">
-          <label for="itemDescription">Описание страницы</label>
+          <label for="itemDescription">Краткое описание</label>
           <textarea class="form-control" id="itemDescription" aria-describedby="descriptionHelp" placeholder="Введите краткое описание страницы" rows="3" v-model="itemObj.description" @focus="editingForm()" @blur="saveForm()"></textarea>
           <small id="descriptionHelp" class="form-text text-muted">Лучше - короче</small>
         </div>
         <div class="form-group">
-          <label for="itemContent">Контент страницы</label>
+          <label for="itemContent">Подробное описание</label>
           <editor
             api-key="hanxollva4phpflvvnv1lje4y82fvprrkqrmpqeclw066js2"
             :init="{height: 350,
@@ -88,6 +111,9 @@ export default {
         title: "",
         alias: "",
         posmenu: null,
+        link: "",
+        github: "",
+        version: "",
         description: "",
         content: "",
         dateUpdate: Date().toString()
@@ -135,7 +161,7 @@ export default {
     saveForm() {
       this.buttonSaveBg = "btn-warning";
       this.buttonSaveText = "Сохраняется...";
-      db.collection("page")
+      db.collection("app")
         .doc(this.tecId)
         .set(this.itemObj)
         .then(function() {

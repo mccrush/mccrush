@@ -30,7 +30,8 @@
       <AdminListRazdel :itogArr="itogArr" :idArr="idArr"/>
     </div>
     <div v-if="authStatus" class="col-10">
-      <AdminFormPage v-if="this.$route.query.alias" :itogArr="itogArr" :idArr="idArr"/>
+      <AdminFormPage v-if="this.$route.query.alias == 'page'" :itogArr="itogArr" :idArr="idArr"/>
+      <AdminFormApp v-if="this.$route.query.alias == 'app'" :itogArr="itogArr" :idArr="idArr"/>
     </div>
 
     <!-- <img alt="Vue logo" src="../assets/logo.png" width="150"> -->
@@ -43,12 +44,14 @@
 import { auth } from "@/main.js";
 import AdminListRazdel from "@/components/AdminListRazdel.vue";
 import AdminFormPage from "@/components/AdminFormPage.vue";
+import AdminFormApp from "@/components/AdminFormApp.vue";
 
 export default {
   name: "admin",
   components: {
     AdminListRazdel,
-    AdminFormPage
+    AdminFormPage,
+    AdminFormApp
   },
   props: {
     pageArr: Array,
