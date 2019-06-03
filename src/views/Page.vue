@@ -7,7 +7,7 @@
       <div class="content" v-html="pageObj.content"></div>
     </div>
     <!-- <img alt="Vue logo" src="../assets/logo.png" width="150"> -->
-    <!-- <HelloWorld v-if="pageObj.title" :msg="'Welcome to ' + pageObj.title"/> -->
+    <!-- <HelloWorld  v-if="pageObj.title" :msg="'Welcome to ' + pageObj.title"/> -->
   </div>
 </template>
 
