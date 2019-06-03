@@ -29,6 +29,7 @@ export default {
   },
   created() {
     db.collection("page")
+      .orderBy("posmenu")
       .get()
       .then(querySnapshot => {
         querySnapshot.forEach(doc => {

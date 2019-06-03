@@ -3,18 +3,25 @@
     <div class="col">
       <form>
         <div class="row">
-          <div class="col-8">
+          <div class="col-6">
             <div class="form-group">
               <label for="itemTitle">Заголовок страницы</label>
               <input type="text" class="form-control" id="itemTitle" aria-describedby="titleHelp" placeholder="Введите заголовок страницы" maxlength="60" v-model="itemObj.title" @focus="editingForm()" @blur="saveForm()">
               <small id="titleHelp" class="form-text text-muted">Длина не более 20 символов</small>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-3">
             <div class="form-group">
               <label for="itemAlias">Алиас</label>
               <input type="text" class="form-control" id="itemAlias" aria-describedby="aliasHelp" placeholder="Введите заголовок страницы" maxlength="10" v-model="itemObj.alias" @focus="editingForm()" @blur="saveForm()">
               <small id="aliasHelp" class="form-text text-muted">Латиницей!</small>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="form-group">
+              <label for="itemPosmenu">Меню</label>
+              <input type="number" class="form-control" id="itemPosmenu" aria-describedby="posmenuHelp" placeholder="9" max="9" step="1" v-model="itemObj.posmenu" @focus="editingForm()" @blur="saveForm()">
+              <small id="posmenuHelp" class="form-text text-muted">Число</small>
             </div>
           </div>
         </div>
@@ -82,6 +89,7 @@ export default {
         title: "",
         description: "",
         content: "",
+        posmenu: null,
         dateUpdate: Date().toString()
       },
       buttonSaveBg: "btn-success",
