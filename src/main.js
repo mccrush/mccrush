@@ -29,6 +29,9 @@ export const auth = firebase.auth();
 
 Vue.config.productionTip = false
 
+store.commit('getArr', 'page');
+store.commit('getArr', 'app');
+
 new Vue({
   router,
   store,

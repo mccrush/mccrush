@@ -37,7 +37,7 @@ import { auth } from "@/main.js";
 export default {
   name: "navbar",
   props: {
-    pageArr: Array
+    //pageArr: Array
   },
   data() {
     return {
@@ -46,9 +46,12 @@ export default {
     };
   },
   created() {
-    this.menuArr = this.pageArr.filter(function(item, i) {
+    this.menuArr = this.$store.state.pageArr.filter(function(item, i) {
       return i > 0;
     });
+    // this.menuArr = this.pageArr.filter(function(item, i) {
+    //   return i > 0;
+    // });
   },
   methods: {
     logOut() {
