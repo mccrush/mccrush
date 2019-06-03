@@ -1,5 +1,8 @@
 <template>
-  <ul class="list-unstyled">
+  <ul class="list-unstyled small">
+    <li>
+      <router-link to="?alias=new" class="btn btn-outline-success btn-sm mb-2">Создать +</router-link>
+    </li>
     <li v-for="(item, index) in itogArr" :key="'ki'+index">
       <router-link :to="'?alias='+item.alias+'&id='+idArr[index]">{{item.title}}</router-link>
     </li>

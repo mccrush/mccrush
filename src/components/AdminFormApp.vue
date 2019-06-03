@@ -3,55 +3,50 @@
     <div class="col">
       <form>
         <div class="row">
-          <div class="col-6">
+          <div class="col-9">
             <div class="form-group">
               <label for="itemTitle">Название приложения</label>
-              <input type="text" class="form-control" id="itemTitle" aria-describedby="titleHelp" placeholder="Введите заголовок страницы" maxlength="60" v-model="itemObj.title" @focus="editingForm()" @blur="saveForm()">
-              <small id="titleHelp" class="form-text text-muted">Длина не более 60 символов</small>
+              <input type="text" class="form-control" id="itemTitle" aria-describedby="titleHelp" placeholder="Введите название приложения" maxlength="60" v-model="itemObj.title" @focus="editingForm()">
             </div>
           </div>
           <div class="col-3">
             <div class="form-group">
               <label for="itemAlias">Алиас</label>
-              <input type="text" class="form-control" id="itemAlias" aria-describedby="aliasHelp" placeholder="Введите заголовок страницы" maxlength="10" v-model="itemObj.alias" @focus="editingForm()" @blur="saveForm()">
-              <small id="aliasHelp" class="form-text text-muted">Латиницей!</small>
+              <input type="text" class="form-control" id="itemAlias" aria-describedby="aliasHelp" placeholder="Введите алиас" maxlength="10" v-model="itemObj.alias" @focus="editingForm()">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-9">
+            <div class="form-group">
+              <label for="itemLink">Ссылка приложения</label>
+              <input type="text" class="form-control" id="itemLink" aria-describedby="linkHelp" placeholder="Введите ссылку на приложение" v-model="itemObj.link" @focus="editingForm()">
             </div>
           </div>
           <div class="col-3">
             <div class="form-group">
               <label for="itemPosmenu">Меню</label>
-              <input type="number" class="form-control" id="itemPosmenu" aria-describedby="posmenuHelp" placeholder="9" max="9" step="1" v-model="itemObj.posmenu" @focus="editingForm()" @blur="saveForm()">
-              <small id="posmenuHelp" class="form-text text-muted">Число</small>
+              <input type="number" class="form-control" id="itemPosmenu" aria-describedby="posmenuHelp" max="9" step="1" v-model="itemObj.posmenu" @focus="editingForm()">
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-5">
-            <div class="form-group">
-              <label for="itemLink">Ссылка приложения</label>
-              <input type="text" class="form-control" id="itemLink" aria-describedby="linkHelp" placeholder="Введите заголовок страницы" v-model="itemObj.link" @focus="editingForm()" @blur="saveForm()">
-              <small id="linkHelp" class="form-text text-muted">URL</small>
-            </div>
-          </div>
-          <div class="col-5">
+          <div class="col-9">
             <div class="form-group">
               <label for="itemGithub">Ссылка Github</label>
-              <input type="text" class="form-control" id="itemGithub" aria-describedby="githubHelp" placeholder="Введите заголовок страницы" v-model="itemObj.github" @focus="editingForm()" @blur="saveForm()">
-              <small id="githubHelp" class="form-text text-muted">URL</small>
+              <input type="text" class="form-control" id="itemGithub" aria-describedby="githubHelp" placeholder="Введите ссылку на Github" v-model="itemObj.github" @focus="editingForm()">
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-3">
             <div class="form-group">
               <label for="itemVersion">Версия</label>
-              <input type="text" class="form-control" id="itemVersion" aria-describedby="versioneHelp" placeholder="Введите заголовок страницы" v-model="itemObj.version" @focus="editingForm()" @blur="saveForm()">
-              <small id="versioneHelp" class="form-text text-muted">Ну версия</small>
+              <input type="text" class="form-control" id="itemVersion" aria-describedby="versioneHelp" placeholder="Введите версию" v-model="itemObj.version" @focus="editingForm()">
             </div>
           </div>
         </div>
         <div class="form-group">
           <label for="itemDescription">Краткое описание</label>
-          <textarea class="form-control" id="itemDescription" aria-describedby="descriptionHelp" placeholder="Введите краткое описание страницы" rows="3" v-model="itemObj.description" @focus="editingForm()" @blur="saveForm()"></textarea>
-          <small id="descriptionHelp" class="form-text text-muted">Лучше - короче</small>
+          <textarea class="form-control" id="itemDescription" aria-describedby="descriptionHelp" placeholder="Введите краткое описание страницы" rows="3" v-model="itemObj.description" @focus="editingForm()"></textarea>
         </div>
         <div class="form-group">
           <label for="itemContent">Подробное описание</label>
@@ -73,7 +68,6 @@
             rows="5"
             v-model="itemObj.content"
             @focus="editingForm()"
-            @blur="saveForm()"
           ></editor>
           <small id="contentHelp" class="form-text text-muted">Как в Worde</small>
         </div>
@@ -106,7 +100,7 @@ export default {
   data() {
     return {
       dateNow: new Date(),
-      tecId: this.$route.query.id,
+      tecId: this.$route.query.id || null,
       itemObj: {
         title: "",
         alias: "",
@@ -123,7 +117,7 @@ export default {
     };
   },
   created() {
-    if (this.$route.query.alias) {
+    if (this.$route.query.id) {
       this.getPageObg(this.$route.query.alias);
     }
     //this.tecYear = new Date().getFullYear();
@@ -159,6 +153,7 @@ export default {
       this.buttonSaveText = "Сохранить";
     },
     saveForm() {
+      this.tecId = this.tecId ? this.tecId : db.collection("page").doc().id;
       this.buttonSaveBg = "btn-warning";
       this.buttonSaveText = "Сохраняется...";
       db.collection("app")
@@ -179,7 +174,7 @@ export default {
   watch: {
     $route(to, from) {
       this.getPageObg(to.query.alias);
-      this.tecId = to.query.id;
+      this.tecId = to.query.id || null;
       //console.log("id=", to.query.id);
       //this.getPageObg(to.params.alias);
     }
