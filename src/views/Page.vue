@@ -20,9 +20,6 @@ export default {
   components: {
     HelloWorld
   },
-  props: {
-    pageArr: Array
-  },
   data() {
     return {
       pageObj: {}
@@ -33,8 +30,13 @@ export default {
   },
   methods: {
     getPageObg(match) {
-      this.pageObj = this.pageArr.find(item => item.alias == match);
+      this.pageObj = this.$store.state.pageArr.find(
+        item => item.alias == match
+      );
     }
+    // getPageObg(match) {
+    //   this.pageObj = this.pageArr.find(item => item.alias == match);
+    // }
   },
   watch: {
     $route(to, from) {

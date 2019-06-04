@@ -53,12 +53,6 @@ export default {
     AdminFormPage,
     AdminFormApp
   },
-  props: {
-    pageArr: Array,
-    pageId: Array,
-    appArr: Array,
-    appId: Array
-  },
   data() {
     return {
       uEmail: null,
@@ -86,12 +80,14 @@ export default {
           // ...
         });
     },
-    getPageObg(match) {
-      this.pageObj = this.pageArr.find(item => item.alias == match);
-    },
+    // getPageObg(match) {
+    //   this.pageObj = this.pageArr.find(item => item.alias == match);
+    // },
     getItogArr(arr) {
-      this.itogArr = arr == "page" ? this.pageArr : this.appArr;
-      this.idArr = arr == "page" ? this.pageId : this.appId;
+      this.itogArr =
+        arr == "page" ? this.$store.state.pageArr : this.$store.state.appArr;
+      this.idArr =
+        arr == "page" ? this.$store.state.pageId : this.$store.state.appId;
     }
   },
   watch: {

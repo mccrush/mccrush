@@ -3,13 +3,13 @@
     <div class="col">
       <form>
         <div class="row">
-          <div class="col-9">
+          <div class="col-8">
             <div class="form-group">
               <label for="itemTitle">Название приложения</label>
               <input type="text" class="form-control" id="itemTitle" aria-describedby="titleHelp" placeholder="Введите название приложения" maxlength="60" v-model="itemObj.title" @focus="editingForm()">
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-4">
             <div class="form-group">
               <label for="itemAlias">Алиас</label>
               <input type="text" class="form-control" id="itemAlias" aria-describedby="aliasHelp" placeholder="Введите алиас" maxlength="60" v-model="itemObj.alias" @focus="editingForm()">
