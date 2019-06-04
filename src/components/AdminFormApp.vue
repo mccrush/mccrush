@@ -149,16 +149,6 @@ export default {
           col: "app",
           id: this.tecId
         });
-        // db.collection("app")
-        //   .doc(this.tecId)
-        //   .delete()
-        //   .then(function() {
-        //     console.log("Document successfully deleted!");
-        //     document.location.replace("/adm/app");
-        //   })
-        //   .catch(function(error) {
-        //     console.error("Error removing document: ", error);
-        //   });
       }
       return false;
     },
@@ -176,26 +166,20 @@ export default {
       this.buttonSaveText = "Сохранить";
     },
     saveForm() {
+      console.log("this.tecId =", this.tecId);
       this.buttonSaveBg = "btn-warning";
       this.buttonSaveText = "Сохраняется...";
-      //this.tecId = this.tecId ? this.tecId : db.collection("app").doc().id;
-      console.log("this.tecId =", this.tecId);
-      this.$store.commit("setItem", {
-        col: "app",
-        id: this.tecId,
-        item: this.itemObj
-      });
-      // db.collection("app")
-      //   .doc(this.tecId)
-      //   .set(this.itemObj)
-      //   .then(function() {
-      //     console.log("Document successfully written!");
-      //   })
-      //   .catch(function(error) {
-      //     console.error("Error writing document: ", error);
-      //   });
-      this.buttonSaveBg = "btn-success";
-      this.buttonSaveText = "Сохранено";
+      if (validate(this.itemObj)) {
+        this.$store.commit("setItem", {
+          col: "app",
+          id: this.tecId,
+          item: this.itemObj
+        });
+        this.buttonSaveBg = "btn-success";
+        this.buttonSaveText = "Сохранено";
+      } else {
+        alert("Все поля необходимо заполнить!");
+      }
     }
   },
   watch: {
