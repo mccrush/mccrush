@@ -3,16 +3,22 @@
     <div class="card-body">
       <h5 class="card-title">{{item.title}}</h5>
       <p class="card-text">
-        Тип: {{item.alias}}
-        <br>Доступно:
-        <a :href="item.link" target="_blank">перейти</a>
-        <br>Github:
-        <a :href="item.github" target="_blank">{{item.github}}</a>
+        <strong>Тип:</strong>
+        {{item.type}}
+        <br>
+        <strong>Версия:</strong>
+        {{item.version}}
+        <small class="text-muted">от {{fullDate}}</small>
       </p>
-      <p class="card-text">{{item.description}}</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Обновлено: {{fullDate}}</small>
+      <div class="row">
+        <div class="col-6">
+          <a :href="item.link" class="btn btn-block btn-sm btn-warning" target="_blank">{{item.button}}</a>
+        </div>
+        <div class="col-6">
+          <a :href="item.github" class="btn btn-block btn-sm btn-light" target="_blank">Github</a>
+        </div>
+      </div>
+      <p class="card-text mt-3">{{item.description}}</p>
     </div>
   </div>
 </template>
@@ -39,6 +45,6 @@ export default {
 <style scoped>
 .card {
   border: none;
-  border-top: 4px solid red;
+  border-top: 3px solid #ffc107; /* rgba(255, 0, 0, 0.75);*/
 }
 </style>

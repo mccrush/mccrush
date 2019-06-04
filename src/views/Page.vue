@@ -4,7 +4,7 @@
       <h2>{{pageObj.title}}</h2>
       <p class="description">{{pageObj.description}}</p>
       <hr>
-      <div class="content" v-html="pageObj.content"></div>
+      <div class="content" v-if="this.$route.params.alias !== 'app'" v-html="pageObj.content"></div>
     </div>
     <!-- <img alt="Vue logo" src="../assets/logo.png" width="150"> -->
     <div class="col-12" v-if="this.$route.params.alias == 'app'">

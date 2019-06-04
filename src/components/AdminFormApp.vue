@@ -17,6 +17,20 @@
           </div>
         </div>
         <div class="row">
+          <div class="col-8">
+            <div class="form-group">
+              <label for="itemType">Тип приложения</label>
+              <input type="text" class="form-control" id="itemType" aria-describedby="typeHelp" placeholder="Введите тип приложения" maxlength="60" v-model="itemObj.type" @focus="editingForm()" required>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label for="itemButton">Кнопка</label>
+              <input type="text" class="form-control" id="itemButton" aria-describedby="buttonHelp" placeholder="Надпись на кнопке" maxlength="60" v-model="itemObj.button" @focus="editingForm()" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
           <div class="col-9">
             <div class="form-group">
               <label for="itemLink">Ссылка приложения</label>
@@ -108,6 +122,8 @@ export default {
       itemObj: {
         title: "",
         alias: "",
+        type: "",
+        button: "",
         posmenu: null,
         link: "",
         github: "",
