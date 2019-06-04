@@ -1,24 +1,28 @@
 <template>
   <div class="row mt-3">
-    <div class="col">
+    <div class="col-12">
       <h2>{{pageObj.title}}</h2>
       <p class="description">{{pageObj.description}}</p>
       <hr>
       <div class="content" v-html="pageObj.content"></div>
     </div>
     <!-- <img alt="Vue logo" src="../assets/logo.png" width="150"> -->
-    <!-- <HelloWorld  v-if="pageObj.title" :msg="'Welcome to ' + pageObj.title"/> -->
+    <div class="col-12" v-if="this.$route.params.alias == 'app'">
+      <div class="card-deck">
+        <CardApp v-for="item in this.$store.state.appArr" :key="'card-'+item.alias" :item="item"/>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import CardApp from "@/components/CardApp.vue";
 
 export default {
   name: "page",
   components: {
-    HelloWorld
+    CardApp
   },
   data() {
     return {
