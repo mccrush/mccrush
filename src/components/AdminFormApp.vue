@@ -89,6 +89,7 @@
 
 <script>
 //import { db } from "@/main.js";
+import validate from "@/scripts/validate.js";
 import Editor from "@tinymce/tinymce-vue";
 
 export default {
