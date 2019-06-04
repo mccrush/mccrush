@@ -38,11 +38,30 @@ export default new Vuex.Store({
         });
       //console.log("after mutations, store.state.authStatus:", store.state.authStatus);
     },
-    updateItem(id, item) {
-
+    setItem(state, payload) {
+      payload.id = payload.id ? payload.id : db.collection(payload.col).doc().id;
+      db.collection(payload.col)
+        .doc(payload.id)
+        .set(payload.item)
+        .then(function () {
+          console.log("Document successfully written!");
+        })
+        .catch(function (error) {
+          console.error("Error writing document: ", error);
+        });
     },
-    addItem(newItem) { },
-    deleteItem(id) { }
+    deleteItem(state, payload) {
+      db.collection(payload.col)
+        .doc(payload.id)
+        .delete()
+        .then(function () {
+          console.log("Document successfully deleted!");
+          document.location.replace("/adm/app");
+        })
+        .catch(function (error) {
+          console.error("Error removing document: ", error);
+        });
+    }
   },
   actions: {
 
