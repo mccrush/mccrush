@@ -54,13 +54,13 @@
           <div class="col-3">
             <div class="form-group">
               <label for="itemVersion">Версия</label>
-              <input type="text" class="form-control" id="itemVersion" aria-describedby="versioneHelp" placeholder="Введите версию" v-model="itemObj.version" @focus="editingForm()">
+              <input type="text" class="form-control" id="itemVersion" aria-describedby="versionHelp" placeholder="Введите версию" v-model="itemObj.version" @focus="editingForm()">
             </div>
           </div>
         </div>
         <div class="form-group">
-          <label for="itemDescription">Краткое описание</label>
-          <textarea class="form-control" id="itemDescription" aria-describedby="descriptionHelp" placeholder="Введите краткое описание страницы" rows="3" v-model="itemObj.description" @focus="editingForm()"></textarea>
+          <label for="itemDateUpdate">Дата релиза</label>
+          <input type="datetime-local" class="form-control" id="itemDateUpdate" aria-describedby="dateUpdateHelp" placeholder="Укажите дату релиза" v-model="itemObj.dateUpdate" @focus="editingForm()">
         </div>
         <div class="form-group">
           <label for="itemContent">Подробное описание</label>
@@ -107,7 +107,7 @@ import validate from "@/scripts/validate.js";
 import Editor from "@tinymce/tinymce-vue";
 
 export default {
-  name: "adminFormPage",
+  name: "adminFormApp",
   components: {
     editor: Editor // <- Important part
   },
@@ -117,7 +117,6 @@ export default {
   },
   data() {
     return {
-      dateNow: new Date(),
       tecId: this.$route.query.id || null,
       itemObj: {
         title: "",
@@ -128,9 +127,8 @@ export default {
         link: "",
         github: "",
         version: "",
-        description: "",
         content: "",
-        dateUpdate: Date().toString()
+        dateUpdate: ""
       },
       buttonSaveBg: "btn-success",
       buttonSaveText: "Сохранено"
@@ -140,25 +138,16 @@ export default {
     if (this.$route.query.id) {
       this.getPageObg(this.$route.query.alias);
     }
-    //this.tecYear = new Date().getFullYear();
-    //console.log("date:", this.itemObj.dateUpdate);
   },
   methods: {
     getPageObg(match) {
       this.itemObj = this.itogArr.find(item => item.alias == match);
+      console.log("before new dateUpdate =", this.itemObj.dateUpdate.seconds);
+      this.itemObj.dateUpdate = new Date(
+        this.itemObj.dateUpdate.seconds * 1000
+      );
+      console.log("after new dateUpdate =", this.itemObj.dateUpdate);
     },
-    // createFullDate() {
-    //   let dd =
-    //     this.dateNow.getDate() < 10
-    //       ? "0" + this.dateNow.getDate()
-    //       : this.dateNow.getDate();
-    //   let mm =
-    //     this.dateNow.getMonth() + 1 < 10
-    //       ? "0" + (this.dateNow.getMonth() + 1)
-    //       : this.dateNow.getMonth() + 1;
-    //   let yyyy = this.dateNow.getFullYear();
-    //   return (this.dateNow = dd + "." + mm + "." + yyyy);
-    // }
     deleteForm() {
       console.log("this.tecId =", this.tecId);
       if (confirm("Точно удалить?")) {
@@ -183,6 +172,10 @@ export default {
       this.buttonSaveText = "Сохранить";
     },
     saveForm() {
+      console.log("do dateUpdate =", this.itemObj.dateUpdate);
+      this.itemObj.dateUpdate = new Date(this.itemObj.dateUpdate).getTime();
+      console.log("after dateUpdate =", this.itemObj.dateUpdate);
+      return false;
       console.log("this.tecId =", this.tecId);
       this.buttonSaveBg = "btn-warning";
       this.buttonSaveText = "Сохраняется...";

@@ -50,6 +50,17 @@ export default new Vuex.Store({
           console.error("Error writing document: ", error);
         });
     },
+    updateItem(state, payload) {
+      db.collection(payload.col)
+        .doc(payload.id)
+        .update(payload.item)
+        .then(function () {
+          console.log("Document successfully updated!");
+        })
+        .catch(function (error) {
+          console.error("Error updated document: ", error);
+        });
+    },
     deleteItem(state, payload) {
       db.collection(payload.col)
         .doc(payload.id)

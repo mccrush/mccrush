@@ -5,7 +5,8 @@ import store from './store'
 import './registerServiceWorker'
 import * as firebase from "firebase/app";
 import "firebase/auth";
-import "firebase/firestore";
+import "firebase/firestore"; // DB
+import "firebase/storage"; // File
 
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,6 +26,8 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 export const db = firebase.firestore();
 export const auth = firebase.auth();
+export const storage = firebase.storage();
+
 //export const storage = firebase.storage();
 
 Vue.config.productionTip = false

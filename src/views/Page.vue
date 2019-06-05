@@ -9,7 +9,7 @@
     <!-- <img alt="Vue logo" src="../assets/logo.png" width="150"> -->
     <div class="col-12" v-if="this.$route.params.alias == 'app'">
       <div class="card-deck">
-        <CardApp v-for="item in this.$store.state.appArr" :key="'card-'+item.alias" :item="item"/>
+        <CardApp v-for="(item, index) in this.$store.state.appArr" :key="'card-'+item.alias" :item="item" :itemId="appId[index]"/>
       </div>
     </div>
   </div>
@@ -26,7 +26,8 @@ export default {
   },
   data() {
     return {
-      pageObj: {}
+      pageObj: {},
+      appId: this.$store.state.appId
     };
   },
   created() {

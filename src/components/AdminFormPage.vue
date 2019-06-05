@@ -108,18 +108,6 @@ export default {
     getPageObg(match) {
       this.itemObj = this.itogArr.find(item => item.alias == match);
     },
-    // createFullDate() {
-    //   let dd =
-    //     this.dateNow.getDate() < 10
-    //       ? "0" + this.dateNow.getDate()
-    //       : this.dateNow.getDate();
-    //   let mm =
-    //     this.dateNow.getMonth() + 1 < 10
-    //       ? "0" + (this.dateNow.getMonth() + 1)
-    //       : this.dateNow.getMonth() + 1;
-    //   let yyyy = this.dateNow.getFullYear();
-    //   return (this.dateNow = dd + "." + mm + "." + yyyy);
-    // }
     deleteForm() {
       console.log("this.tecId =", this.tecId);
       if (confirm("Точно удалить?")) {
