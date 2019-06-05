@@ -8,7 +8,7 @@
         <br>
         <strong>Версия:</strong>
         {{item.version}}
-        <small class="text-muted">от {{fullDate}}</small>
+        <small class="text-muted">от {{dateFormat}}</small>
       </p>
       <div class="row">
         <div class="col-6">
@@ -36,15 +36,14 @@ export default {
     itemId: String
   },
   computed: {
-    fullDate() {
-      let time = new Date(this.item.dateUpdate.seconds * 1000);
-      let dd = time.getDate() < 10 ? "0" + time.getDate() : time.getDate();
-      let mm =
-        time.getMonth() + 1 < 10
-          ? "0" + (time.getMonth() + 1)
-          : time.getMonth() + 1;
-      let yyyy = time.getFullYear();
-      return dd + "." + mm + "." + yyyy;
+    dateFormat() {
+      return (
+        this.item.dateUpdate.slice(8, 10) +
+        "." +
+        this.item.dateUpdate.slice(5, 7) +
+        "." +
+        this.item.dateUpdate.slice(0, 4)
+      );
     }
   },
   methods: {

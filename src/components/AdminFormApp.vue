@@ -60,7 +60,7 @@
         </div>
         <div class="form-group">
           <label for="itemDateUpdate">Дата релиза</label>
-          <input type="datetime-local" class="form-control" id="itemDateUpdate" aria-describedby="dateUpdateHelp" placeholder="Укажите дату релиза" v-model="itemObj.dateUpdate" @focus="editingForm()">
+          <input type="date" class="form-control" id="itemDateUpdate" aria-describedby="dateUpdateHelp" placeholder="Укажите дату релиза" v-model="itemObj.dateUpdate" @focus="editingForm()">
         </div>
         <div class="form-group">
           <label for="itemContent">Подробное описание</label>
@@ -142,12 +142,21 @@ export default {
   methods: {
     getPageObg(match) {
       this.itemObj = this.itogArr.find(item => item.alias == match);
-      console.log("before new dateUpdate =", this.itemObj.dateUpdate.seconds);
-      this.itemObj.dateUpdate = new Date(
-        this.itemObj.dateUpdate.seconds * 1000
-      );
-      console.log("after new dateUpdate =", this.itemObj.dateUpdate);
+      //console.log("before new dateUpdate =", this.itemObj.dateUpdate);
+      //this.itemObj.dateUpdate = new Date(this.itemObj.dateUpdate);
+
+      //console.log("after new dateUpdate =", this.itemObj.dateUpdate);
     },
+    // fullDate(time) {
+    //   //let time = new Date(this.item.dateUpdate.seconds * 1000);
+    //   let dd = time.getDate() < 10 ? "0" + time.getDate() : time.getDate();
+    //   let mm =
+    //     time.getMonth() + 1 < 10
+    //       ? "0" + (time.getMonth() + 1)
+    //       : time.getMonth() + 1;
+    //   let yyyy = time.getFullYear();
+    //   return yyyy + "-" + mm + "-" + dd + "T00:00";
+    // },
     deleteForm() {
       console.log("this.tecId =", this.tecId);
       if (confirm("Точно удалить?")) {
@@ -163,7 +172,7 @@ export default {
         for (let key in this.itemObj) {
           this.itemObj[key] = "";
         }
-        this.itemObj.dateUpdate = Date().toString();
+        //this.itemObj.dateUpdate = Date().toString();
       }
       return false;
     },
@@ -172,10 +181,6 @@ export default {
       this.buttonSaveText = "Сохранить";
     },
     saveForm() {
-      console.log("do dateUpdate =", this.itemObj.dateUpdate);
-      this.itemObj.dateUpdate = new Date(this.itemObj.dateUpdate).getTime();
-      console.log("after dateUpdate =", this.itemObj.dateUpdate);
-      return false;
       console.log("this.tecId =", this.tecId);
       this.buttonSaveBg = "btn-warning";
       this.buttonSaveText = "Сохраняется...";
