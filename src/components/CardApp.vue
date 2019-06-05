@@ -1,5 +1,5 @@
 <template>
-  <div class="col-6 pl-0 pr-0 mb-3">
+  <div class="col-6 pl-0 pr-0 mb-4">
     <div class="card shadow-sm">
       <div class="card-body">
         <h5 class="card-title">{{item.title}}</h5>
@@ -13,11 +13,11 @@
         </p>
         <div class="row">
           <div class="col-6">
-            <a v-if="item.alias == 'pomotime'" :href="item.link" class="btn btn-block btn-sm btn-warning" target="_self" @click="countClick">
+            <a v-if="item.alias == 'pomotimer'" :href="item.link" class="btn btn-block btn-sm btn-warning" target="_self" @click="countClick">
               {{item.button}}
               <small class="text-muted">({{item.btnclick}})</small>
             </a>
-            <a v-if="item.alias !== 'pomotime'" :href="item.link" class="btn btn-block btn-sm btn-warning" target="_blank" @click="countClick">{{item.button}}</a>
+            <a v-if="item.alias !== 'pomotimer'" :href="item.link" class="btn btn-block btn-sm btn-warning" target="_blank" @click="countClick">{{item.button}}</a>
           </div>
           <div class="col-6">
             <a :href="item.github" class="btn btn-block btn-sm btn-light" target="_blank">Github</a>

@@ -8,7 +8,10 @@
     </div>
     <!-- <img alt="Vue logo" src="../assets/logo.png" width="150"> -->
     <div class="col-12" v-if="this.$route.params.alias == 'app'">
-      <div class="card-deck">
+      <div v-if="!this.$store.state.appArr[0]" class="spinner-grow text-danger mt-3" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div v-if="this.$store.state.appArr[0]" class="card-deck">
         <CardApp v-for="(item, index) in this.$store.state.appArr" :key="'card-'+item.alias" :item="item" :itemId="appId[index]"/>
       </div>
     </div>
