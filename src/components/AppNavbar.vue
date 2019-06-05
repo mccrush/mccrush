@@ -23,7 +23,7 @@
             </li>
           </ul>
         </div>
-        <a class="navbar-brand mr-0 d-none d-sm-block" href="https://github/mccrush" target="_blank">
+        <a class="navbar-brand mr-0 d-none d-sm-block" href="https://github.com/mccrush/" target="_blank">
           <img src="/img/github.png" width="24" height="24" alt="Github/mccrush" title="Github/mccrush">
         </a>
       </nav>
