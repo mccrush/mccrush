@@ -44,7 +44,7 @@ export default {
       if (this.pageObj == null) {
         this.$router.replace("/404");
       }
-      console.log("this.pageObj:", this.pageObj);
+      //console.log("this.pageObj:", this.pageObj);
     }
     // getPageObg(match) {
     //   this.pageObj = this.pageArr.find(item => item.alias == match);
