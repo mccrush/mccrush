@@ -1,13 +1,13 @@
 <template>
   <div class="row mt-3">
-    <div class="col-12">
+    <div v-if="this.pageObj !== null" class="col-12">
       <h2>{{pageObj.title}}</h2>
       <p class="description">{{pageObj.description}}</p>
       <hr>
       <div class="content" v-if="this.$route.params.alias !== 'app'" v-html="pageObj.content"></div>
     </div>
     <!-- <img alt="Vue logo" src="../assets/logo.png" width="150"> -->
-    <div class="col-12" v-if="this.$route.params.alias == 'app'">
+    <div v-if="this.$route.params.alias == 'app'" class="col-12">
       <div v-if="!this.$store.state.appArr[0]" class="spinner-grow text-danger mt-3" role="status">
         <span class="sr-only">Loading...</span>
       </div>
@@ -38,9 +38,13 @@ export default {
   },
   methods: {
     getPageObg(match) {
-      this.pageObj = this.$store.state.pageArr.find(
-        item => item.alias == match
-      );
+      this.pageObj =
+        this.$store.state.pageArr.find(item => item.alias == match) || null;
+
+      if (this.pageObj == null) {
+        this.$router.replace("/404");
+      }
+      console.log("this.pageObj:", this.pageObj);
     }
     // getPageObg(match) {
     //   this.pageObj = this.pageArr.find(item => item.alias == match);
