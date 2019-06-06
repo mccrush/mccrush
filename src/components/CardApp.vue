@@ -1,5 +1,5 @@
 <template>
-  <div class="col-6 pl-0 pr-0 mb-4">
+  <div class="col-12 col-sm-6 pl-0 pr-0 mb-4">
     <div class="card shadow-sm">
       <div class="card-body">
         <h5 class="card-title">{{item.title}}</h5>
