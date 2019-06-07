@@ -60,32 +60,6 @@ export default new Vuex.Store({
       }
 
 
-
-
-      // if (localStorage.getItem('pageId').length >= 1) {
-      //   state.pageId = JSON.parse(localStorage.getItem('pageId'));
-      //   state.pageArr = JSON.parse(localStorage.getItem('pageArr'));
-      // } else {
-      //   db.collection(typeCol)
-      //     .orderBy("posmenu")
-      //     .get()
-      //     .then(querySnapshot => {
-      //       if (typeCol == 'page') {
-      //         querySnapshot.forEach(doc => {
-      //           state.pageId.push(doc.id);
-      //           state.pageArr.push(doc.data());
-      //         });
-      //       } else if (typeCol == 'app') {
-      //         querySnapshot.forEach(doc => {
-      //           state.appId.push(doc.id);
-      //           state.appArr.push(doc.data());
-      //         });
-      //       }
-      //     })
-      //     .catch(error => {
-      //       console.log(error);
-      //     });
-      // }
     },
     setItem(state, payload) {
       payload.id = payload.id ? payload.id : db.collection(payload.col).doc().id;
@@ -93,6 +67,17 @@ export default new Vuex.Store({
         .doc(payload.id)
         .set(payload.item)
         .then(function () {
+          if (payload.col == 'page') {
+            state.pageId.push(payload.id);
+            state.pageArr.push(payload.item);
+            localStorage.setItem('pageId', JSON.stringify(state.pageId));
+            localStorage.setItem('pageArr', JSON.stringify(state.pageArr));
+          } else if (payload.col == 'app') {
+            state.appId.push(payload.id);
+            state.appArr.push(payload.item);
+            localStorage.setItem('appId', JSON.stringify(state.appId));
+            localStorage.setItem('appArr', JSON.stringify(state.appArr));
+          }
           console.log("Document successfully written!");
         })
         .catch(function (error) {
