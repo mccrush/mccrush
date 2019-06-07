@@ -28,7 +28,9 @@ export default new Vuex.Store({
                 state.pageId.push(doc.id);
                 state.pageArr.push(doc.data());
               });
-              console.log("in store this.pageArr:", this.pageArr);
+              localStorage.setItem('pageId', JSON.stringify(state.pageId));
+              localStorage.setItem('pageArr', JSON.stringify(state.pageArr));
+              //console.log("in store this.pageArr:", this.pageArr);
             })
             .catch(error => {
               console.log(error);
@@ -47,7 +49,9 @@ export default new Vuex.Store({
                 state.appId.push(doc.id);
                 state.appArr.push(doc.data());
               });
-              console.log("in store this.appArr:", this.appArr);
+              localStorage.setItem('appId', JSON.stringify(state.appId));
+              localStorage.setItem('appArr', JSON.stringify(state.appArr));
+              //console.log("in store state.appArr:", state.appArr);
             })
             .catch(error => {
               console.log(error);
