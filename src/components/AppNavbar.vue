@@ -10,7 +10,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item d-none d-sm-inline" v-for="item in menuArr" :key="'k-'+item.alias">
+            <li class="nav-item d-none d-sm-inline" v-for="item in menuArr" :key="'ks-'+item.alias">
               <router-link :to="'/'+item.alias">&nbsp;{{item.title}}&nbsp;</router-link>
             </li>
             <li class="nav-item d-sm-none" v-for="item in menuArr" :key="'k-'+item.alias">
