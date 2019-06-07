@@ -71,7 +71,8 @@ export default {
       auth
         .signOut()
         .then(function() {
-          document.location.reload();
+          this.$store.commit("logOut");
+          // document.location.reload();
           // Sign-out successful.
         })
         .catch(function(error) {

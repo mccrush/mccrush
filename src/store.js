@@ -9,12 +9,11 @@ export default new Vuex.Store({
     pageArr: [],
     pageId: [],
     appArr: [],
-    appId: []
-
+    appId: [],
+    uid: ""
   },
   mutations: {
     getArr(state, typeCol) {
-
       if (typeCol == 'page') {
         if (localStorage.getItem('pageId')) {
           state.pageId = JSON.parse(localStorage.getItem('pageId'));
@@ -106,6 +105,13 @@ export default new Vuex.Store({
         .catch(function (error) {
           console.error("Error removing document: ", error);
         });
+    },
+    signIn(state, payload) {
+      console.log('commit signIn run');
+      state.uid = payload;
+    },
+    logOut(state) {
+      state.uid = "";
     }
   },
   actions: {
