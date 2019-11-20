@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // import Vue from 'vue'
 // import Router from 'vue-router'
 // import Page from './views/Page.vue'
@@ -85,7 +86,7 @@ const routes = [
 
 const router = new VueRouter({
   mode: 'history',
-  // eslint-disable-next-line no-undef
+
   base: process.env.BASE_URL,
   routes
 })

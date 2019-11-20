@@ -70,6 +70,8 @@
 </template>
 
 <script>
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-console */
 //import { db } from "@/main.js";
 import validate from "@/scripts/validate.js";
 import Editor from "@tinymce/tinymce-vue";

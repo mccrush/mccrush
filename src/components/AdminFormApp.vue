@@ -6,13 +6,13 @@
           <div class="col-8">
             <div class="form-group">
               <label for="itemTitle">Название приложения</label>
-              <input type="text" class="form-control" id="itemTitle" aria-describedby="titleHelp" placeholder="Введите название приложения" maxlength="60" v-model="itemObj.title" @focus="editingForm()" required>
+              <input type="text" class="form-control" id="itemTitle" aria-describedby="titleHelp" placeholder="Введите название приложения" maxlength="60" v-model="itemObj.title" @focus="editingForm()" required />
             </div>
           </div>
           <div class="col-4">
             <div class="form-group">
               <label for="itemAlias">Алиас</label>
-              <input type="text" class="form-control" id="itemAlias" aria-describedby="aliasHelp" placeholder="Введите алиас" maxlength="60" v-model="itemObj.alias" @focus="editingForm()" required>
+              <input type="text" class="form-control" id="itemAlias" aria-describedby="aliasHelp" placeholder="Введите алиас" maxlength="60" v-model="itemObj.alias" @focus="editingForm()" required />
             </div>
           </div>
         </div>
@@ -20,13 +20,13 @@
           <div class="col-8">
             <div class="form-group">
               <label for="itemType">Тип приложения</label>
-              <input type="text" class="form-control" id="itemType" aria-describedby="typeHelp" placeholder="Введите тип приложения" maxlength="60" v-model="itemObj.type" @focus="editingForm()" required>
+              <input type="text" class="form-control" id="itemType" aria-describedby="typeHelp" placeholder="Введите тип приложения" maxlength="60" v-model="itemObj.type" @focus="editingForm()" required />
             </div>
           </div>
           <div class="col-4">
             <div class="form-group">
               <label for="itemButton">Кнопка</label>
-              <input type="text" class="form-control" id="itemButton" aria-describedby="buttonHelp" placeholder="Надпись на кнопке" maxlength="60" v-model="itemObj.button" @focus="editingForm()" required>
+              <input type="text" class="form-control" id="itemButton" aria-describedby="buttonHelp" placeholder="Надпись на кнопке" maxlength="60" v-model="itemObj.button" @focus="editingForm()" required />
             </div>
           </div>
         </div>
@@ -34,13 +34,13 @@
           <div class="col-9">
             <div class="form-group">
               <label for="itemLink">Ссылка приложения</label>
-              <input type="text" class="form-control" id="itemLink" aria-describedby="linkHelp" placeholder="Введите ссылку на приложение" v-model="itemObj.link" @focus="editingForm()">
+              <input type="text" class="form-control" id="itemLink" aria-describedby="linkHelp" placeholder="Введите ссылку на приложение" v-model="itemObj.link" @focus="editingForm()" />
             </div>
           </div>
           <div class="col-3">
             <div class="form-group">
               <label for="itemPosmenu">Меню</label>
-              <input type="number" class="form-control" id="itemPosmenu" aria-describedby="posmenuHelp" max="9" step="1" v-model="itemObj.posmenu" @focus="editingForm()" required>
+              <input type="number" class="form-control" id="itemPosmenu" aria-describedby="posmenuHelp" max="9" step="1" v-model="itemObj.posmenu" @focus="editingForm()" required />
             </div>
           </div>
         </div>
@@ -48,19 +48,19 @@
           <div class="col-9">
             <div class="form-group">
               <label for="itemGithub">Ссылка Github</label>
-              <input type="text" class="form-control" id="itemGithub" aria-describedby="githubHelp" placeholder="Введите ссылку на Github" v-model="itemObj.github" @focus="editingForm()">
+              <input type="text" class="form-control" id="itemGithub" aria-describedby="githubHelp" placeholder="Введите ссылку на Github" v-model="itemObj.github" @focus="editingForm()" />
             </div>
           </div>
           <div class="col-3">
             <div class="form-group">
               <label for="itemVersion">Версия</label>
-              <input type="text" class="form-control" id="itemVersion" aria-describedby="versionHelp" placeholder="Введите версию" v-model="itemObj.version" @focus="editingForm()">
+              <input type="text" class="form-control" id="itemVersion" aria-describedby="versionHelp" placeholder="Введите версию" v-model="itemObj.version" @focus="editingForm()" />
             </div>
           </div>
         </div>
         <div class="form-group">
           <label for="itemDateUpdate">Дата релиза</label>
-          <input type="date" class="form-control" id="itemDateUpdate" aria-describedby="dateUpdateHelp" placeholder="Укажите дату релиза" v-model="itemObj.dateUpdate" @focus="editingForm()">
+          <input type="date" class="form-control" id="itemDateUpdate" aria-describedby="dateUpdateHelp" placeholder="Укажите дату релиза" v-model="itemObj.dateUpdate" @focus="editingForm()" />
         </div>
         <div class="form-group">
           <label for="itemContent">Подробное описание</label>
@@ -102,6 +102,8 @@
 </template>
 
 <script>
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-console */
 //import { db } from "@/main.js";
 import validate from "@/scripts/validate.js";
 import Editor from "@tinymce/tinymce-vue";

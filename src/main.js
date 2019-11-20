@@ -11,7 +11,7 @@ import "firebase/storage"; // File
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
+let app = "";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAGGtzL2xfNuWKIW_KbF1Dxtgd9Av2MtUM",
@@ -35,8 +35,12 @@ Vue.config.productionTip = false
 store.commit('getArr', 'page');
 store.commit('getArr', 'app');
 
-new Vue({
-  router,
-  store,
-  render: function (h) { return h(App) }
-}).$mount('#app')
+firebase.auth().onAuthStateChanged(() => {
+  if (!app) {
+    app = new Vue({
+      router,
+      store,
+      render: function (h) { return h(App) }
+    }).$mount('#app')
+  }
+})
