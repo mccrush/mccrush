@@ -16,11 +16,11 @@
             <li class="nav-item d-sm-none" v-for="item in menuArr" :key="'k-'+item.alias">
               <router-link :to="'/'+item.alias" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">&nbsp;{{item.title}}&nbsp;</router-link>
             </li>
-            <li class="nav-item" v-if="authStatus">
+            <li class="nav-item" v-if="this.$store.state.uid">
               &nbsp;
               <router-link :to="'/adm/page'" class="text-muted pl-1 pr-1">Панель</router-link>&nbsp;
             </li>
-            <li class="nav-item" v-if="authStatus">
+            <li class="nav-item" v-if="this.$store.state.uid">
               &nbsp;
               <span class="text-muted spanout pl-1 pr-1" @click="logOut()">Выйти</span>&nbsp;
             </li>
@@ -36,7 +36,7 @@
 
 <script>
 /* eslint-disable no-unused-vars */
-import { auth } from "@/main.js";
+//import { auth } from "@/main.js";
 
 export default {
   name: "navbar",
@@ -45,8 +45,8 @@ export default {
   },
   data() {
     return {
-      menuArr: [],
-      authStatus: auth.currentUser
+      menuArr: []
+      //authStatus: auth.currentUser
     };
   },
   created() {
@@ -69,16 +69,7 @@ export default {
   },
   methods: {
     logOut() {
-      auth
-        .signOut()
-        .then(function() {
-          this.$store.commit("logOut");
-          // document.location.reload();
-          // Sign-out successful.
-        })
-        .catch(function(error) {
-          // An error happened.
-        });
+      this.$store.commit("logOut");
     }
   },
   computed: {}

@@ -108,17 +108,20 @@ export default new Vuex.Store({
           console.error("Error removing document: ", error);
         });
     },
-    signIn(state, payload) {
-      console.log('commit signIn run');
-      state.uid = payload;
-    },
+    // signIn(state, payload) {
+    //   console.log('commit signIn run');
+    //   state.uid = payload;
+    // },
     logOut(state) {
-      state.uid = ""; // Зачем вообще это?
       auth.signOut().then(function () {
+        state.uid = "";
         document.location.replace("/login");
       }).catch(function (error) {
         console.log('Store: ошибка при выходе, ', error);
       });
+    },
+    setUser(state, payload) {
+      state.uid = payload;
     }
   },
   actions: {

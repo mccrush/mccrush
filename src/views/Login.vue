@@ -36,8 +36,8 @@ export default {
     login() {
       auth
         .signInWithEmailAndPassword(this.email, this.password)
-        .then(() => {
-          this.$store.commit("setUser");
+        .then(user => {
+          this.$store.commit("setUser", user.user.uid);
           this.$router.push("/adm/page");
         })
         .catch(function(error) {
