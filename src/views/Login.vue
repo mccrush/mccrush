@@ -1,7 +1,7 @@
 <template>
   <div class="row home justify-content-center">
     <div class="col-4 text-left mt-4">
-      <h4>Авторизируйтесь</h4>
+      <h4 class="text-center">Авторизируйтесь</h4>
       <label for="email">Email:</label>
       <br />
       <input type="text" class="form-control" id="email" v-model="email" />
@@ -13,7 +13,7 @@
         <div class="col-6 d-none">
           <button class="btn btn-success btn-block">Регистрация</button>
         </div>
-        <div class="col-6">
+        <div class="col-12">
           <button class="btn btn-success btn-block" @click="login">Вход</button>
         </div>
       </div>
