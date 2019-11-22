@@ -3,7 +3,7 @@
     <div v-if="this.pageObj !== null" class="col-12">
       <h2>{{pageObj.title}}</h2>
       <p class="description">{{pageObj.description}}</p>
-      <hr>
+      <hr />
       <div class="content" v-if="this.$route.params.alias !== 'app'" v-html="pageObj.content"></div>
     </div>
     <!-- <img alt="Vue logo" src="../assets/logo.png" width="150"> -->
@@ -12,18 +12,19 @@
         <span class="sr-only">Loading...</span>
       </div>
       <div v-if="this.$store.state.appArr[0]" class="card-deck">
-        <CardApp v-for="(item, index) in this.$store.state.appArr" :key="'card-'+item.alias" :item="item" :itemId="appId[index]"/>
+        <CardApp v-for="(item, index) in this.$store.state.appArr" :key="'card-'+item.alias" :item="item" :itemId="appId[index]" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+/* eslint-disable no-unused-vars */
 // @ is an alias to /src
 import CardApp from "@/components/CardApp.vue";
 
 export default {
-  name: "page",
+  name: "home",
   components: {
     CardApp
   },

@@ -52,13 +52,9 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/:alias',
-    name: 'home',
-    component: Home
-  },
-  {
-    path: '/',
-    redirect: '/home'
+    path: '/404', // Первая, для перекрытия остальных
+    name: '404',
+    component: NotFound
   },
   {
     path: '/login',
@@ -74,9 +70,13 @@ const routes = [
     }
   },
   {
-    path: '/404', // Первая, для перекрытия остальных
-    name: '404',
-    component: NotFound
+    path: '/:alias',
+    name: 'home',
+    component: Home
+  },
+  {
+    path: '/',
+    redirect: '/home'
   },
   {
     path: '*', // Для всех прочих кроме существующих

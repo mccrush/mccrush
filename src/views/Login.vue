@@ -1,7 +1,7 @@
 <template>
   <div class="row home justify-content-center">
-    <div class="col-4 text-left">
-      <h4>Авторизируйтесь для продолжения</h4>
+    <div class="col-4 text-left mt-4">
+      <h4>Авторизируйтесь</h4>
       <label for="email">Email:</label>
       <br />
       <input type="text" class="form-control" id="email" v-model="email" />
@@ -10,8 +10,8 @@
       <input type="password" class="form-control" id="password" v-model="password" />
       <br />
       <div class="row">
-        <div class="col-6">
-          <button class="btn btn-success btn-block" @click="signin">Регистрация</button>
+        <div class="col-6 d-none">
+          <button class="btn btn-success btn-block">Регистрация</button>
         </div>
         <div class="col-6">
           <button class="btn btn-success btn-block" @click="login">Вход</button>
@@ -38,28 +38,28 @@ export default {
         .signInWithEmailAndPassword(this.email, this.password)
         .then(() => {
           this.$store.commit("setUser");
-          this.$router.push("/about");
+          this.$router.push("/adm/page");
         })
         .catch(function(error) {
           var errorCode = error.code;
           var errorMessage = error.message;
           alert("Login: errors:", errorCode, "& ", errorMessage);
         });
-    },
-
-    signin() {
-      auth
-        .createUserWithEmailAndPassword(this.email, this.password)
-        .then(() => {
-          this.$store.commit("setUser");
-          this.$router.push("/about");
-        })
-        .catch(function(error) {
-          var errorCode = error.code;
-          var errorMessage = error.message;
-          alert("Signin: errors:", errorCode, "& ", errorMessage);
-        });
     }
+
+    // signin() {
+    //   auth
+    //     .createUserWithEmailAndPassword(this.email, this.password)
+    //     .then(() => {
+    //       this.$store.commit("setUser");
+    //       this.$router.push("/about");
+    //     })
+    //     .catch(function(error) {
+    //       var errorCode = error.code;
+    //       var errorMessage = error.message;
+    //       alert("Signin: errors:", errorCode, "& ", errorMessage);
+    //     });
+    // }
   }
 };
 </script>

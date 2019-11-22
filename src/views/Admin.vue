@@ -1,6 +1,6 @@
 <template>
   <div class="row mt-3">
-    <div v-if="!this.$store.state.uid" class="col-12">
+    <!-- <div v-if="!this.$store.state.uid" class="col-12">
       <div class="row mt-2">
         <div class="col-4"></div>
         <div class="col-4 pt-3 pb-3 border bg-light">
@@ -19,19 +19,19 @@
         </div>
         <div class="col-4"></div>
       </div>
-    </div>
-    <div v-if="this.$store.state.uid" class="col-12">
+    </div>-->
+    <div class="col-12">
       <router-link to="/adm/page">Page</router-link>&nbsp;
       <small>|</small>&nbsp;
       <router-link to="/adm/app">App</router-link>
-      <hr>
+      <hr />
     </div>
-    <div v-if="this.$store.state.uid" class="col-2 border-right">
-      <AdminListRazdel :itogArr="itogArr" :idArr="idArr"/>
+    <div class="col-2 border-right">
+      <AdminListRazdel :itogArr="itogArr" :idArr="idArr" />
     </div>
-    <div v-if="this.$store.uid" class="col-10">
-      <AdminFormPage v-if="this.$route.params.razdel == 'page' && this.$route.query.alias" :itogArr="itogArr" :idArr="idArr"/>
-      <AdminFormApp v-if=" this.$route.params.razdel == 'app' && this.$route.query.alias" :itogArr="itogArr" :idArr="idArr"/>
+    <div class="col-10">
+      <AdminFormPage v-if="this.$route.params.razdel == 'page' && this.$route.query.alias" :itogArr="itogArr" :idArr="idArr" />
+      <AdminFormApp v-if=" this.$route.params.razdel == 'app' && this.$route.query.alias" :itogArr="itogArr" :idArr="idArr" />
     </div>
 
     <!-- <img alt="Vue logo" src="../assets/logo.png" width="150"> -->
@@ -40,6 +40,7 @@
 </template>
 
 <script>
+/* eslint-disable no-unused-vars */
 // @ is an alias to /src
 import { auth } from "@/main.js";
 import AdminListRazdel from "@/components/AdminListRazdel.vue";
@@ -68,23 +69,23 @@ export default {
     this.getItogArr(this.$route.params.razdel);
   },
   methods: {
-    signIn() {
-      auth
-        .signInWithEmailAndPassword(this.uEmail, this.uPassword)
-        .then(function(user) {
-          console.log("user.uemail", user.user.uid);
-          //this.$store.state.uid = user.user.uid;
-          this.$store.commit("signIn", user.user.uid);
+    // signIn() {
+    //   auth
+    //     .signInWithEmailAndPassword(this.uEmail, this.uPassword)
+    //     .then(function(user) {
+    //       console.log("user.uemail", user.user.uid);
+    //       //this.$store.state.uid = user.user.uid;
+    //       this.$store.commit("signIn", user.user.uid);
 
-          //document.location.assign("/adm/page");
-        })
-        .catch(function(error) {
-          // Handle Errors here.
-          var errorCode = error.code;
-          var errorMessage = error.message;
-          // ...
-        });
-    },
+    //       //document.location.assign("/adm/page");
+    //     })
+    //     .catch(function(error) {
+    //       // Handle Errors here.
+    //       var errorCode = error.code;
+    //       var errorMessage = error.message;
+    //       // ...
+    //     });
+    // },
     // getPageObg(match) {
     //   this.pageObj = this.pageArr.find(item => item.alias == match);
     // },

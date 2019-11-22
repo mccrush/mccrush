@@ -6,21 +6,21 @@
           <div class="col-7">
             <div class="form-group">
               <label for="itemTitle">Заголовок страницы</label>
-              <input type="text" class="form-control" id="itemTitle" aria-describedby="titleHelp" placeholder="Введите заголовок страницы" maxlength="60" v-model="itemObj.title" @focus="editingForm()" required>
+              <input type="text" class="form-control" id="itemTitle" aria-describedby="titleHelp" placeholder="Введите заголовок страницы" maxlength="60" v-model="itemObj.title" @focus="editingForm()" required />
               <small id="titleHelp" class="form-text text-muted">Длина не более 60 символов</small>
             </div>
           </div>
           <div class="col-3">
             <div class="form-group">
               <label for="itemAlias">Алиас</label>
-              <input type="text" class="form-control" id="itemAlias" aria-describedby="aliasHelp" placeholder="Введите алиас" maxlength="10" v-model="itemObj.alias" @focus="editingForm()" required>
+              <input type="text" class="form-control" id="itemAlias" aria-describedby="aliasHelp" placeholder="Введите алиас" maxlength="10" v-model="itemObj.alias" @focus="editingForm()" required />
               <small id="aliasHelp" class="form-text text-muted">Латиницей</small>
             </div>
           </div>
           <div class="col-2">
             <div class="form-group">
               <label for="itemPosmenu">Меню</label>
-              <input type="number" class="form-control" id="itemPosmenu" aria-describedby="posmenuHelp" max="9" step="1" v-model="itemObj.posmenu" @focus="editingForm()" required>
+              <input type="number" class="form-control" id="itemPosmenu" aria-describedby="posmenuHelp" max="9" step="1" v-model="itemObj.posmenu" @focus="editingForm()" required />
               <small id="posmenuHelp" class="form-text text-muted">Число</small>
             </div>
           </div>
@@ -37,7 +37,7 @@
             :init="{height: 350,
   menubar: true,
   plugins: [
-    'advlist autolink lists link image charmap print preview anchor textcolor',
+    'advlist autolink lists link image charmap print preview anchor',
     'searchreplace visualblocks code fullscreen',
     'insertdatetime media table paste code help wordcount'
   ],

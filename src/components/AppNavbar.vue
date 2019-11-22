@@ -3,7 +3,7 @@
     <div class="col pl-0 pr-0">
       <nav class="navbar navbar-expand-sm navbar-light bg-white shadow-sm">
         <router-link class="navbar-brand" to="/home">
-          <img src="/img/logo.png" width="70" height="30" alt="Write Code!">
+          <img src="/img/logo.png" width="70" height="30" alt="Write Code!" />
         </router-link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -11,23 +11,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item d-none d-sm-inline" v-for="item in menuArr" :key="'ks-'+item.alias">
-              <router-link :to="'/'+item.alias">&nbsp;{{item.title}}&nbsp;</router-link>
+              <router-link :to="'/'+item.alias" class="pl-1 pr-1">&nbsp;{{item.title}}&nbsp;</router-link>
             </li>
             <li class="nav-item d-sm-none" v-for="item in menuArr" :key="'k-'+item.alias">
               <router-link :to="'/'+item.alias" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">&nbsp;{{item.title}}&nbsp;</router-link>
             </li>
             <li class="nav-item" v-if="authStatus">
               &nbsp;
-              <router-link :to="'/adm/page'" class="text-muted">Панель</router-link>&nbsp;
+              <router-link :to="'/adm/page'" class="text-muted pl-1 pr-1">Панель</router-link>&nbsp;
             </li>
             <li class="nav-item" v-if="authStatus">
               &nbsp;
-              <span class="text-muted spanout" @click="logOut()">Выйти</span>&nbsp;
+              <span class="text-muted spanout pl-1 pr-1" @click="logOut()">Выйти</span>&nbsp;
             </li>
           </ul>
         </div>
         <a class="navbar-brand mr-0 d-none d-sm-block" href="https://github.com/mccrush/" target="_blank">
-          <img src="/img/github.png" width="24" height="24" alt="Github/mccrush" title="Github/mccrush">
+          <img src="/img/github.png" width="24" height="24" alt="Github/mccrush" title="Github/mccrush" />
         </a>
       </nav>
     </div>
@@ -35,6 +35,7 @@
 </template>
 
 <script>
+/* eslint-disable no-unused-vars */
 import { auth } from "@/main.js";
 
 export default {

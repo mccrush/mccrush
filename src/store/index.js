@@ -2,6 +2,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import { db } from "@/main.js";
+import { auth } from "@/main.js";
 
 Vue.use(Vuex)
 
@@ -112,7 +113,12 @@ export default new Vuex.Store({
       state.uid = payload;
     },
     logOut(state) {
-      state.uid = "";
+      state.uid = ""; // Зачем вообще это?
+      auth.signOut().then(function () {
+        document.location.replace("/login");
+      }).catch(function (error) {
+        console.log('Store: ошибка при выходе, ', error);
+      });
     }
   },
   actions: {
