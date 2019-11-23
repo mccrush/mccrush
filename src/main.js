@@ -30,7 +30,7 @@ export const storage = firebase.storage();
 
 //export const storage = firebase.storage();
 
-Vue.config.productionTip = false
+Vue.config.productionTip = true
 
 store.commit('getArr', 'page');
 store.commit('getArr', 'app');

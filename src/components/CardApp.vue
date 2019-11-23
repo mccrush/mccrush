@@ -6,7 +6,7 @@
         <p class="card-text">
           <strong>Тип:</strong>
           {{item.type}}
-          <br>
+          <br />
           <strong>Версия:</strong>
           {{item.version}}
           <small class="text-muted">от {{dateFormat}}</small>
@@ -30,7 +30,8 @@
   </div>
 </template>
 <script>
-import { storage } from "@/main.js";
+/* eslint-disable no-unused-vars */
+//import { storage } from "@/main.js";
 
 export default {
   name: "cardapp",
