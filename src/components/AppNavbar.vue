@@ -20,7 +20,7 @@
               &nbsp;
               <router-link :to="'/adm/page'" class="text-muted pl-1 pr-1">Панель</router-link>&nbsp;
             </li>
-            <li class="nav-item" v-if="this.$store.state.uid">
+            <li class="nav-item" v-if="this.$store.state.uid && (this.$route.path == '/adm/page' || this.$route.path == '/adm/app')">
               &nbsp;
               <span class="text-muted spanout pl-1 pr-1" @click="logOut()">Выйти</span>&nbsp;
             </li>
