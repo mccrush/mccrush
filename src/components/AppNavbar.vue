@@ -27,7 +27,7 @@
           </ul>
         </div>
         <a class="mr-0 d-none d-sm-block" href="https://github.com/mccrush/" target="_blank">
-          <img src="/img/github_32.png" width="32" height="32" alt="Github/mccrush" title="Github/mccrush" />
+          <img src="/img/github_32.png" width="28" height="28" alt="Github/mccrush" title="Github/mccrush" />
         </a>
       </nav>
     </div>
@@ -81,7 +81,7 @@ export default {
 .nav-item a {
   color: #212529;
   margin-top: -20px;
-  padding-bottom: 16px;
+  padding-bottom: 20px;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
   transition: 0.5s;
 }
