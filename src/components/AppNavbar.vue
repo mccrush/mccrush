@@ -3,7 +3,7 @@
     <div class="col pl-0 pr-0">
       <nav class="navbar navbar-expand-sm navbar-light bg-white shadow-sm">
         <router-link class="navbar-brand" to="/home">
-          <img src="/img/logo.png" width="70" height="30" alt="Write Code!" />
+          <img src="/img/logo.png" width="32" height="32" alt="Logo" />
         </router-link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item d-none d-sm-inline" v-for="item in menuArr" :key="'ks-'+item.alias">
-              <router-link :to="'/'+item.alias" class="pl-1 pr-1">&nbsp;{{item.title}}&nbsp;</router-link>
+              <router-link :to="'/'+item.alias" class="pr-1">&nbsp;{{item.title}}&nbsp;</router-link>
             </li>
             <li class="nav-item d-sm-none" v-for="item in menuArr" :key="'k-'+item.alias">
               <router-link :to="'/'+item.alias" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">&nbsp;{{item.title}}&nbsp;</router-link>
