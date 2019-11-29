@@ -1,8 +1,8 @@
 <template>
   <div class="row">
     <div class="col pl-0 pr-0">
-      <nav class="navbar navbar-expand-sm navbar-light bg-white shadow-sm">
-        <router-link class="navbar-brand" to="/home">
+      <nav class="navbar navbar-expand-sm navbar-light bg-white shadow-sm pt-3 pb-3">
+        <router-link class="mr-1" to="/home">
           <img src="/img/logo.png" width="32" height="32" alt="Logo" />
         </router-link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item d-none d-sm-inline" v-for="item in menuArr" :key="'ks-'+item.alias">
-              <router-link :to="'/'+item.alias" class="pr-1">&nbsp;{{item.title}}&nbsp;</router-link>
+              <router-link :to="'/'+item.alias" class="pl-2 pr-2">&nbsp;{{item.title}}&nbsp;</router-link>
             </li>
             <li class="nav-item d-sm-none" v-for="item in menuArr" :key="'k-'+item.alias">
               <router-link :to="'/'+item.alias" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">&nbsp;{{item.title}}&nbsp;</router-link>
@@ -26,8 +26,8 @@
             </li>
           </ul>
         </div>
-        <a class="navbar-brand mr-0 d-none d-sm-block" href="https://github.com/mccrush/" target="_blank">
-          <img src="/img/github.png" width="24" height="24" alt="Github/mccrush" title="Github/mccrush" />
+        <a class="mr-0 d-none d-sm-block" href="https://github.com/mccrush/" target="_blank">
+          <img src="/img/github_32.png" width="32" height="32" alt="Github/mccrush" title="Github/mccrush" />
         </a>
       </nav>
     </div>
@@ -81,7 +81,7 @@ export default {
 .nav-item a {
   color: #212529;
   margin-top: -20px;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
   transition: 0.5s;
 }
