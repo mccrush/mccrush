@@ -51,7 +51,7 @@ export default {
   },
   created() {
     this.menuArr = this.$store.state.pageArr.filter(function(item, i) {
-      return i > 0;
+      return i > 0 && item.show;
     });
 
     // this.menuArr = this.pageArr.filter(function(item, i) {
