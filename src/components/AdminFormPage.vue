@@ -3,7 +3,7 @@
     <div class="col">
       <form>
         <div class="row">
-          <div class="col-7">
+          <div class="col-5">
             <div class="form-group">
               <label for="itemTitle">Заголовок страницы</label>
               <input type="text" class="form-control" id="itemTitle" aria-describedby="titleHelp" placeholder="Введите заголовок страницы" maxlength="60" v-model="itemObj.title" @focus="editingForm()" required />
@@ -22,6 +22,14 @@
               <label for="itemPosmenu">Меню</label>
               <input type="number" class="form-control" id="itemPosmenu" aria-describedby="posmenuHelp" max="9" step="1" v-model="itemObj.posmenu" @focus="editingForm()" required />
               <small id="posmenuHelp" class="form-text text-muted">Число</small>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label class="form-check-label" for="itemPosmenu">Show</label>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input d-block m-0 mt-4" id="itemShow" aria-describedby="showHelp" v-model="itemObj.show" @focus="editingForm()" required />
+              </div>
             </div>
           </div>
         </div>
@@ -95,7 +103,8 @@ export default {
         posmenu: null,
         description: "",
         content: "",
-        dateUpdate: Date().toString()
+        dateUpdate: Date().toString(),
+        show: false
       },
       buttonSaveBg: "btn-success",
       buttonSaveText: "Сохранено"
