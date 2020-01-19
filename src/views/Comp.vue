@@ -3,12 +3,12 @@
     <div class="col-12">
       <h2>
         Ремонт компьютеров
-        <small>г. Славгород</small>
+        <small>г.&nbsp;Славгород</small>
       </h2>
       <p>Установка операционной системы, удаление вирусов, ускорение загрузки</p>
       <hr />
     </div>
-    <div class="card-group mb-4 p-3">
+    <div class="card-group mb-0 mb-sm-4 p-3">
       <div class="card border-0 shadow card-base rounded-top">
         <div class="card-header bg-secondary border-0 rounded-top">
           <h5 class="text-white text-center m-0">Base</h5>
@@ -63,7 +63,7 @@
       </div>
     </div>
     <div class="col-12 text-center">
-      <h3 class="mt-3">
+      <h3 class="mt-sm-3">
         <img src="/img/comp/whatsapp64.png" alt="WhatsApp" width="48" height="48" />
         <span>+7 906 940 4069</span>
       </h3>
