@@ -25,7 +25,7 @@
 import { auth } from "@/main.js";
 
 export default {
-  name: "home",
+  name: "login",
   data() {
     return {
       email: "",

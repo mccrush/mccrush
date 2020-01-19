@@ -45,8 +45,10 @@ import VueRouter from 'vue-router'
 import { auth } from "@/main.js";
 import Home from '../views/Home.vue'
 import Admin from '../views/Admin.vue'
+import Comp from '../views/Comp.vue'
 import Login from '../views/Login.vue'
 import NotFound from '../views/NotFound.vue'
+
 
 Vue.use(VueRouter)
 
@@ -60,6 +62,11 @@ const routes = [
     path: '/login',
     name: 'login',
     component: Login
+  },
+  {
+    path: '/comp',
+    name: 'comp',
+    component: Comp
   },
   {
     path: '/adm/:razdel',
