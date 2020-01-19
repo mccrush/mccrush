@@ -1,6 +1,11 @@
 <template>
-  <div class="row justify-content-center">
-    <div class="card-group mt-4 mb-4 p-3">
+  <div class="row justify-content-center mt-3">
+    <div class="col-12">
+      <h2>Ремонт компьютеров</h2>
+      <p>Установка операционной системы, удаление вирусов, ускорение загрузки</p>
+      <hr />
+    </div>
+    <div class="card-group mb-4 p-3">
       <div class="card border-0 shadow card-base rounded-top">
         <div class="card-header bg-secondary border-0 rounded-top">
           <h5 class="text-white text-center m-0">Base</h5>
@@ -21,28 +26,32 @@
           <h5 class="text-white text-center m-0">Standart</h5>
         </div>
         <div class="card-body text-center">
-          <h5 class="bg-secondary text-white p-2 rounded">Пакет Base</h5>
-          <h5>+</h5>
-          <h5>Microsoft Office</h5>
-          <p class="card-text">Word, Excel, PowerPoint</p>
+          <h6 class="border border-secondary p-2 rounded">Пакет Base</h6>
           <h5>+</h5>
           <h5>Установка браузера</h5>
           <p class="card-text">Chrome | Opera | Firefox</p>
+          <h5>+</h5>
+          <h5>Microsoft Office</h5>
+          <p class="card-text">Word, Excel, PowerPoint</p>
         </div>
         <div class="card-footer bg-success mb-sm-n4 border-0 shadow rounded-bottom">
           <h5 class="text-white text-center m-0">500P</h5>
         </div>
       </div>
+
       <div class="card border-0 shadow card-premium rounded-top">
         <div class="card-header bg-warning border-0 rounded-top">
           <h5 class="text-white text-center m-0">Premium</h5>
         </div>
         <div class="card-body text-center">
-          <h5 class="bg-success text-white p-2 rounded">Пакет Standart</h5>
+          <h6 class="border border-success p-2 rounded">Пакет Standart</h6>
           <h5>+</h5>
-          <h5>Ускорение загрузки</h5>
+          <h5>Настройка ускоренной загрузки</h5>
           <h5>+</h5>
-          <h5>Гарантия 3 мес.</h5>
+          <h5>
+            Бесплатное обслуживание
+            <br />3 месяца
+          </h5>
         </div>
         <div class="card-footer bg-warning border-0">
           <h5 class="text-white text-center m-0">750P</h5>
