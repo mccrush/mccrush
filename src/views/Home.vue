@@ -1,5 +1,6 @@
 <template>
   <div class="row mt-3">
+    <vueHeadful :title="pageObj.title" :description="pageObj.description" />
     <div v-if="this.pageObj !== null" class="col-12">
       <h2>{{pageObj.title}}</h2>
       <p class="description">{{pageObj.description}}</p>
@@ -21,11 +22,13 @@
 <script>
 /* eslint-disable no-unused-vars */
 // @ is an alias to /src
+import vueHeadful from "vue-headful";
 import CardApp from "@/components/CardApp.vue";
 
 export default {
   name: "home",
   components: {
+    vueHeadful,
     CardApp
   },
   data() {

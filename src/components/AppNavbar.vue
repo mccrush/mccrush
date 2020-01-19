@@ -2,10 +2,10 @@
   <div class="row">
     <div class="col pl-0 pr-0">
       <nav class="navbar navbar-expand-sm navbar-light bg-white shadow-sm pt-3 pb-3">
-        <router-link class="mr-1 d-none d-sm-block" to="/home">
+        <router-link class="mr-1" to="/home">
           <img src="/img/logo.png" width="32" height="32" alt="Logo" />
         </router-link>
-        <h4 class="d-sm-none m-0">Качественная разработка</h4>
+        <h4 class="d-sm-none m-0">mccrush.ru</h4>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

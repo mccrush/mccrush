@@ -1,5 +1,6 @@
 <template>
   <div class="row justify-content-center mt-3">
+    <vueHeadful title="Ремонт компьютеров г. Славгород" description="Установка операционной системы, удаление вирусов, ускорение загрузки" />
     <div class="col-12">
       <h2>
         Ремонт компьютеров
@@ -72,8 +73,13 @@
 </template>
 
 <script>
+import vueHeadful from "vue-headful";
+
 export default {
   name: "comp",
+  components: {
+    vueHeadful
+  },
   data() {
     return {};
   },
