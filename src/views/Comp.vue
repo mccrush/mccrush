@@ -50,7 +50,7 @@
         <div class="card-body text-center">
           <h6 class="border border-success p-2 rounded">Пакет Standart</h6>
           <h5>+</h5>
-          <h5>Настройка ускоренной загрузки</h5>
+          <h5>Настройка ускоренной загрузки системы</h5>
           <h5>+</h5>
           <h5>
             Бесплатное обслуживание
@@ -63,10 +63,10 @@
       </div>
     </div>
     <div class="col-12 text-center">
-      <h3 class="mt-sm-3">
-        <img src="/img/comp/whatsapp64.png" alt="WhatsApp" width="48" height="48" />
+      <h4 class="mt-sm-3">
+        <img src="/img/comp/whatsapp64.png" alt="WhatsApp" width="36" height="36" />
         <span>+7 906 940 4069</span>
-      </h3>
+      </h4>
     </div>
   </div>
 </template>
