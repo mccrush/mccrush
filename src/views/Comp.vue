@@ -1,7 +1,10 @@
 <template>
   <div class="row justify-content-center mt-3">
     <div class="col-12">
-      <h2>Ремонт компьютеров</h2>
+      <h2>
+        Ремонт компьютеров
+        <small>г. Славгород</small>
+      </h2>
       <p>Установка операционной системы, удаление вирусов, ускорение загрузки</p>
       <hr />
     </div>
@@ -18,9 +21,10 @@
           <p class="card-text">звук, видео, сеть</p>
         </div>
         <div class="card-footer bg-secondary border-0">
-          <h5 class="text-white text-center m-0">350P</h5>
+          <h5 class="text-white text-center m-0">500P</h5>
         </div>
       </div>
+
       <div class="card border-0 shadow mt-sm-4 card-standart ml-n1 mr-n1 rounded-top">
         <div class="card-header bg-success border-0 rounded-top">
           <h5 class="text-white text-center m-0">Standart</h5>
@@ -35,7 +39,7 @@
           <p class="card-text">Word, Excel, PowerPoint</p>
         </div>
         <div class="card-footer bg-success mb-sm-n4 border-0 shadow rounded-bottom">
-          <h5 class="text-white text-center m-0">500P</h5>
+          <h5 class="text-white text-center m-0">750P</h5>
         </div>
       </div>
 
@@ -54,9 +58,15 @@
           </h5>
         </div>
         <div class="card-footer bg-warning border-0">
-          <h5 class="text-white text-center m-0">750P</h5>
+          <h5 class="text-white text-center m-0">900P</h5>
         </div>
       </div>
+    </div>
+    <div class="col-12 text-center">
+      <h3 class="mt-3">
+        <img src="/img/comp/whatsapp64.png" alt="WhatsApp" width="48" height="48" />
+        <span>+7 906 940 4069</span>
+      </h3>
     </div>
   </div>
 </template>
