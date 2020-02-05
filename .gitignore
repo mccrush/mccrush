@@ -3,6 +3,7 @@ node_modules
 /dist
 .firebase
 .cache
+apiKey.js
 
 # local env files
 .env.local

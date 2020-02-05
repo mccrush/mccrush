@@ -3,6 +3,9 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './registerServiceWorker'
+
+import { apiKey } from '../apiKey'
+
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore"; // DB
@@ -14,7 +17,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 let app = "";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAGGtzL2xfNuWKIW_KbF1Dxtgd9Av2MtUM",
+  apiKey: apiKey,
   authDomain: "mccrush-8de25.firebaseapp.com",
   databaseURL: "https://mccrush-8de25.firebaseio.com",
   projectId: "mccrush-8de25",
