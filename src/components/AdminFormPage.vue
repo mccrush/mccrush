@@ -20,7 +20,7 @@
           <div class="col-2">
             <div class="form-group">
               <label for="itemPosmenu">Меню</label>
-              <input type="number" class="form-control" id="itemPosmenu" aria-describedby="posmenuHelp" max="9" step="1" v-model="itemObj.posmenu" @focus="editingForm()" required />
+              <input type="number" class="form-control" id="itemPosmenu" aria-describedby="posmenuHelp" max="9" step="1" v-model.number="itemObj.posmenu" @focus="editingForm()" required />
               <small id="posmenuHelp" class="form-text text-muted">Число</small>
             </div>
           </div>
@@ -100,11 +100,11 @@ export default {
       itemObj: {
         title: "",
         alias: "",
-        posmenu: null,
+        posmenu: 9,
         description: "",
         content: "",
         dateUpdate: Date().toString(),
-        show: false
+        show: true
       },
       buttonSaveBg: "btn-success",
       buttonSaveText: "Сохранено"
