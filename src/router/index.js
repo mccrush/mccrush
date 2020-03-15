@@ -43,11 +43,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import { auth } from "@/main.js";
-import Home from '../views/Home.vue'
+import Index from '../views/Index.vue'
 import Admin from '../views/Admin.vue'
 import Comp from '../views/Comp.vue'
 import Login from '../views/Login.vue'
 import NotFound from '../views/NotFound.vue'
+import Home from '../pages/Home.vue'
 
 
 Vue.use(VueRouter)
@@ -57,6 +58,15 @@ const routes = [
     path: '/404', // Первая, для перекрытия остальных
     name: '404',
     component: NotFound
+  },
+  {
+    path: '/home',
+    name: 'home',
+    component: Home
+  },
+  {
+    path: '/',
+    redirect: '/home'
   },
   {
     path: '/login',
@@ -78,13 +88,10 @@ const routes = [
   },
   {
     path: '/:alias',
-    name: 'home',
-    component: Home
+    name: 'index',
+    component: Index
   },
-  {
-    path: '/',
-    redirect: '/home'
-  },
+
   {
     path: '*', // Для всех прочих кроме существующих
     redirect: '/404'
