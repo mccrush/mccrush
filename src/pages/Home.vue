@@ -18,13 +18,13 @@
               <img title src="img/stec/firebase.png" alt="Firebase" width="64" height="64" data-toggle="tooltip" data-placement="bottom" data-original-title="Firebase - это облачная СУБД, позволяющая разработчикам обрабатывать данные" />
             </td>
             <td style="width: 12%; text-align: center; vertical-align: middle;">
-              <img src="img/stec/arr_right_red.png" alt width="32" height="32" />
+              <img src="img/stec/arr_right.png" alt width="32" height="32" />
             </td>
             <td style="width: 25%; text-align: center; vertical-align: middle;">
               <img title src="img/stec/vuejs.png" alt="Vue.js" width="64" height="64" data-toggle="tooltip" data-placement="bottom" data-original-title="Vue.js - это прогрессивный фреймворк для создания пользовательских интерфейсов" />
             </td>
             <td style="width: 12%; text-align: center; vertical-align: middle;">
-              <img src="img/stec/arr_right_red.png" alt width="32" height="32" />
+              <img src="img/stec/arr_right.png" alt width="32" height="32" />
             </td>
             <td style="width: 25%; text-align: center; vertical-align: middle;">
               <img title src="img/stec/bootstrap.png" alt="Bootstrap" width="64" height="64" data-toggle="tooltip" data-placement="bottom" data-original-title="Bootstrap - это HTML- и CSS-шаблоны оформления для типографики, веб-форм, и прочих компонентов веб-интерфейса" />
