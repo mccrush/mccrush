@@ -66,6 +66,7 @@ export default {
 <style scoped>
 .card {
   border: none;
-  border-top: 3px solid #ffc107; /* rgba(255, 0, 0, 0.75);*/
+  /* border-top: 3px solid #ffc107; rgba(255, 0, 0, 0.75); */
+  border-top: 3px solid #ffc107;
 }
 </style>
