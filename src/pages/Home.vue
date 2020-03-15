@@ -3,7 +3,11 @@
     <vueHeadful title="Качественная разработка приложений" description="Современные сайты и веб-приложения (SPA, PWA*), с адаптивным дизайном и офлайн-доступом" />
     <div class="col-12">
       <h2>Качественная разработка приложений</h2>
-      <p class="description">Современные сайты и веб-приложения (SPA, PWA*), с адаптивным дизайном и офлайн-доступом</p>
+      <p class="description">
+        Современные сайты и веб-приложения (
+        <abbr data-original-title="Single-page application" class="initialism" data-toggle="tooltip" data-placement="bottom">SPA</abbr>,
+        <abbr data-original-title="Progressive Web Apps" class="initialism" data-toggle="tooltip" data-placement="bottom">PWA</abbr>), с адаптивным дизайном и офлайн-доступом
+      </p>
       <hr />
 
       <h5 style="text-align: center;">Стек технологий</h5>
@@ -47,12 +51,6 @@
         </div>
       </div>
       <hr />
-      <p class="small">
-        * SPA -
-        <a href="https://www.wikiwand.com/en/Single-page_application" target="_blank" rel="noopener">Single-page application</a>
-        <br />PWA -
-        <a href="https://developers.google.com/web/progressive-web-apps/" target="_blank" rel="noopener">Progressive Web Apps</a>
-      </p>
     </div>
   </div>
 </template>
