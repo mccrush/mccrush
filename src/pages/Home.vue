@@ -52,17 +52,21 @@
       </div>
       <hr />
       <div class="row mr-0 ml-0">
-        <router-link class="col-12 col-sm-6 col-md-3 shadow-sm rounded box text-decoration-none" to="/">
-          <h4>Заголовок раздела</h4>
+        <router-link class="col-12 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-3 pb-2" to="/app">
+          <img src="img/home/icons_box/app.png" class width="64" alt="Приложения" />
+          <h6 class>Приложения</h6>
         </router-link>
-        <router-link class="col-12 col-sm-6 col-md-3 shadow-sm rounded box text-decoration-none" to="/">
-          <h4>Заголовок раздела</h4>
+        <router-link class="col-12 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-3 pb-2" to="/edu">
+          <img src="img/home/icons_box/edu.png" class width="64" alt="Приложения" />
+          <h6 class>Образование</h6>
         </router-link>
-        <router-link class="col-12 col-sm-6 col-md-3 shadow-sm rounded box text-decoration-none" to="/">
-          <h4>Заголовок раздела</h4>
+        <router-link class="col-12 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-3 pb-2" to="/gtd">
+          <img src="img/home/icons_box/gtd.png" class width="64" alt="Приложения" />
+          <h6 class>GTD</h6>
         </router-link>
-        <router-link class="col-12 col-sm-6 col-md-3 shadow-sm rounded box text-decoration-none" to="/">
-          <h4>Заголовок раздела</h4>
+        <router-link class="col-12 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-3 pb-2" to="/comp">
+          <img src="img/home/icons_box/comp.png" class width="64" alt="Приложения" />
+          <h6 class>Ремонт</h6>
         </router-link>
       </div>
     </div>
@@ -93,7 +97,7 @@ export default {
 </script>
 <style scoped>
 .box {
-  color: #2c3e50;
+  color: #212529;
 }
 .box:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
