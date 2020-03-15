@@ -51,6 +51,20 @@
         </div>
       </div>
       <hr />
+      <div class="row mr-0 ml-0">
+        <router-link class="col-12 col-sm-6 col-md-3 shadow-sm rounded box text-decoration-none" to="/">
+          <h4>Заголовок раздела</h4>
+        </router-link>
+        <router-link class="col-12 col-sm-6 col-md-3 shadow-sm rounded box text-decoration-none" to="/">
+          <h4>Заголовок раздела</h4>
+        </router-link>
+        <router-link class="col-12 col-sm-6 col-md-3 shadow-sm rounded box text-decoration-none" to="/">
+          <h4>Заголовок раздела</h4>
+        </router-link>
+        <router-link class="col-12 col-sm-6 col-md-3 shadow-sm rounded box text-decoration-none" to="/">
+          <h4>Заголовок раздела</h4>
+        </router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -77,5 +91,11 @@ export default {
   watch: {}
 };
 </script>
-<style>
+<style scoped>
+.box {
+  color: #2c3e50;
+}
+.box:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
 </style>
