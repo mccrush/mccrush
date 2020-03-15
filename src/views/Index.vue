@@ -66,4 +66,7 @@ export default {
 };
 </script>
 <style>
+.content a {
+  color: #0056b3;
+}
 </style>
