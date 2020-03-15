@@ -18,28 +18,28 @@
               <img title src="img/stec/firebase.png" alt="Firebase" width="64" height="64" data-toggle="tooltip" data-placement="bottom" data-original-title="Firebase - это облачная СУБД, позволяющая разработчикам обрабатывать данные" />
             </td>
             <td style="width: 12%; text-align: center; vertical-align: middle;">
-              <img src="img/stec/arr_right.png" alt width="32" height="32" />
+              <img src="img/stec/arr_right_red.png" alt width="32" height="32" />
             </td>
             <td style="width: 25%; text-align: center; vertical-align: middle;">
               <img title src="img/stec/vuejs.png" alt="Vue.js" width="64" height="64" data-toggle="tooltip" data-placement="bottom" data-original-title="Vue.js - это прогрессивный фреймворк для создания пользовательских интерфейсов" />
             </td>
             <td style="width: 12%; text-align: center; vertical-align: middle;">
-              <img src="img/stec/arr_right.png" alt width="32" height="32" />
+              <img src="img/stec/arr_right_red.png" alt width="32" height="32" />
             </td>
             <td style="width: 25%; text-align: center; vertical-align: middle;">
               <img title src="img/stec/bootstrap.png" alt="Bootstrap" width="64" height="64" data-toggle="tooltip" data-placement="bottom" data-original-title="Bootstrap - это HTML- и CSS-шаблоны оформления для типографики, веб-форм, и прочих компонентов веб-интерфейса" />
             </td>
           </tr>
           <tr>
-            <td style="text-align: center; vertical-align: middle;">
+            <td class="stec-text">
               <strong>Firebase</strong>
             </td>
-            <td style="text-align: center; vertical-align: middle;">&nbsp;</td>
-            <td style="text-align: center; vertical-align: middle;">
+            <td class="stec-text">&nbsp;</td>
+            <td class="stec-text">
               <strong>Vue.js</strong>
             </td>
-            <td style="text-align: center; vertical-align: middle;">&nbsp;</td>
-            <td style="text-align: center; vertical-align: middle;">
+            <td class="stec-text">&nbsp;</td>
+            <td class="stec-text">
               <strong>Bootstrap</strong>
             </td>
           </tr>
@@ -52,21 +52,29 @@
       </div>
       <hr />
       <div class="row mr-0 ml-0">
-        <router-link class="col-12 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-3 pb-2" to="/app">
-          <img src="img/home/icons_box/app.png" class width="64" alt="Приложения" />
-          <h6 class>Приложения</h6>
+        <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/app">
+          <img src="img/home/icons_box/app.png" width="56" alt="Приложения" />
+          <p>
+            <strong>Приложения</strong>
+          </p>
         </router-link>
-        <router-link class="col-12 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-3 pb-2" to="/edu">
-          <img src="img/home/icons_box/edu.png" class width="64" alt="Приложения" />
-          <h6 class>Образование</h6>
+        <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/edu">
+          <img src="img/home/icons_box/edu.png" width="56" alt="Приложения" />
+          <p>
+            <strong>Образование</strong>
+          </p>
         </router-link>
-        <router-link class="col-12 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-3 pb-2" to="/gtd">
-          <img src="img/home/icons_box/gtd.png" class width="64" alt="Приложения" />
-          <h6 class>GTD</h6>
+        <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/gtd">
+          <img src="img/home/icons_box/gtd.png" width="56" alt="Приложения" />
+          <p>
+            <strong>GTD</strong>
+          </p>
         </router-link>
-        <router-link class="col-12 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-3 pb-2" to="/comp">
-          <img src="img/home/icons_box/comp.png" class width="64" alt="Приложения" />
-          <h6 class>Ремонт</h6>
+        <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/comp">
+          <img src="img/home/icons_box/comp.png" width="56" alt="Приложения" />
+          <p>
+            <strong>Ремонт</strong>
+          </p>
         </router-link>
       </div>
     </div>
@@ -96,6 +104,11 @@ export default {
 };
 </script>
 <style scoped>
+.stec-text {
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+}
 .box {
   color: #212529;
   border-bottom: 2px solid white;
