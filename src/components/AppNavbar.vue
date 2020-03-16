@@ -17,11 +17,19 @@
             </li>
             <li class="nav-item d-none d-sm-inline">
               &nbsp;
+              <router-link :to="'/dev'" class="pl-2 pr-2">Веб-разработка</router-link>&nbsp;
+            </li>
+            <li class="nav-item d-none d-sm-inline">
+              &nbsp;
               <router-link :to="'/comp'" class="pl-2 pr-2">Ремонт ПК</router-link>&nbsp;
             </li>
             <!-- Для телефонов -->
             <li class="nav-item d-sm-none" v-for="item in menuArr" :key="'k-'+item.alias">
               <router-link :to="'/'+item.alias" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">&nbsp;{{item.title}}&nbsp;</router-link>
+            </li>
+            <li class="nav-item d-sm-none">
+              &nbsp;
+              <router-link :to="'/dev'" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">Веб-разработка</router-link>&nbsp;
             </li>
             <li class="nav-item d-sm-none">
               &nbsp;
