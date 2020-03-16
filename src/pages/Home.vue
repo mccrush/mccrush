@@ -18,13 +18,13 @@
               <img title src="img/stec/firebase.png" alt="Firebase" width="64" height="64" data-toggle="tooltip" data-placement="bottom" data-original-title="Firebase - это облачная СУБД, позволяющая разработчикам обрабатывать данные" />
             </td>
             <td style="width: 12%; text-align: center; vertical-align: middle;">
-              <img src="img/stec/arr_right.png" alt width="32" height="32" />
+              <img src="img/stec/arr_right_line.png" alt width="32" height="32" />
             </td>
             <td style="width: 25%; text-align: center; vertical-align: middle;">
               <img title src="img/stec/vuejs.png" alt="Vue.js" width="64" height="64" data-toggle="tooltip" data-placement="bottom" data-original-title="Vue.js - это прогрессивный фреймворк для создания пользовательских интерфейсов" />
             </td>
             <td style="width: 12%; text-align: center; vertical-align: middle;">
-              <img src="img/stec/arr_right.png" alt width="32" height="32" />
+              <img src="img/stec/arr_right_line.png" alt width="32" height="32" />
             </td>
             <td style="width: 25%; text-align: center; vertical-align: middle;">
               <img title src="img/stec/bootstrap.png" alt="Bootstrap" width="64" height="64" data-toggle="tooltip" data-placement="bottom" data-original-title="Bootstrap - это HTML- и CSS-шаблоны оформления для типографики, веб-форм, и прочих компонентов веб-интерфейса" />
@@ -53,27 +53,27 @@
       <hr />
       <div class="row mr-0 ml-0">
         <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/app">
-          <img src="img/home/icons_box/app.png" width="56" alt="Приложения" />
+          <img src="img/home/icons_box/app.png" width="56" height="56" alt="Приложения" />
           <p>
             <strong>Приложения</strong>
           </p>
         </router-link>
         <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/edu">
-          <img src="img/home/icons_box/edu.png" width="56" alt="Приложения" />
+          <img src="img/home/icons_box/edu.png" width="56" height="56" alt="Образование" />
           <p>
             <strong>Образование</strong>
           </p>
         </router-link>
         <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/gtd">
-          <img src="img/home/icons_box/gtd.png" width="56" alt="Приложения" />
+          <img src="img/home/icons_box/gtd.png" width="56" height="56" alt="GTD" />
           <p>
             <strong>GTD</strong>
           </p>
         </router-link>
         <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/comp">
-          <img src="img/home/icons_box/comp.png" width="56" alt="Приложения" />
+          <img src="img/home/icons_box/comp.png" width="56" height="56" alt="Ремонт ПК" />
           <p>
-            <strong>Ремонт</strong>
+            <strong>Ремонт ПК</strong>
           </p>
         </router-link>
       </div>
@@ -116,6 +116,6 @@ export default {
 }
 .box:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-  border-bottom: 2px solid red;
+  /* border-bottom: 2px solid red; */
 }
 </style>
