@@ -65,15 +65,15 @@
           </p>
         </router-link>
         <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/dev">
-          <img src="img/home/icons_box/dev.png" width="56" height="56" alt="Веб-разработка" />
+          <img src="img/home/icons_box/dev.png" width="56" height="56" alt="Разработка" />
           <p>
-            <strong>Веб-разработка</strong>
+            <strong>Разработка</strong>
           </p>
         </router-link>
         <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/comp">
-          <img src="img/home/icons_box/comp.png" width="56" height="56" alt="Ремонт ПК" />
+          <img src="img/home/icons_box/comp.png" width="56" height="56" alt="Ремонт" />
           <p>
-            <strong>Ремонт ПК</strong>
+            <strong>Ремонт</strong>
           </p>
         </router-link>
       </div>
