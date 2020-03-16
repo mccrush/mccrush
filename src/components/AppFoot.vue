@@ -5,7 +5,7 @@
         <p>
           &copy; {{tecYear}} mccrush.ru&nbsp;&nbsp;
           <small>|</small>&nbsp;&nbsp;
-          v2.3.0
+          v2.4.1
           <small>|</small>&nbsp;&nbsp;
           <!-- <a href="https://github.com/mccrush/mccrush/releases" target="_blank">v2.0.1</a>&nbsp;
           <small class="text-muted">от 06.06.2019</small>&nbsp;&nbsp; 
