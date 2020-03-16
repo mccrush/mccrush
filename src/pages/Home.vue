@@ -58,16 +58,16 @@
             <strong>Приложения</strong>
           </p>
         </router-link>
-        <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/edu">
-          <img src="img/home/icons_box/edu.png" width="56" height="56" alt="Образование" />
-          <p>
-            <strong>Образование</strong>
-          </p>
-        </router-link>
         <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/gtd">
           <img src="img/home/icons_box/gtd.png" width="56" height="56" alt="GTD" />
           <p>
             <strong>GTD</strong>
+          </p>
+        </router-link>
+        <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/dev">
+          <img src="img/home/icons_box/dev.png" width="56" height="56" alt="Веб-разработка" />
+          <p>
+            <strong>Веб-разработка</strong>
           </p>
         </router-link>
         <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/comp">
