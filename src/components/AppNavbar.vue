@@ -11,7 +11,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <!-- Для телефонов -->
+            <!-- Для компьютеров -->
             <li class="nav-item d-none d-sm-inline" v-for="item in menuArr" :key="'ks-'+item.alias">
               <router-link :to="'/'+item.alias" class="pl-2 pr-2">&nbsp;{{item.title}}&nbsp;</router-link>
             </li>
@@ -19,13 +19,13 @@
               &nbsp;
               <router-link :to="'/comp'" class="pl-2 pr-2">Ремонт ПК</router-link>&nbsp;
             </li>
-            <!-- Для компьютеров -->
+            <!-- Для телефонов -->
             <li class="nav-item d-sm-none" v-for="item in menuArr" :key="'k-'+item.alias">
               <router-link :to="'/'+item.alias" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">&nbsp;{{item.title}}&nbsp;</router-link>
             </li>
             <li class="nav-item d-sm-none">
               &nbsp;
-              <router-link :to="'/comp'">Ремонт ПК</router-link>&nbsp;
+              <router-link :to="'/comp'" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">Ремонт ПК</router-link>&nbsp;
             </li>
             <!-- Для системные всегда -->
             <li class="nav-item" v-if="this.$store.state.uid">
