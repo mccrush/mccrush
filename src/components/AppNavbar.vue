@@ -17,7 +17,7 @@
             </li>
             <li class="nav-item d-none d-sm-inline">
               &nbsp;
-              <router-link :to="'/comp'" class="pl-2 pr-2">Ремонт</router-link>&nbsp;
+              <router-link :to="'/comp'" class="pl-2 pr-2">Ремонт ПК</router-link>&nbsp;
             </li>
             <!-- Для компьютеров -->
             <li class="nav-item d-sm-none" v-for="item in menuArr" :key="'k-'+item.alias">
@@ -25,7 +25,7 @@
             </li>
             <li class="nav-item d-sm-none">
               &nbsp;
-              <router-link :to="'/comp'">Ремонт</router-link>&nbsp;
+              <router-link :to="'/comp'">Ремонт ПК</router-link>&nbsp;
             </li>
             <!-- Для системные всегда -->
             <li class="nav-item" v-if="this.$store.state.uid">

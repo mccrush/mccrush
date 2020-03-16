@@ -45,7 +45,7 @@ import VueRouter from 'vue-router'
 import { auth } from "@/main.js";
 import Index from '../views/Index.vue'
 import Admin from '../views/Admin.vue'
-import Comp from '../views/Comp.vue'
+import Comp from '../pages/Comp.vue'
 import Login from '../views/Login.vue'
 import NotFound from '../views/NotFound.vue'
 import Home from '../pages/Home.vue'
