@@ -49,6 +49,7 @@ import Comp from '../pages/Comp.vue'
 import Login from '../views/Login.vue'
 import NotFound from '../views/NotFound.vue'
 import Home from '../pages/Home.vue'
+import Dev from '../pages/Dev.vue'
 
 
 Vue.use(VueRouter)
@@ -72,6 +73,11 @@ const routes = [
     path: '/login',
     name: 'login',
     component: Login
+  },
+  {
+    path: '/dev',
+    name: 'dev',
+    component: Dev
   },
   {
     path: '/comp',
