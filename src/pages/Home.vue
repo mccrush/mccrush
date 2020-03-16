@@ -2,7 +2,7 @@
   <div class="row mt-3">
     <vueHeadful title="Качественная разработка приложений" description="Современные сайты и веб-приложения (SPA, PWA*), с адаптивным дизайном и офлайн-доступом" />
     <div class="col-12">
-      <h2>Качественная разработка приложений</h2>
+      <h3>Качественная разработка приложений</h3>
       <p class="description">
         Современные сайты и веб-приложения (
         <abbr data-original-title="Single-page application" class="initialism" data-toggle="tooltip" data-placement="bottom">SPA</abbr>,
