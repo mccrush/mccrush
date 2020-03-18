@@ -54,27 +54,19 @@
       <div class="row mr-0 ml-0">
         <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/app">
           <img src="img/home/icons_box/app.png" width="56" height="56" alt="Приложения" />
-          <p>
-            <strong>Приложения</strong>
-          </p>
+          <p>Приложения</p>
         </router-link>
         <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/gtd">
           <img src="img/home/icons_box/gtd.png" width="56" height="56" alt="GTD" />
-          <p>
-            <strong>GTD</strong>
-          </p>
+          <p>GTD</p>
         </router-link>
         <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/dev">
           <img src="img/home/icons_box/dev.png" width="56" height="56" alt="Разработка" />
-          <p>
-            <strong>Разработка</strong>
-          </p>
+          <p>Разработка</p>
         </router-link>
         <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/comp">
           <img src="img/home/icons_box/comp.png" width="56" height="56" alt="Ремонт" />
-          <p>
-            <strong>Ремонт</strong>
-          </p>
+          <p>Ремонт</p>
         </router-link>
       </div>
     </div>
@@ -111,11 +103,12 @@ export default {
 }
 .box {
   color: #212529;
-  border-bottom: 2px solid white;
+  /* border-top: 3px solid rgba(255, 0, 0, 0.5); */
+  /* border-bottom: 2px solid white; */
   transition: 0.5s;
 }
 .box:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-  /* border-bottom: 2px solid red; */
+  /* border-top: 3px solid rgba(255, 0, 0, 0.75); */
 }
 </style>
