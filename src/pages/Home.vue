@@ -52,22 +52,22 @@
       </div>
       <hr />
       <div class="row mr-0 ml-0">
-        <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/app">
+        <router-link class="col-6 col-sm-4 shadow-sm rounded box text-decoration-none text-center pt-4" to="/app">
           <img src="img/home/icons_box/app.png" width="56" height="56" alt="Приложения" />
           <p>Приложения</p>
         </router-link>
-        <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/gtd">
+        <router-link class="col-6 col-sm-4 shadow-sm rounded box text-decoration-none text-center pt-4" to="/gtd">
           <img src="img/home/icons_box/gtd.png" width="56" height="56" alt="GTD" />
           <p>GTD</p>
         </router-link>
-        <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/dev">
+        <router-link class="col-6 col-sm-4 shadow-sm rounded box text-decoration-none text-center pt-4" to="/dev">
           <img src="img/home/icons_box/dev.png" width="56" height="56" alt="Разработка" />
           <p>Разработка</p>
         </router-link>
-        <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/comp">
+        <!-- <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/comp">
           <img src="img/home/icons_box/comp.png" width="56" height="56" alt="Ремонт" />
           <p>Ремонт</p>
-        </router-link>
+        </router-link>-->
       </div>
     </div>
   </div>
