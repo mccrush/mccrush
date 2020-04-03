@@ -19,10 +19,10 @@
               &nbsp;
               <router-link :to="'/dev'" class="pl-2 pr-2">Разработка</router-link>&nbsp;
             </li>
-            <li class="nav-item d-none d-sm-inline">
+            <!-- <li class="nav-item d-none d-sm-inline">
               &nbsp;
               <router-link :to="'/comp'" class="pl-2 pr-2">Ремонт</router-link>&nbsp;
-            </li>
+            </li>-->
             <!-- Для телефонов -->
             <li class="nav-item d-sm-none" v-for="item in menuArr" :key="'k-'+item.alias">
               <router-link :to="'/'+item.alias" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">&nbsp;{{item.title}}&nbsp;</router-link>
@@ -31,10 +31,10 @@
               &nbsp;
               <router-link :to="'/dev'" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">Разработка</router-link>&nbsp;
             </li>
-            <li class="nav-item d-sm-none">
+            <!-- <li class="nav-item d-sm-none">
               &nbsp;
               <router-link :to="'/comp'" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">Ремонт</router-link>&nbsp;
-            </li>
+            </li>-->
             <!-- Для системные всегда -->
             <li class="nav-item" v-if="this.$store.state.uid">
               &nbsp;
