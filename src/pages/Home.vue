@@ -108,7 +108,8 @@ export default {
   transition: 0.5s;
 }
 .box:hover {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0.5rem 1rem rgba(256, 0, 0, 0.15) !important;
   /* border-top: 3px solid rgba(255, 0, 0, 0.75); */
+  /* color: rgba(196, 0, 0, 1); */
 }
 </style>
