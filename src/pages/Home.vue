@@ -52,7 +52,7 @@
       </div>
       <hr />
       <div class="row mr-0 ml-0">
-        <router-link class="col-6 col-sm-4 shadow-sm rounded box text-decoration-none text-center pt-4" to="/app">
+        <router-link class="col-12 col-sm-4 shadow-sm rounded box text-decoration-none text-center pt-4" to="/app">
           <img src="img/home/icons_box/app.png" width="56" height="56" alt="Приложения" />
           <p>Приложения</p>
         </router-link>
