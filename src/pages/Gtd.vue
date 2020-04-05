@@ -8,18 +8,18 @@
 
       <h5 class="text-center">Ссылки на полезные сервисы</h5>
 
-      <div class="row mr-0 ml-0">
-        <div class="col-12 col-sm-4 shadow-sm rounded box text-decoration-none text-center p-0 pt-4 trello">
+      <div class="row mr-0 ml-0 mt-3">
+        <div class="col-12 col-sm-4 shadow-sm rounded box text-decoration-none text-center p-0 pt-4 trello" data-toggle="tooltip" data-placement="bottom" data-original-title="Веб-приложение для управления проектами">
           <img src="img/gtd/icons_gtd/trello.png" width="56" height="56" alt="Trello" class="mb-4" />
-          <a class="d-block p-3" href="trello.com" target="_blank">Trello</a>
+          <a class="d-block p-3 rounded-bottom" href="trello.com" target="_blank">Trello</a>
         </div>
-        <div class="col-6 col-sm-4 shadow-sm rounded box text-decoration-none text-center p-0 pt-4 evernote" href="evernote.com" target="_blank">
+        <div class="col-6 col-sm-4 shadow-sm rounded box text-decoration-none text-center p-0 pt-4 evernote" data-toggle="tooltip" data-placement="bottom" data-original-title="Сохраняйте и делитесь заметками где угодно">
           <img src="img/gtd/icons_gtd/evernote.png" width="56" height="56" alt="Evernote" class="mb-4" />
-          <a class="d-block p-3" href="evernote.com" target="_blank">Evernote</a>
+          <a class="d-block p-3 rounded-bottom" href="evernote.com" target="_blank">Evernote</a>
         </div>
-        <div class="col-6 col-sm-4 shadow-sm rounded box text-decoration-none text-center p-0 pt-4 flow" href="knowflow.io" target="_blank">
+        <div class="col-6 col-sm-4 shadow-sm rounded box text-decoration-none text-center p-0 pt-4 flow" data-toggle="tooltip" data-placement="bottom" data-original-title="Современный инструмент для визуализации процессов, алгоритмов и сложных систем">
           <img src="img/gtd/icons_gtd/flow.png" width="56" height="56" alt="Knowflow" class="mb-4" />
-          <a class="d-block p-3" href="knowflow.io" target="_blank">Knowflow</a>
+          <a class="d-block p-3 rounded-bottom" href="knowflow.io" target="_blank">Knowflow</a>
         </div>
       </div>
     </div>
@@ -76,7 +76,7 @@ export default {
 
 .box a:hover {
   /* backdrop-filter: blur(6px); */
-  backdrop-filter: opacity(0.4);
+  backdrop-filter: opacity(0.5);
 }
 
 .trello {
