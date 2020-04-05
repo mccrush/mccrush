@@ -122,12 +122,14 @@ export default {
 .box a {
   color: #fff;
   text-decoration: none;
+  -webkit-backdrop-filter: opacity(0.6);
   backdrop-filter: opacity(0.6);
   /* transition: 0.5s; */
 }
 
 .box a:hover {
   /* backdrop-filter: blur(6px); */
+  -webkit-backdrop-filter: opacity(0.5);
   backdrop-filter: opacity(0.5);
 }
 
