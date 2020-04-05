@@ -6,22 +6,75 @@
       <p class="description">Данный раздел посвящен методикам организации повседневной деятельности, инструментам и способам поддержания своих дел в полном порядке</p>
       <hr />
 
-      <h5 class="text-center">Ссылки на полезные сервисы</h5>
-
+      <h5>Ссылки на полезные сервисы</h5>
       <div class="row mr-0 ml-0 mt-3">
-        <div class="col-12 col-sm-4 shadow-sm rounded box text-decoration-none text-center p-0 pt-4 trello" data-toggle="tooltip" data-placement="bottom" data-original-title="Веб-приложение для управления проектами">
-          <img src="img/gtd/icons_gtd/trello.png" width="56" height="56" alt="Trello" class="mb-4" />
-          <a class="d-block p-3 rounded-bottom" href="trello.com" target="_blank">Trello</a>
+        <div class="col-12 col-sm-4 text-decoration-none text-center p-0" data-toggle="tooltip" data-placement="bottom" data-original-title="Веб-приложение для управления проектами">
+          <div class="row m-0 mr-0 mr-sm-2">
+            <div class="col p-0 pt-4 shadow-sm rounded box trello">
+              <img src="img/gtd/icons_gtd/trello.png" width="56" height="56" alt="Trello" class="mb-4" />
+              <a class="d-block p-3 rounded-bottom" href="https://trello.com/mccrush/recommend" target="_blank">Trello</a>
+            </div>
+          </div>
         </div>
-        <div class="col-6 col-sm-4 shadow-sm rounded box text-decoration-none text-center p-0 pt-4 evernote" data-toggle="tooltip" data-placement="bottom" data-original-title="Сохраняйте и делитесь заметками где угодно">
-          <img src="img/gtd/icons_gtd/evernote.png" width="56" height="56" alt="Evernote" class="mb-4" />
-          <a class="d-block p-3 rounded-bottom" href="evernote.com" target="_blank">Evernote</a>
+        <div class="col-6 col-sm-4 text-decoration-none text-center p-0" data-toggle="tooltip" data-placement="bottom" data-original-title="Сохраняйте и делитесь заметками где угодно">
+          <div class="row m-0 mt-3 mt-sm-0 ml-0 ml-sm-2 mr-2">
+            <div class="col p-0 pt-4 shadow-sm rounded box evernote">
+              <img src="img/gtd/icons_gtd/evernote.png" width="56" height="56" alt="Evernote" class="mb-4" />
+              <a class="d-block p-3 rounded-bottom" href="https://evernote.com/intl/ru/" target="_blank">Evernote</a>
+            </div>
+          </div>
         </div>
-        <div class="col-6 col-sm-4 shadow-sm rounded box text-decoration-none text-center p-0 pt-4 flow" data-toggle="tooltip" data-placement="bottom" data-original-title="Современный инструмент для визуализации процессов, алгоритмов и сложных систем">
-          <img src="img/gtd/icons_gtd/flow.png" width="56" height="56" alt="Knowflow" class="mb-4" />
-          <a class="d-block p-3 rounded-bottom" href="knowflow.io" target="_blank">Knowflow</a>
+        <div class="col-6 col-sm-4 text-decoration-none text-center p-0" data-toggle="tooltip" data-placement="bottom" data-original-title="Современный инструмент для визуализации процессов, алгоритмов и сложных систем">
+          <div class="row m-0 mt-3 mt-sm-0 ml-2">
+            <div class="col p-0 pt-4 shadow-sm rounded box flow">
+              <img src="img/gtd/icons_gtd/flow.png" width="56" height="56" alt="Knowflow" class="mb-4" />
+              <a class="d-block p-3 rounded-bottom" href="https://www.knowflow.io/about" target="_blank">Knowflow</a>
+            </div>
+          </div>
         </div>
       </div>
+      <hr />
+      <h5 class="mt-4">Список книг, которые помогут разобраться в делах</h5>
+      <table class="table table-bordered table-hover mt-3">
+        <tbody>
+          <tr class="warning">
+            <td align="center" width="5%">1</td>
+            <td width="35%">
+              <strong>Дэвид Аллен</strong>
+              <br />
+              <a class="mctbln" title="Как привести дела в порядок" href="http://www.ozon.ru/context/detail/id/138561487/?partner=mccrush" target="_blank" rel="noopener">Как привести дела в порядок</a>
+            </td>
+            <td>Искусство продуктивности без стресса". Пожалуй, лучшая книга в своем роде. Автор подробно рассказывает об эффективных методах организации ежедневных задач.</td>
+          </tr>
+          <tr>
+            <td align="center" width="5%">2</td>
+            <td width="35%">
+              <strong>Стивен Р. Кови</strong>
+              <br />
+              <a class="mctbln" title="Семь навыков высокоэффективных людей" href="http://www.ozon.ru/context/detail/id/6974309/?partner=mccrush" target="_blank" rel="noopener">Семь навыков высокоэффективных людей</a>
+            </td>
+            <td>Об этой книге, думаю, слышали многие. Такие простые, но такие эффективные рекомендации, которые помогут наладить свои дела в любых сферах деятельности.</td>
+          </tr>
+          <tr>
+            <td align="center" width="5%">3</td>
+            <td width="35%">
+              <strong>Элияху М. Голдратт</strong>
+              <br />
+              <a class="mctbln" title="Цель. Процесс непрерывного совершенствования" href="http://www.ozon.ru/context/detail/id/26994615/?partner=mccrush" target="_blank" rel="noopener">Цель. Процесс непрерывного совершенствования</a>
+            </td>
+            <td>Это классика. Понимание описанного метода действий, позволит любой процесс сделать максимально эффективным.</td>
+          </tr>
+          <tr>
+            <td align="center" width="5%">4</td>
+            <td width="35%">
+              <strong>Тимоти Феррис</strong>
+              <br />
+              <a class="mctbln" title="Как работать по 4 часа в неделю и при этом не торчать в офисе" href="http://www.ozon.ru/context/detail/id/5474657/?partner=mccrush" target="_blank" rel="noopener">Как работать по 4 часа в неделю</a>
+            </td>
+            <td>В данной книге описаны современные инструменты ведения дел. Мир не стоит на месте, появляются все новые и новые методы решения повседневных проблем. Читайте, и учитель новому.</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </template>
@@ -68,7 +121,6 @@ export default {
 
 .box a {
   color: #fff;
-  font-weight: bold;
   text-decoration: none;
   backdrop-filter: opacity(0.6);
   /* transition: 0.5s; */
@@ -81,6 +133,7 @@ export default {
 
 .trello {
   background: url(/img/gtd/icons_gtd/bg_trello.jpg) center top no-repeat;
+  background-size: cover;
 }
 
 .evernote {
