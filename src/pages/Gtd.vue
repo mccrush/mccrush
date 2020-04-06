@@ -8,19 +8,19 @@
 
       <h5>Ссылки на полезные сервисы</h5>
       <div class="row mr-0 ml-0 mt-3">
-        <div class="col-12 col-sm-4 text-decoration-none text-center p-0" data-toggle="tooltip" data-placement="bottom" data-original-title="Веб-приложение для управления проектами">
+        <div class="col-12 col-sm-4 text-decoration-none text-center p-0" data-toggle="tooltip" data-placement="bottom" data-original-title="Сохраняйте и делитесь заметками где угодно">
           <div class="row m-0 mr-0 mr-sm-2">
-            <div class="col p-0 pt-4 shadow-sm rounded box trello">
-              <img src="img/gtd/icons_gtd/trello.png" width="56" height="56" alt="Trello" class="mb-4" />
-              <a class="d-block p-3 rounded-bottom" href="https://trello.com/mccrush/recommend" target="_blank">Trello</a>
+            <div class="col p-0 pt-4 shadow-sm rounded box evernote">
+              <img src="img/gtd/icons_gtd/evernote.png" width="56" height="56" alt="Evernote" class="mb-4" />
+              <a class="d-block p-3 rounded-bottom border-top border-light" href="https://evernote.com/intl/ru/" target="_blank">Evernote</a>
             </div>
           </div>
         </div>
-        <div class="col-6 col-sm-4 text-decoration-none text-center p-0" data-toggle="tooltip" data-placement="bottom" data-original-title="Сохраняйте и делитесь заметками где угодно">
+        <div class="col-6 col-sm-4 text-decoration-none text-center p-0" data-toggle="tooltip" data-placement="bottom" data-original-title="Веб-приложение для управления проектами">
           <div class="row m-0 mt-3 mt-sm-0 ml-0 ml-sm-2 mr-2">
-            <div class="col p-0 pt-4 shadow-sm rounded box evernote">
-              <img src="img/gtd/icons_gtd/evernote.png" width="56" height="56" alt="Evernote" class="mb-4" />
-              <a class="d-block p-3 rounded-bottom" href="https://evernote.com/intl/ru/" target="_blank">Evernote</a>
+            <div class="col p-0 pt-4 shadow-sm rounded box trello">
+              <img src="img/gtd/icons_gtd/trellow.png" width="56" height="56" alt="Trello" class="mb-4" />
+              <a class="d-block p-3 rounded-bottom border-top border-light" href="https://trello.com/mccrush/recommend" target="_blank">Trello</a>
             </div>
           </div>
         </div>
@@ -28,7 +28,7 @@
           <div class="row m-0 mt-3 mt-sm-0 ml-2">
             <div class="col p-0 pt-4 shadow-sm rounded box flow">
               <img src="img/gtd/icons_gtd/flow.png" width="56" height="56" alt="Knowflow" class="mb-4" />
-              <a class="d-block p-3 rounded-bottom" href="https://www.knowflow.io/about" target="_blank">Knowflow</a>
+              <a class="d-block p-3 rounded-bottom border-top border-light" href="https://www.knowflow.io/about" target="_blank">Knowflow</a>
             </div>
           </div>
         </div>
@@ -122,27 +122,30 @@ export default {
 .box a {
   color: #fff;
   text-decoration: none;
-  -webkit-backdrop-filter: opacity(0.6);
-  backdrop-filter: opacity(0.6);
+  -webkit-backdrop-filter: opacity(0.8);
+  backdrop-filter: opacity(0.8);
   /* transition: 0.5s; */
 }
 
 .box a:hover {
   /* backdrop-filter: blur(6px); */
-  -webkit-backdrop-filter: opacity(0.5);
-  backdrop-filter: opacity(0.5);
-}
-
-.trello {
-  background: url(/img/gtd/icons_gtd/bg_trello.jpg) center top no-repeat;
-  background-size: cover;
+  -webkit-backdrop-filter: opacity(0.7);
+  backdrop-filter: opacity(0.7);
 }
 
 .evernote {
-  background: url(/img/gtd/icons_gtd/bg_evernote.jpg) center top no-repeat;
+  background: #00cc5f;
+  /* background: url(/img/gtd/icons_gtd/bg_evernote.jpg) center top no-repeat; */
+}
+
+.trello {
+  background: #0079bf;
+  /* background: url(/img/gtd/icons_gtd/bg_trello.jpg) center top no-repeat;
+  background-size: cover; */
 }
 
 .flow {
-  background: url(/img/gtd/icons_gtd/bg_flow.jpg) center top no-repeat;
+  background: #380acc;
+  /* background: url(/img/gtd/icons_gtd/bg_flow.jpg) center top no-repeat; */
 }
 </style>
