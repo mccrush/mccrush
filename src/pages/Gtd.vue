@@ -49,7 +49,7 @@
           <tr>
             <td align="center" width="5%">2</td>
             <td width="35%">
-              <strong>Стивен Р. Кови</strong>
+              <strong>Стивен Кови</strong>
               <br />
               <a class="mctbln" title="Семь навыков высокоэффективных людей" href="http://www.ozon.ru/context/detail/id/6974309/?partner=mccrush" target="_blank" rel="noopener">Семь навыков высокоэффективных людей</a>
             </td>
@@ -58,7 +58,7 @@
           <tr>
             <td align="center" width="5%">3</td>
             <td width="35%">
-              <strong>Элияху М. Голдратт</strong>
+              <strong>Элияху Голдратт</strong>
               <br />
               <a class="mctbln" title="Цель. Процесс непрерывного совершенствования" href="http://www.ozon.ru/context/detail/id/26994615/?partner=mccrush" target="_blank" rel="noopener">Цель. Процесс непрерывного совершенствования</a>
             </td>
