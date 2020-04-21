@@ -52,7 +52,7 @@
             <div class="col-12 shadow-sm rounded-sm box-tech">PWA</div>
           </div>
           <div class="row">
-            <div class="col-4 shadow-sm rounded-sm box-tech">Bootstrap</div>
+            <div class="col-4 shadow-sm rounded-sm box-tech" style="margin-top: 4px;">Bootstrap</div>
             <div class="col-4">
               <div class="row row-tech-50">
                 <div class="col-12 shadow-sm rounded-sm box-tech">Vue.js</div>
@@ -70,7 +70,7 @@
                 <div class="col-6">
                   <div class="row row-tech-50">
                     <div class="col-12 shadow-sm rounded-sm small box-tech">Authentication</div>
-                    <div class="col-12 shadow-sm rounded-sm small box-tech">Cloud Storege</div>
+                    <div class="col-12 shadow-sm rounded-sm small box-tech">Cloud Storage</div>
                   </div>
                 </div>
                 <div class="col-6">
@@ -89,6 +89,29 @@
           </div>
         </div>
       </div>
+      <hr />
+      <h5 class="mb-3 text-center">Оказываем услуги</h5>
+      <div class="row">
+        <div class="col-12">
+          <ul style="list-style: circle;">
+            <li>Администрирование веб-сайтов;</li>
+            <li>Создание и добавление компонентов / элементов (HTML, CSS, JavaScript);</li>
+            <li>Установка / настройка модулей CMS (WordPress, Joomla, OpenCart);</li>
+            <li>Работа с базами данных (MySQL).</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mr-0 ml-0 mt-1 text-center">
+        <div class="col-6 shadow-sm rounded-sm p-2 box-tech">
+          На регулярной основе
+          <br />от 7000 р/месяц
+        </div>
+        <div class="col-6 shadow-sm rounded-sm p-2 box-tech">
+          Сдельная работа
+          <br />от 450 р/час
+        </div>
+      </div>
+
       <hr />
       <h5 class="mb-3 text-center">Разделы сайта</h5>
       <div class="row mr-0 ml-0">

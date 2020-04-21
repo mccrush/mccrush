@@ -5,7 +5,7 @@
         <p>
           &copy; {{tecYear}} mccrush.ru&nbsp;&nbsp;
           <small>|</small>&nbsp;&nbsp;
-          <abbr title="Текущая версия сайта">v2.4.3</abbr>
+          <abbr title="Текущая версия сайта" class="initialism">v2.4.3</abbr>
           <small>|</small>&nbsp;&nbsp;
           <span class="showem" @click="showEmail">{{email}}</span>
         </p>
