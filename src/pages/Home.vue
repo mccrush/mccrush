@@ -45,47 +45,47 @@
           </tr>
         </tbody>
       </table>
-      <h5 class="mt-5 mb-3 text-center">Структура технологий</h5>
-      <div class="row m-0">
+      <h5 class="mt-5 mb-3 text-center d-none d-md-block">Структура технологий</h5>
+      <div class="row m-0 d-none d-md-block">
         <div class="col-12">
           <div class="row row-tech-50">
-            <div class="col-12 shadow-sm rounded-sm box-tech">PWA</div>
+            <div class="col-12 border-top border-left border-right box-tech">PWA</div>
           </div>
           <div class="row">
-            <div class="col-4 shadow-sm rounded-sm box-tech" style="margin-top: 4px;">Bootstrap</div>
-            <div class="col-4">
+            <div class="col-12 col-sm-6 col-md-4">
               <div class="row row-tech-50">
-                <div class="col-12 shadow-sm rounded-sm box-tech">Vue.js</div>
-              </div>
-              <div class="row row-tech-50">
-                <div class="col-6 shadow-sm rounded-sm box-tech">Vuex</div>
-                <div class="col-6 shadow-sm rounded-sm box-tech">Router</div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="row row-tech-50">
-                <div class="col-12 shadow-sm rounded-sm box-tech">Firebase</div>
+                <div class="col-12 border-top border-right border-left box-tech">Firebase</div>
               </div>
               <div class="row">
                 <div class="col-6">
                   <div class="row row-tech-50">
-                    <div class="col-12 shadow-sm rounded-sm small box-tech">Authentication</div>
-                    <div class="col-12 shadow-sm rounded-sm small box-tech">Cloud Storage</div>
+                    <div class="col-12 border-top border-right border-left small box-tech">Authentication</div>
+                    <div class="col-12 border-top border-right border-left small box-tech">Cloud Storage</div>
                   </div>
                 </div>
                 <div class="col-6">
                   <div class="row row-tech-50">
-                    <div class="col-12 shadow-sm rounded-sm small box-tech">Cloud Firestore</div>
-                    <div class="col-12 shadow-sm rounded-sm small box-tech">Hosting</div>
+                    <div class="col-12 border-top border-right small box-tech">Cloud Firestore</div>
+                    <div class="col-12 border-top border-right small box-tech">Hosting</div>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="row row-tech-50">
+                <div class="col-12 border-top border-right box-tech">Vue.js</div>
+              </div>
+              <div class="row row-tech-50">
+                <div class="col-6 border-top border-right box-tech">Vuex</div>
+                <div class="col-6 border-top border-right box-tech">Router</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 border-top border-right box-tech" style="margin-top: 0px;">Bootstrap</div>
           </div>
           <div class="row row-tech-50">
-            <div class="col-2 shadow-sm rounded-sm box-tech">HTML</div>
-            <div class="col-2 shadow-sm rounded-sm box-tech">CSS</div>
-            <div class="col-8 shadow-sm rounded-sm box-tech">JavaScript</div>
+            <div class="col-8 border-top border-right border-bottom border-left box-tech">JavaScript</div>
+            <div class="col-2 border-top border-right border-bottom box-tech">HTML</div>
+            <div class="col-2 border-top border-bottom border-right box-tech">CSS</div>
           </div>
         </div>
       </div>
@@ -102,11 +102,11 @@
         </div>
       </div>
       <div class="row mr-0 ml-0 mt-1 text-center">
-        <div class="col-6 shadow-sm rounded-sm p-2 box-tech">
+        <div class="col-6 shadow-sm p-2 box-uslugi1">
           На регулярной основе
           <br />от 7000 р/месяц
         </div>
-        <div class="col-6 shadow-sm rounded-sm p-2 box-tech">
+        <div class="col-6 shadow-sm p-2 box-uslugi2">
           Сдельная работа
           <br />от 450 р/час
         </div>
@@ -178,12 +178,12 @@ export default {
 
 .row-tech-50 {
   height: 50px;
-  margin-top: 4px;
+  margin-top: 0px;
 }
 
 .row-tech-100 {
   height: 100px;
-  margin-top: 4px;
+  margin-top: 0px;
 }
 
 .box-tech {
@@ -191,12 +191,32 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 2px solid rgba(224, 0, 0, 0.55);
+  /* border-top: 2px solid rgba(224, 0, 0, 0.55); */
+  /* border: 1px solid grey; */
   transition: 0.3s;
 }
 
 .box-tech:hover {
-  box-shadow: 0 0.3rem 0.7rem rgba(256, 0, 0, 0.15) !important;
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.15) !important;
   /* border: solid 1px rgba(255, 0, 0, 0.5); */
+}
+
+.box-uslugi1 {
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid rgba(224, 0, 0, 0.55);
+  border-right: 2px solid rgba(224, 0, 0, 0.55);
+  transition: 0.3s;
+}
+
+.box-uslugi2 {
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid rgba(224, 0, 0, 0.55);
+  transition: 0.3s;
 }
 </style>
