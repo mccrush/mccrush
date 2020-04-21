@@ -107,6 +107,17 @@ export default {
   text-align: center;
   vertical-align: middle;
 }
+
+a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
 .box {
   color: #212529;
   /* border-top: 3px solid rgba(255, 0, 0, 0.5); */
