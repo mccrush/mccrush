@@ -67,6 +67,16 @@ export default {
 .card {
   border: none;
   /* border-top: 3px solid #ffc107; rgba(255, 0, 0, 0.75); */
-  border-top: 3px solid #ffc107;
+  border-top: 3px solid #ffd460;
+}
+
+.btn-warning {
+  background-color: #ffd460;
+  border-color: #ffd460;
+}
+
+.btn-warning:hover {
+  background-color: #e6c057;
+  border-color: #e6c057;
 }
 </style>
