@@ -109,12 +109,12 @@ export default {
 .nav-item a:hover {
   color: #212529;
   text-decoration: none;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #ea5455 /*red*/;
 }
 
 .nav-item a.router-link-exact-active {
   color: #212529;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #ea5455 /*red*/;
 }
 
 @media (max-width: 576px) {
