@@ -27,6 +27,22 @@
       <div class="col-12 col-sm-6 mb-4">
         <div class="card shadow-sm">
           <div class="card-body">
+            <h5 class="card-title">Онлайн курсы</h5>
+            <ul class="pl-4 mb-1">
+              <li>
+                <a href="https://ru.hexlet.io/?ref=107231" target="_blank" title="Открыть сайт">hexlet.io</a>
+              </li>
+              <li>
+                <a href="https://www.codecademy.com/learn" target="_blank" title="Открыть сайт">codecademy.com (en)</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
             <h5 class="card-title">Списки книг</h5>
             <ul class="pl-4 mb-1">
               <li>
@@ -37,22 +53,6 @@
               </li>
               <li>
                 <a title="Открыть сайт" href="https://stackoverflow.com/questions/1711/what-is-the-single-most-influential-book-every-programmer-should-read" target="_blank">stackoverflow.com (en)</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 mb-4">
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Онлайн курсы</h5>
-            <ul class="pl-4 mb-1">
-              <li>
-                <a href="https://ru.hexlet.io/?ref=107231" target="_blank" title="Открыть сайт">hexlet.io</a>
-              </li>
-              <li>
-                <a href="https://www.codecademy.com/learn" target="_blank" title="Открыть сайт">codecademy.com (en)</a>
               </li>
             </ul>
           </div>
