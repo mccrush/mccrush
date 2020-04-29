@@ -4,7 +4,9 @@
       <span class="sr-only">Loading...</span>
     </div>
     <AppNavbar v-if="this.$store.state.pageArr[0]" />
-    <router-view v-if="this.$store.state.pageArr[0]" />
+    <transition appear name="fade" mode="out-in">
+      <router-view v-if="this.$store.state.pageArr[0]" />
+    </transition>
     <AppFoot />
   </div>
 </template>
@@ -35,5 +37,13 @@ export default {
   text-align: left;
   color: #2c3e50;
   max-width: 800px;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
 }
 </style>
