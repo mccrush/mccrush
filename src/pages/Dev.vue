@@ -112,7 +112,7 @@ export default {
 <style scoped>
 .card {
   border: none;
-  border-top: 3px solid rgba(224, 0, 0, 0.75);
+  border-top: 3px solid #ea5455 /*rgba(224, 0, 0, 0.75)*/;
 }
 
 ul {
