@@ -12,7 +12,7 @@
           <div class="row m-0 mr-0 mr-sm-2">
             <div class="col p-0 pt-4 shadow-sm rounded box evernote">
               <img src="img/gtd/icons_gtd/evernote.png" width="56" height="56" alt="Evernote" class="mb-4" />
-              <a class="d-block p-3 rounded-bottom border-top border-light" href="https://evernote.com/intl/ru/" target="_blank">Evernote</a>
+              <a class="d-block p-3 rounded-bottom" href="https://evernote.com/intl/ru/" target="_blank">Evernote</a>
             </div>
           </div>
         </div>
@@ -20,7 +20,7 @@
           <div class="row m-0 mt-3 mt-sm-0 ml-0 ml-sm-2 mr-2">
             <div class="col p-0 pt-4 shadow-sm rounded box trello">
               <img src="img/gtd/icons_gtd/trellow.png" width="56" height="56" alt="Trello" class="mb-4" />
-              <a class="d-block p-3 rounded-bottom border-top border-light" href="https://trello.com/mccrush/recommend" target="_blank">Trello</a>
+              <a class="d-block p-3 rounded-bottom" href="https://trello.com/mccrush/recommend" target="_blank">Trello</a>
             </div>
           </div>
         </div>
@@ -28,7 +28,7 @@
           <div class="row m-0 mt-3 mt-sm-0 ml-2">
             <div class="col p-0 pt-4 shadow-sm rounded box flow">
               <img src="img/gtd/icons_gtd/flow.png" width="56" height="56" alt="Knowflow" class="mb-4" />
-              <a class="d-block p-3 rounded-bottom border-top border-light" href="https://www.knowflow.io/about" target="_blank">Knowflow</a>
+              <a class="d-block p-3 rounded-bottom" href="https://www.knowflow.io/about" target="_blank">Knowflow</a>
             </div>
           </div>
         </div>
