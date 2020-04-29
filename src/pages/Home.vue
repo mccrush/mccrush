@@ -206,8 +206,8 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 2px solid rgba(224, 0, 0, 0.55);
-  border-right: 2px solid rgba(224, 0, 0, 0.55);
+  border-top: 2px solid #ea5455 /*rgba(224, 0, 0, 0.55)*/;
+  border-right: 2px solid #ea5455 /*rgba(224, 0, 0, 0.55)*/;
   transition: 0.3s;
 }
 
@@ -216,7 +216,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 2px solid rgba(224, 0, 0, 0.55);
+  border-top: 2px solid #ea5455 /*rgba(224, 0, 0, 0.55)*/;
   transition: 0.3s;
 }
 </style>
