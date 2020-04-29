@@ -145,18 +145,18 @@ a:hover {
 }
 
 .evernote {
-  background: #00cc5f;
+  background: #2d4059 /*#00cc5f*/;
   /* background: url(/img/gtd/icons_gtd/bg_evernote.jpg) center top no-repeat; */
 }
 
 .trello {
-  background: #0079bf;
+  background: #2d4059 /*#0079bf*/;
   /* background: url(/img/gtd/icons_gtd/bg_trello.jpg) center top no-repeat;
   background-size: cover; */
 }
 
 .flow {
-  background: #380acc;
+  background: #2d4059 /*#380acc*/;
   /* background: url(/img/gtd/icons_gtd/bg_flow.jpg) center top no-repeat; */
 }
 </style>
