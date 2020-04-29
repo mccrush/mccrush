@@ -49,43 +49,71 @@
       <div class="row m-0 d-none d-md-block">
         <div class="col-12">
           <div class="row row-tech-50">
-            <div class="col-12 border-top border-left border-right box-tech">PWA</div>
+            <div class="col-12 box-tech shadow-sm rounded" style="border-top: 3px solid #3298F0;">PWA</div>
           </div>
-          <div class="row">
-            <div class="col-12 col-sm-6 col-md-4">
-              <div class="row row-tech-50">
-                <div class="col-12 border-top border-right border-left box-tech">Firebase</div>
-              </div>
-              <div class="row">
-                <div class="col-6">
+
+          <div class="row ml-0 mr-0 mt-2">
+            <div class="col-12 col-sm-6 col-md-4 p-0">
+              <div class="row mr-1">
+                <div class="col-12 shadow-sm rounded" style="border-top: 3px solid #f07b3f;">
                   <div class="row row-tech-50">
-                    <div class="col-12 border-top border-right border-left small box-tech">Authentication</div>
-                    <div class="col-12 border-top border-right border-left small box-tech">Cloud Storage</div>
+                    <div class="col-12 box-tech">Firebase</div>
                   </div>
-                </div>
-                <div class="col-6">
-                  <div class="row row-tech-50">
-                    <div class="col-12 border-top border-right small box-tech">Cloud Firestore</div>
-                    <div class="col-12 border-top border-right small box-tech">Hosting</div>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="row row-tech-50">
+                        <div class="col-12 small box-tech border-right border-top">Authentication</div>
+                        <div class="col-12 small box-tech border-right border-top">Cloud Storage</div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="row row-tech-50">
+                        <div class="col-12 small box-tech border-top">Cloud Firestore</div>
+                        <div class="col-12 small box-tech border-top">Hosting</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
-              <div class="row row-tech-50">
-                <div class="col-12 border-top border-right box-tech">Vue.js</div>
-              </div>
-              <div class="row row-tech-50">
-                <div class="col-6 border-top border-right box-tech">Vuex</div>
-                <div class="col-6 border-top border-right box-tech">Router</div>
+
+            <div class="col-12 col-sm-6 col-md-4 p-0">
+              <div class="row m-0 ml-2 mr-1">
+                <div class="col-12 shadow-sm rounded" style="border-top: 3px solid #3BA361;">
+                  <div class="row row-tech-50">
+                    <div class="col-12 box-tech">Vue.js</div>
+                  </div>
+                  <div class="row row-tech-50">
+                    <div class="col-6 box-tech border-right border-top">Vuex</div>
+                    <div class="col-6 box-tech border-top">Router</div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-12 col-md-4 border-top border-right box-tech" style="margin-top: 0px;">Bootstrap</div>
+
+            <div class="col-12 col-md-4 p-0">
+              <div class="row ml-2 row-tech-100">
+                <div class="col-12 box-tech shadow-sm rounded" style="border-top: 3px solid #9732F0;">Bootstrap</div>
+              </div>
+            </div>
           </div>
-          <div class="row row-tech-50">
-            <div class="col-8 border-top border-right border-bottom border-left box-tech">JavaScript</div>
-            <div class="col-2 border-top border-right border-bottom box-tech">HTML</div>
-            <div class="col-2 border-top border-bottom border-right box-tech">CSS</div>
+
+          <div class="row mt-2 ml-0 mr-0">
+            <div class="col-8 p-0">
+              <div class="row mr-1 row-tech-50">
+                <div class="col-12 box-tech shadow-sm rounded" style="border-top: 3px solid #ffd460;">JavaScript</div>
+              </div>
+            </div>
+            <div class="col-2 p-0">
+              <div class="row m-0 ml-2 row-tech-50">
+                <div class="col-12 box-tech shadow-sm rounded" style="border-top: 3px solid #f07b3f;">HTML</div>
+              </div>
+            </div>
+            <div class="col-2 p-0">
+              <div class="row ml-3 row-tech-50">
+                <div class="col-12 box-tech shadow-sm rounded" style="border-top: 3px solid #3298F0;">CSS</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -219,4 +247,10 @@ export default {
   border-top: 2px solid #ea5455 /*rgba(224, 0, 0, 0.55)*/;
   transition: 0.3s;
 }
+
+/*
+Зеленый для Vue #3BA361
+Синий для CSS #3298F0
+Фиолетовый для Bootstrap #9732F0
+ */
 </style>
