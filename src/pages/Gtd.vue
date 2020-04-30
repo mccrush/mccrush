@@ -7,12 +7,38 @@
       <hr />
 
       <h5>Ссылки на полезные сервисы</h5>
-      <div class="row mr-0 ml-0 mt-3">
+
+      <div class="row mt-4">
+        <div class="col-4 text-center" data-toggle="tooltip" data-placement="bottom" data-original-title="Сохраняйте и делитесь заметками где угодно">
+          <div class="rounded-circle m-auto d-flex box-round">
+            <img src="img/gtd/icons_gtd/evernote.png" width="56" height="56" alt="Evernote" class="mb-4 m-auto" />
+          </div>
+          <a class="d-inline-block mt-3" href="https://evernote.com/intl/ru/" target="_blank">Evernote</a>
+        </div>
+
+        <div class="col-4 text-center" data-toggle="tooltip" data-placement="bottom" data-original-title="Веб-приложение для управления проектами">
+          <div class="rounded-circle m-auto d-flex box-round">
+            <img src="img/gtd/icons_gtd/trello.png" width="56" height="56" alt="Evernote" class="mb-4 m-auto" />
+          </div>
+          <a class="d-inline-block mt-3" href="https://trello.com/mccrush/recommend" target="_blank">Trello</a>
+        </div>
+
+        <div class="col-4 text-center" data-toggle="tooltip" data-placement="bottom" data-original-title="Современный инструмент для визуализации процессов, алгоритмов и сложных систем">
+          <div class="rounded-circle m-auto d-flex box-round">
+            <img src="img/gtd/icons_gtd/flow.png" width="56" height="56" alt="Evernote" class="mb-4 m-auto" />
+          </div>
+          <a class="d-inline-block mt-3" href="https://www.knowflow.io/about" target="_blank">Knowflow</a>
+        </div>
+      </div>
+
+      <!-- <div class="row mr-0 ml-0 mt-4">
         <div class="col-12 col-sm-4 text-decoration-none text-center p-0" data-toggle="tooltip" data-placement="bottom" data-original-title="Сохраняйте и делитесь заметками где угодно">
           <div class="row m-0 mr-0 mr-sm-2">
-            <div class="col p-0 pt-4 shadow-sm rounded box evernote">
-              <img src="img/gtd/icons_gtd/evernote.png" width="56" height="56" alt="Evernote" class="mb-4" />
-              <a class="d-block p-3 rounded-bottom" href="https://evernote.com/intl/ru/" target="_blank">Evernote</a>
+            <div class="col p-0 pt-4 shadow-sm justify-content-center d-flex box evernote">
+              <div class="rounded-circle bg-info">
+                <img src="img/gtd/icons_gtd/evernote.png" width="56" height="56" alt="Evernote" class="mb-4" />
+                <a class="d-block p-3 rounded-bottom" href="https://evernote.com/intl/ru/" target="_blank">Evernote</a>
+              </div>
             </div>
           </div>
         </div>
@@ -32,9 +58,9 @@
             </div>
           </div>
         </div>
-      </div>
-      <hr />
-      <h5 class="mt-4">Список книг, которые помогут разобраться в делах</h5>
+      </div>-->
+
+      <h5 class="mt-5">Список книг, которые помогут разобраться в делах</h5>
       <table class="table table-bordered table-hover mt-3">
         <tbody>
           <tr class="warning">
@@ -142,6 +168,12 @@ a:hover {
   /* backdrop-filter: blur(6px); */
   -webkit-backdrop-filter: opacity(0.7);
   backdrop-filter: opacity(0.7);
+}
+
+.box-round {
+  width: 120px;
+  height: 120px;
+  box-shadow: inset 0 0 1rem 0rem #0000000f;
 }
 
 .evernote {
