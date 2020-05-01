@@ -78,7 +78,7 @@
           <th scope="col" class="text-center">Вид работы</th>
           <th scope="col" class="text-center" width="90px">Стоим.</th>
           <th scope="col" class="text-center" width="90px">Колич.</th>
-          <th scope="col" class="text-center" width="100px">Включить</th>
+          <th scope="col" class="text-center" width="120px">Включить</th>
           <th scope="col" class="text-center" width="90px">Сумма</th>
         </tr>
       </thead>
@@ -94,10 +94,23 @@
         <tr>
           <th scope="row" class="text-center">2</th>
           <td>Jacob</td>
-          <td class="text-center">Thornton</td>
-          <td class="text-center">@fat</td>
-          <td class="text-center">Otto</td>
-          <td class="text-center">@mdo</td>
+          <td class="text-center">40</td>
+          <td class="text-center">
+            <input type="number" min="1" max="99" step="1" class="form-control form-control-sm" placeholder="1" v-model="count" @change="podkluch=40*count" />
+          </td>
+          <td class="text-center">
+            <div role="group" class="btn-group btn-group-sm">
+              <button type="button" class="btn btn-light active btn-light" @click="podkluch=0">Нет</button>
+              <button type="button" class="btn btn-light" @click="addSum(podkluch)">Да_&nbsp;</button>
+            </div>
+          </td>
+          <td class="text-center">{{podkluch}}</td>
+        </tr>
+        <tr>
+          <td colspan="5" class="text-right">
+            <strong>Итого:</strong>
+          </td>
+          <td class="text-center">{{itogSum}}</td>
         </tr>
       </tbody>
     </table>
@@ -113,9 +126,20 @@ export default {
     vueHeadful
   },
   data() {
-    return {};
+    return {
+      count: 1,
+      podkluch: 40,
+      itogSum: 250
+    };
   },
-  methods: {}
+  methods: {
+    addSum(sum) {
+      this.itogSum += sum;
+    },
+    delSum(sum) {
+      this.itogSum -= sum;
+    }
+  }
 };
 </script>
 
