@@ -11,7 +11,7 @@
       <div class="row mt-4">
         <div class="col-4 text-center" data-toggle="tooltip" data-placement="bottom" data-original-title="Сохраняйте и делитесь заметками где угодно">
           <div class="rounded-circle m-auto d-flex box-round">
-            <img src="img/gtd/icons_gtd/evernote.png" width="56" height="56" alt="Evernote" class="mb-4 m-auto" />
+            <img src="img/gtd/icons_gtd/evernote_48.png" width="48" height="48" alt="Evernote" class="mb-4 m-auto" />
           </div>
           <a class="d-inline-block mt-3" href="https://evernote.com/intl/ru/" target="_blank">Evernote</a>
         </div>
