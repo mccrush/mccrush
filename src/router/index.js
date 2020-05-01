@@ -45,6 +45,11 @@ const routes = [
     component: Gtd
   },
   {
+    path: '/comp',
+    name: 'comp',
+    component: () => import('../pages/Comp.vue')
+  },
+  {
     path: '/adm/:razdel',
     name: 'admin',
     component: Admin,

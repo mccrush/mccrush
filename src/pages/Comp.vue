@@ -3,10 +3,10 @@
     <vueHeadful title="Ремонт компьютеров г. Славгород" description="Установка операционной системы, удаление вирусов, ускорение загрузки" />
     <div class="col-12">
       <h3>
-        Ремонт компьютеров
+        Компьютерная помощь
         <small>г.&nbsp;Славгород</small>
       </h3>
-      <p>Установка операционных системы, удаление вирусов, ускорение загрузки</p>
+      <p>Установка операционных систем, удаление вирусов, ускорение загрузки</p>
       <hr />
     </div>
     <div class="card-group mb-0 mb-sm-4 p-3">
@@ -63,12 +63,44 @@
         </div>
       </div>
     </div>
-    <div class="col-12 text-center">
+    <!-- <div class="col-12 text-center">
       <h4 class="mt-sm-3">
         <img src="/img/comp/whatsapp64.png" alt="WhatsApp" width="36" height="36" />
-        <span>+7 906 940 4069</span>
+        WhatsApp:
+        <span>8 906 940 4069</span>
       </h4>
-    </div>
+    </div>-->
+
+    <table class="table table-striped table-borderless table-sm mt-5">
+      <thead>
+        <tr>
+          <th scope="col" class="text-center" width="40px">#</th>
+          <th scope="col" class="text-center">Вид работы</th>
+          <th scope="col" class="text-center" width="90px">Стоим.</th>
+          <th scope="col" class="text-center" width="90px">Колич.</th>
+          <th scope="col" class="text-center" width="100px">Включить</th>
+          <th scope="col" class="text-center" width="90px">Сумма</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="text-center">1</th>
+          <td>Mark</td>
+          <td class="text-center">Otto</td>
+          <td class="text-center">@mdo</td>
+          <td class="text-center">Otto</td>
+          <td class="text-center">@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row" class="text-center">2</th>
+          <td>Jacob</td>
+          <td class="text-center">Thornton</td>
+          <td class="text-center">@fat</td>
+          <td class="text-center">Otto</td>
+          <td class="text-center">@mdo</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
