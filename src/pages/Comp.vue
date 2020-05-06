@@ -63,15 +63,15 @@
         </div>
       </div>
     </div>
-    <!-- <div class="col-12 text-center">
+    <div class="col-12 text-center">
       <h4 class="mt-sm-3">
         <img src="/img/comp/whatsapp64.png" alt="WhatsApp" width="36" height="36" />
         WhatsApp:
         <span>8 906 940 4069</span>
       </h4>
-    </div>-->
+    </div>
 
-    <table class="table table-striped table-borderless table-sm mt-5">
+    <!-- <table class="table table-striped table-borderless table-sm mt-5">
       <thead>
         <tr>
           <th scope="col" class="text-center" width="40px">#</th>
@@ -113,7 +113,7 @@
           <td class="text-center">{{itogSum}}</td>
         </tr>
       </tbody>
-    </table>
+    </table>-->
   </div>
 </template>
 
