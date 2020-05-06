@@ -11,10 +11,51 @@
       <div class="col-12 col-sm-6 mb-4">
         <div class="card shadow-sm">
           <div class="card-body">
+            <h5 class="card-title">Документация основы</h5>
+            <ul class="pl-4 mb-1">
+              <li>
+                <a href="http://htmlbook.ru/html" target="_blank" title="Открыть сайт">HTML</a>
+              </li>
+              <li>
+                <a href="http://htmlbook.ru/css" target="_blank" title="Открыть сайт">CSS</a>
+              </li>
+              <li>
+                <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript" target="_blank" title="Открыть сайт">JavaScript | MDN</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Документация технологии</h5>
+            <ul class="pl-4 mb-1">
+              <li>
+                <a href="https://getbootstrap.com/" target="_blank" title="Открыть сайт">Bootstrap</a>
+              </li>
+              <li>
+                <a href="https://vuejs.org/" target="_blank" title="Открыть сайт">Vue.js</a>
+              </li>
+              <li>
+                <a href="https://firebase.google.com/docs?hl=ru" target="_blank" title="Открыть сайт">Firebase</a>
+              </li>
+              <li>
+                <a href="https://codelabs.developers.google.com/codelabs/your-first-pwapp/?hl=ru#0" target="_blank" title="Открыть сайт">PWA (Progressive Web App)</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
             <h5 class="card-title">Онлайн учебники</h5>
             <ul class="pl-4 mb-1">
               <li>
-                <a href="https://learn.javascript.ru/" target="_blank" title="Открыть сайт">Учебник Javascript</a>
+                <a href="https://learn.javascript.ru/" target="_blank" title="Открыть сайт">Учебник JavaScript</a>
               </li>
               <li>
                 <a href="https://github.com/azat-io/you-dont-know-js-ru" target="_blank" title="Открыть сайт">"Вы не знаете JS"</a>
