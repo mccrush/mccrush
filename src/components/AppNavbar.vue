@@ -23,6 +23,7 @@
               &nbsp;
               <router-link :to="'/comp'" class="pl-2 pr-2">Ремонт</router-link>&nbsp;
             </li>
+            <!-- Конец Для компьютеров -->
             <!-- Для телефонов -->
             <li class="nav-item d-sm-none" v-for="item in menuArr" :key="'k-'+item.alias">
               <router-link :to="'/'+item.alias" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">&nbsp;{{item.title}}&nbsp;</router-link>
@@ -35,6 +36,7 @@
               &nbsp;
               <router-link :to="'/comp'" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">Ремонт</router-link>&nbsp;
             </li>
+            <!-- Конец Для телефонов -->
             <!-- Для системные всегда -->
             <li class="nav-item" v-if="this.$store.state.uid">
               &nbsp;
@@ -44,6 +46,7 @@
               &nbsp;
               <span class="text-muted spanout pl-1 pr-1" @click="logOut()">Выйти</span>&nbsp;
             </li>
+            <!-- Конец Для системные всегда -->
           </ul>
         </div>
         <a class="mr-0 d-none d-sm-block" href="https://github.com/mccrush/" target="_blank">
