@@ -35,7 +35,9 @@ export default {
 <style>
 #app {
   text-align: left;
-  color: #2c3e50;
+  /* color: #2c3e50; */
+  color: #55636f;
+  font-family: "Roboto", sans-serif;
   max-width: 800px;
 }
 
@@ -45,5 +47,17 @@ export default {
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
   opacity: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /*color: #000; */
+  color: #2c3e50;
+
+  font-family: "Montserrat", sans-serif;
 }
 </style>
