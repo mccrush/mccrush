@@ -104,7 +104,7 @@ export default {
 .nav-item a {
   color: #212529;
   margin-top: -20px;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
   transition: 0.5s;
 }
