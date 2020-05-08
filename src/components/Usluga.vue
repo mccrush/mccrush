@@ -1,9 +1,12 @@
 <template>
   <tr>
-    <th scope="row" class="text-center">{{index+1}}</th>
-    <td>{{usluga.title}}</td>
-    <td class="text-center">{{usluga.price}}</td>
-    <td class="text-center">
+    <th scope="row" class="text-center align-middle">{{index+1}}</th>
+    <td v-if="usluga.description" class="align-middle">
+      <span class="border-bot" data-toggle="tooltip" data-placement="bottom" :data-original-title="usluga.description">{{usluga.title}}</span>
+    </td>
+    <td v-if="!usluga.description" class="align-middle">{{usluga.title}}</td>
+    <td class="text-center align-middle">{{usluga.price}}</td>
+    <td class="text-center align-middle">
       <input type="number" min="0" max="99" step="1" class="form-control form-control-sm" placeholder="0" v-model="kolich" @change="changeSum" />
     </td>
     <!-- <td class="text-center">
@@ -12,11 +15,13 @@
         <button type="button" class="btn btn-light">Да</button>
       </div>
     </td>-->
-    <td class="text-center">{{totalSum}}</td>
+    <td class="text-center align-middle">{{totalSum}}</td>
   </tr>
 </template>
 
 <script>
+import $ from "jquery";
+
 export default {
   props: {
     index: {
@@ -36,6 +41,11 @@ export default {
       totalSum: this.index == 0 ? 250 : 0
     };
   },
+  created() {
+    $(function() {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  },
   methods: {
     changeSum() {
       this.totalSum = this.usluga.price * this.kolich;
@@ -44,3 +54,8 @@ export default {
   }
 };
 </script>
+<style  scoped>
+.border-bot {
+  border-bottom: 1px dotted #55636f70;
+}
+</style>

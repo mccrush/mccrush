@@ -4,7 +4,7 @@
     <div class="col-12">
       <h3>
         Компьютерная помощь
-        <small>г.&nbsp;Славгород</small>
+        <small class="text-muted">г.&nbsp;Славгород</small>
       </h3>
       <p>Установка операционных систем, удаление вирусов, ускорение загрузки</p>
       <hr />
@@ -70,7 +70,8 @@
       </h4>
     </div>
 
-    <table class="table table-striped table-borderless table-sm mt-5">
+    <h5 class="text-left mt-4">Расчет стоимости работ</h5>
+    <table class="table table-striped table-borderless table-sm mt-2">
       <thead>
         <tr>
           <th scope="col" class="text-center" width="40px">#</th>
@@ -87,7 +88,9 @@
           <td colspan="4" class="text-right">
             <strong>Итого:</strong>
           </td>
-          <td class="text-center">{{itogSum}}</td>
+          <td class="text-center text-white">
+            <span class="badge badge-success text-wrap p-1 pl-2 pr-2">{{itogSum}}</span>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -116,7 +119,6 @@ export default {
   methods: {
     changeItogSum(index, totalSum) {
       this.allSums[index] = totalSum;
-      console.log(this.allSums);
       this.itogSum = this.allSums.reduce((a, b) => a + b);
     }
   }
@@ -126,5 +128,8 @@ export default {
 <style scoped>
 .card-standart {
   z-index: 1;
+}
+.table {
+  cursor: default;
 }
 </style>
