@@ -65,8 +65,7 @@
     </div>
     <div class="col-12 text-center">
       <h4 class="mt-sm-3">
-        <img src="/img/comp/whatsapp64.png" alt="WhatsApp" width="36" height="36" />
-        WhatsApp:
+        <img src="/img/comp/whatsapp64.png" alt="WhatsApp" width="36" height="36" class="mr-2" />
         <span>8 906 940 4069</span>
       </h4>
     </div>
@@ -78,14 +77,14 @@
           <th scope="col" class="text-left">Вид работы</th>
           <th scope="col" class="text-center" width="80px">Стоим.</th>
           <th scope="col" class="text-center" width="70px">Колич.</th>
-          <th scope="col" class="text-center" width="90px">Включить</th>
+          <!-- <th scope="col" class="text-center" width="90px">Включить</th> -->
           <th scope="col" class="text-center" width="80px">Сумма</th>
         </tr>
       </thead>
       <tbody>
-        <Usluga v-for="(usluga, index) in uslugi" :key="index+'us'" :usluga="usluga" :index="index" />
+        <Usluga v-for="(usluga, index) in uslugi" :key="index+'us'" :usluga="usluga" :index="index" @totalSum="changeItogSum" />
         <tr>
-          <td colspan="5" class="text-right">
+          <td colspan="4" class="text-right">
             <strong>Итого:</strong>
           </td>
           <td class="text-center">{{itogSum}}</td>
@@ -96,6 +95,7 @@
 </template>
 
 <script>
+/* eslint-disable no-console */
 import vueHeadful from "vue-headful";
 import uslugi from "@/scripts/uslugi";
 import Usluga from "@/components/Usluga.vue";
@@ -108,10 +108,18 @@ export default {
   },
   data() {
     return {
-      uslugi: uslugi
+      uslugi: uslugi,
+      allSums: [250],
+      itogSum: 250
     };
   },
-  methods: {}
+  methods: {
+    changeItogSum(index, totalSum) {
+      this.allSums[index] = totalSum;
+      console.log(this.allSums);
+      this.itogSum = this.allSums.reduce((a, b) => a + b);
+    }
+  }
 };
 </script>
 
