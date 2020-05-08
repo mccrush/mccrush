@@ -71,7 +71,7 @@
       </h4>
     </div>
 
-    <!-- <table class="table table-striped table-borderless table-sm mt-5">
+    <table class="table table-striped table-borderless table-sm mt-5">
       <thead>
         <tr>
           <th scope="col" class="text-center" width="40px">#</th>
@@ -91,21 +91,7 @@
           <td class="text-center">Otto</td>
           <td class="text-center">@mdo</td>
         </tr>
-        <tr>
-          <th scope="row" class="text-center">2</th>
-          <td>Jacob</td>
-          <td class="text-center">40</td>
-          <td class="text-center">
-            <input type="number" min="1" max="99" step="1" class="form-control form-control-sm" placeholder="1" v-model="count" @change="podkluch=40*count" />
-          </td>
-          <td class="text-center">
-            <div role="group" class="btn-group btn-group-sm">
-              <button type="button" class="btn btn-light active btn-light" @click="podkluch=0">Нет</button>
-              <button type="button" class="btn btn-light" @click="addSum(podkluch)">Да_&nbsp;</button>
-            </div>
-          </td>
-          <td class="text-center">{{podkluch}}</td>
-        </tr>
+        <Usluga v-for="(usluga, index) in uslugi" :key="index+'us'" />
         <tr>
           <td colspan="5" class="text-right">
             <strong>Итого:</strong>
@@ -113,33 +99,27 @@
           <td class="text-center">{{itogSum}}</td>
         </tr>
       </tbody>
-    </table>-->
+    </table>
   </div>
 </template>
 
 <script>
 import vueHeadful from "vue-headful";
+import uslugi from "../scripts.";
+import Usluga from "@/components/Usluga.vue";
 
 export default {
   name: "comp",
   components: {
-    vueHeadful
+    vueHeadful,
+    Usluga
   },
   data() {
     return {
-      count: 1,
-      podkluch: 40,
-      itogSum: 250
+      uslugi: uslugi
     };
   },
-  methods: {
-    addSum(sum) {
-      this.itogSum += sum;
-    },
-    delSum(sum) {
-      this.itogSum -= sum;
-    }
-  }
+  methods: {}
 };
 </script>
 
