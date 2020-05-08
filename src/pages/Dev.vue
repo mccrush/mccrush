@@ -6,7 +6,7 @@
       <p>Ссылки на качественные материалы по веб-разработке. Данная информация бедет полезна не только веб-разработчикам, но и тем, кто желает расширить свой кругозор</p>
       <hr />
 
-      <div class="row pl-3 pr-3">
+      <div class="row">
         <div class="col-12 col-sm-6 mb-4">
           <div class="card shadow-sm red-border">
             <div class="card-body">
@@ -136,9 +136,9 @@
       <hr />
 
       <h5 class="mb-4">Редакторы для комфортного программирования</h5>
-      <div class="row mb-2">
+      <div class="row">
         <div class="col-12 col-sm-4">
-          <div class="card shadow">
+          <div class="card shadow mb-3 card-pop">
             <img src="/img/dev/vscode.jpg" class="card-img-top" alt="Visual Studio Code" />
             <div class="card-body">
               <h5 class="card-title">VS Code</h5>
@@ -148,7 +148,7 @@
           </div>
         </div>
         <div class="col-12 col-sm-4">
-          <div class="card shadow">
+          <div class="card shadow mb-3 card-pop">
             <img src="/img/dev/storm.jpg" class="card-img-top" alt="WebStorm" />
             <div class="card-body">
               <h5 class="card-title">WebStorm</h5>
@@ -158,7 +158,7 @@
           </div>
         </div>
         <div class="col-12 col-sm-4">
-          <div class="card shadow">
+          <div class="card shadow mb-3 card-pop">
             <img src="/img/dev/sublime.jpg" class="card-img-top" alt="Sublime Text 3" />
             <div class="card-body">
               <h5 class="card-title">Sublime Text</h5>
@@ -187,6 +187,7 @@ export default {
 .card {
   border: none;
 }
+
 .red-border {
   border-top: 3px solid #ea5455 /*rgba(224, 0, 0, 0.75)*/;
 }
@@ -203,5 +204,14 @@ li a {
 li a:hover {
   color: #0056b3;
   text-decoration: underline;
+}
+
+.card-pop {
+  transition: 0.3s;
+  top: 0px;
+}
+
+.card-pop:hover {
+  top: -5px;
 }
 </style>
