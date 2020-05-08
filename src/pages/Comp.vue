@@ -10,13 +10,15 @@
       <hr />
     </div>
     <div class="card-group mb-0 mb-sm-4 p-3">
-      <div class="card border-0 shadow card-base rounded-top">
+      <div class="card border-0 shadow card-base rounded-top card-pop">
         <div class="card-header bg-secondary border-0 rounded-top">
           <h5 class="text-white text-center m-0">Base</h5>
         </div>
         <div class="card-body text-center">
-          <h5 class="card-title">Установка Windows</h5>
-          <h5>7 или 10</h5>
+          <h5 class="card-title">
+            Установка Windows
+            <br />7 или 10
+          </h5>
           <h5>+</h5>
           <h5>Установка драйверов</h5>
           <p class="card-text">звук, видео, сеть</p>
@@ -26,7 +28,7 @@
         </div>
       </div>
 
-      <div class="card border-0 shadow mt-sm-4 card-standart ml-n1 mr-n1 rounded-top">
+      <div class="card border-0 shadow mt-sm-4 card-standart ml-n1 mr-n1 rounded-top card-pop">
         <div class="card-header bg-success border-0 rounded-top">
           <h5 class="text-white text-center m-0">Standart</h5>
         </div>
@@ -44,7 +46,7 @@
         </div>
       </div>
 
-      <div class="card border-0 shadow card-premium rounded-top">
+      <div class="card border-0 shadow card-premium rounded-top card-pop">
         <div class="card-header bg-warning border-0 rounded-top">
           <h5 class="text-white text-center m-0">Premium</h5>
         </div>
@@ -131,5 +133,15 @@ export default {
 }
 .table {
   cursor: default;
+}
+
+.card-pop {
+  cursor: default;
+  top: 0px;
+  transition: 0.3s;
+}
+
+.card-pop:hover {
+  top: -5px;
 }
 </style>
