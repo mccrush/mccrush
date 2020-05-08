@@ -75,23 +75,15 @@
       <thead>
         <tr>
           <th scope="col" class="text-center" width="40px">#</th>
-          <th scope="col" class="text-center">Вид работы</th>
-          <th scope="col" class="text-center" width="90px">Стоим.</th>
-          <th scope="col" class="text-center" width="90px">Колич.</th>
-          <th scope="col" class="text-center" width="120px">Включить</th>
-          <th scope="col" class="text-center" width="90px">Сумма</th>
+          <th scope="col" class="text-left">Вид работы</th>
+          <th scope="col" class="text-center" width="80px">Стоим.</th>
+          <th scope="col" class="text-center" width="70px">Колич.</th>
+          <th scope="col" class="text-center" width="90px">Включить</th>
+          <th scope="col" class="text-center" width="80px">Сумма</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row" class="text-center">1</th>
-          <td>Mark</td>
-          <td class="text-center">Otto</td>
-          <td class="text-center">@mdo</td>
-          <td class="text-center">Otto</td>
-          <td class="text-center">@mdo</td>
-        </tr>
-        <Usluga v-for="(usluga, index) in uslugi" :key="index+'us'" />
+        <Usluga v-for="(usluga, index) in uslugi" :key="index+'us'" :usluga="usluga" :index="index" />
         <tr>
           <td colspan="5" class="text-right">
             <strong>Итого:</strong>
@@ -105,7 +97,7 @@
 
 <script>
 import vueHeadful from "vue-headful";
-import uslugi from "../scripts.";
+import uslugi from "@/scripts/uslugi";
 import Usluga from "@/components/Usluga.vue";
 
 export default {
