@@ -139,7 +139,7 @@
       <div class="row">
         <div class="col-12 col-sm-4">
           <div class="card shadow mb-3 card-pop">
-            <img src="/img/dev/vscode.jpg" class="card-img-top" alt="Visual Studio Code" />
+            <img src="data:image/gif;base64,R0lGODlhHQAQAIAAAP///wAAACH5BAEAAAEALAAAAAAdABAAAAITjI+py+0Po5y02ouz3rz7D4ZhAQA7" data-src="/img/dev/vscode.jpg" class="lazy card-img-top" alt="Visual Studio Code" />
             <div class="card-body">
               <h5 class="card-title">VS Code</h5>
               <p class="card-text">Free. Built on open source. Runs everywhere</p>
@@ -149,7 +149,7 @@
         </div>
         <div class="col-12 col-sm-4">
           <div class="card shadow mb-3 card-pop">
-            <img src="/img/dev/storm.jpg" class="card-img-top" alt="WebStorm" />
+            <img src="data:image/gif;base64,R0lGODlhHQAQAIAAAP///wAAACH5BAEAAAEALAAAAAAdABAAAAITjI+py+0Po5y02ouz3rz7D4ZhAQA7" data-src="/img/dev/storm.jpg" class="lazy card-img-top" alt="WebStorm" />
             <div class="card-body">
               <h5 class="card-title">WebStorm</h5>
               <p class="card-text">The smartest JavaScript IDE</p>
@@ -159,7 +159,7 @@
         </div>
         <div class="col-12 col-sm-4">
           <div class="card shadow mb-3 card-pop">
-            <img src="/img/dev/sublime.jpg" class="card-img-top" alt="Sublime Text 3" />
+            <img src="data:image/gif;base64,R0lGODlhHQAQAIAAAP///wAAACH5BAEAAAEALAAAAAAdABAAAAITjI+py+0Po5y02ouz3rz7D4ZhAQA7" data-src="/img/dev/sublime.jpg" class="lazy card-img-top" alt="Sublime Text 3" />
             <div class="card-body">
               <h5 class="card-title">Sublime Text</h5>
               <p class="card-text">A sophisticated text editor for code, markup and prose</p>
@@ -174,11 +174,18 @@
 
 <script>
 import vueHeadful from "vue-headful";
+import LazyLoad from "vanilla-lazyload";
 
 export default {
   name: "dev",
   components: {
     vueHeadful
+  },
+  mounted() {
+    const lazyContent = new LazyLoad({
+      elements_selector: "img.lazy",
+      use_native: true // <-- there you go
+    });
   }
 };
 </script>
