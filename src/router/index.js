@@ -3,14 +3,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import { auth } from "@/main.js";
-import Index from '../views/Index.vue'
-import Admin from '../views/Admin.vue'
-import Gtd from '../pages/Gtd.vue'
-import Login from '../views/Login.vue'
-import NotFound from '../views/NotFound.vue'
-import Home from '../pages/Home.vue'
-import Dev from '../pages/Dev.vue'
-
 
 Vue.use(VueRouter)
 
@@ -18,12 +10,12 @@ const routes = [
   {
     path: '/404', // Первая, для перекрытия остальных
     name: '404',
-    component: NotFound
+    component: () => import('../views/NotFound.vue')
   },
   {
     path: '/home',
     name: 'home',
-    component: Home
+    component: () => import('../pages/Home.vue')
   },
   {
     path: '/',
@@ -32,17 +24,17 @@ const routes = [
   {
     path: '/login',
     name: 'login',
-    component: Login
+    component: () => import('../views/Login.vue')
   },
   {
     path: '/dev',
     name: 'dev',
-    component: Dev
+    component: () => import('../pages/Dev.vue')
   },
   {
     path: '/gtd',
     name: 'gtd',
-    component: Gtd
+    component: () => import('../pages/Gtd.vue')
   },
   {
     path: '/comp',
@@ -52,7 +44,7 @@ const routes = [
   {
     path: '/adm/:razdel',
     name: 'admin',
-    component: Admin,
+    component: () => import('../views/Admin.vue'),
     meta: {
       requiresAuth: true
     }
@@ -60,7 +52,7 @@ const routes = [
   {
     path: '/:alias',
     name: 'index',
-    component: Index
+    component: () => import('../views/Index.vue')
   },
 
   {
