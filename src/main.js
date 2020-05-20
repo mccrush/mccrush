@@ -1,21 +1,18 @@
 import Vue from 'vue'
 import App from './App.vue'
+import './registerServiceWorker'
 import router from './router'
 import store from './store'
-import './registerServiceWorker'
 
-import { apiKey } from '../apiKey'
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore"; // DB
 import "firebase/storage"; // File
 
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-let app = "";
-
+import { apiKey } from '../apiKey'
 const firebaseConfig = {
   apiKey: apiKey,
   authDomain: "mccrush-8de25.firebaseapp.com",
@@ -37,6 +34,8 @@ Vue.config.productionTip = true
 
 store.commit('getArr', 'page');
 store.commit('getArr', 'app');
+
+let app = "";
 
 firebase.auth().onAuthStateChanged(() => {
   if (!app) {

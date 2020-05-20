@@ -124,7 +124,7 @@
           <ul style="list-style: circle;">
             <li>Администрирование веб-сайтов;</li>
             <li>Создание и добавление компонентов / элементов (HTML, CSS, JavaScript);</li>
-            <li>Установка / настройка модулей CMS (WordPress, Joomla, OpenCart);</li>
+            <li>Установка / настройка модулей CMS (WordPress, Joomla, Moodle, OpenCart);</li>
             <li>Работа с базами данных (MySQL).</li>
           </ul>
         </div>
