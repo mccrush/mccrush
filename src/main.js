@@ -35,7 +35,7 @@ Vue.config.productionTip = true
 store.commit('getArr', 'page');
 store.commit('getArr', 'app');
 
-let app = "";
+let app
 
 firebase.auth().onAuthStateChanged(() => {
   if (!app) {
