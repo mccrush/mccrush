@@ -12,7 +12,7 @@ import "firebase/auth";
 import "firebase/firestore"; // DB
 import "firebase/storage"; // File
 
-import { apiKey } from '../apiKey'
+import apiKey from '../apiKey'
 const firebaseConfig = {
   apiKey: apiKey,
   authDomain: "mccrush-8de25.firebaseapp.com",
@@ -30,7 +30,7 @@ export const storage = firebase.storage();
 
 //export const storage = firebase.storage();
 
-Vue.config.productionTip = true
+Vue.config.productionTip = false
 
 store.commit('getArr', 'page');
 store.commit('getArr', 'app');

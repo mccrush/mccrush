@@ -51,13 +51,13 @@
                     title="Открыть сайт"
                   >Firebase</a>
                 </li>
-                <li>
+                <!-- <li>
                   <a
                     href="https://codelabs.developers.google.com/codelabs/your-first-pwapp/?hl=ru#0"
                     target="_blank"
                     title="Открыть сайт"
                   >PWA (Progressive Web App)</a>
-                </li>
+                </li>-->
               </ul>
             </div>
           </div>
@@ -80,7 +80,7 @@
                     href="https://github.com/azat-io/you-dont-know-js-ru"
                     target="_blank"
                     title="Открыть сайт"
-                  >"Вы не знаете JS"</a>
+                  >«Вы не знаете JS»</a>
                 </li>
               </ul>
             </div>
@@ -161,13 +161,13 @@
                     title="Открыть сайт"
                   >Sorax</a>
                 </li>
-                <li>
+                <!-- <li>
                   <a
                     href="https://www.youtube.com/user/iliakan/playlists"
                     target="_blank"
                     title="Открыть сайт"
                   >JavaScript.ru</a>
-                </li>
+                </li>-->
                 <li>
                   <a
                     href="https://www.youtube.com/user/agragregra/playlists"
@@ -191,24 +191,23 @@
         >16-bits.ru/myvideo/nettech/</a>
       </p>
 
-      <h5>Список YouTube каналов от Андрея Романова</h5>
+      <!-- <h5>Список YouTube каналов от Андрея Романова</h5>
       <p>
         Сайт: страница на
         <a href="https://github.com/andrew--r/channels" target="_blank">GitHub</a>
-      </p>
+      </p>-->
       <hr />
 
       <h5 class="mb-4">Редакторы для комфортного программирования</h5>
       <div class="row">
-        <div class="col-12 col-sm-4">
+        <div class="col-12 col-sm-6 col-md-4">
           <div class="card shadow mb-3 card-pop">
             <img
               src="data:image/gif;base64,R0lGODlhHQAQAIAAAP///wAAACH5BAEAAAEALAAAAAAdABAAAAITjI+py+0Po5y02ouz3rz7D4ZhAQA7"
               data-src="/img/dev/vscode.jpg"
               class="lazy card-img-top"
               alt="Visual Studio Code"
-              width="100%"
-              height="150"
+              height="134"
             />
             <div class="card-body">
               <h5 class="card-title">VS Code</h5>
@@ -221,15 +220,14 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-4">
+        <div class="col-12 col-sm-6 col-md-4">
           <div class="card shadow mb-3 card-pop">
             <img
               src="data:image/gif;base64,R0lGODlhHQAQAIAAAP///wAAACH5BAEAAAEALAAAAAAdABAAAAITjI+py+0Po5y02ouz3rz7D4ZhAQA7"
               data-src="/img/dev/storm.jpg"
               class="lazy card-img-top"
               alt="WebStorm"
-              width="100%"
-              height="150"
+              height="134"
             />
             <div class="card-body">
               <h5 class="card-title">WebStorm</h5>
@@ -242,15 +240,14 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-4">
+        <div class="col-12 col-sm-6 col-md-4 ml-sm-auto mr-sm-auto">
           <div class="card shadow mb-3 card-pop">
             <img
               src="data:image/gif;base64,R0lGODlhHQAQAIAAAP///wAAACH5BAEAAAEALAAAAAAdABAAAAITjI+py+0Po5y02ouz3rz7D4ZhAQA7"
               data-src="/img/dev/sublime.jpg"
               class="lazy card-img-top"
               alt="Sublime Text 3"
-              width="100%"
-              height="150"
+              height="134"
             />
             <div class="card-body">
               <h5 class="card-title">Sublime Text</h5>
@@ -316,5 +313,9 @@ li a:hover {
 
 .card-pop:hover {
   top: -5px;
+}
+
+img.card-img-top {
+  object-fit: cover;
 }
 </style>
