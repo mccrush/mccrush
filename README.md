@@ -1,29 +1,8 @@
 # mccrush
+Версия [2.4.6](https://github.com/mccrush/mccrush/releases)
 
-## Project setup
-```
-npm install
-```
+Ссылка: [mccrush.ru](https://mccrush.ru/)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Описание
+Личный веб-сайт
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
