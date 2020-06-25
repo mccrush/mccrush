@@ -13,7 +13,12 @@
         <span class="sr-only">Loading...</span>
       </div>
       <div v-if="this.$store.state.appArr[0]" class="card-deck">
-        <CardApp v-for="(item, index) in this.$store.state.appArr" :key="'card-'+item.alias" :item="item" :itemId="appId[index]" />
+        <CardApp
+          v-for="(item, index) in this.$store.state.appArr"
+          :key="'card-'+item.alias"
+          :item="item"
+          :itemId="appId[index]"
+        />
       </div>
     </div>
   </div>
@@ -22,12 +27,12 @@
 <script>
 /* eslint-disable no-unused-vars */
 // @ is an alias to /src
-import vueHeadful from "vue-headful";
-import $ from "jquery";
-import CardApp from "@/components/CardApp.vue";
+import vueHeadful from 'vue-headful'
+import $ from 'jquery'
+import CardApp from '@/components/CardApp.vue'
 
 export default {
-  name: "index",
+  name: 'index',
   components: {
     vueHeadful,
     CardApp
@@ -36,21 +41,21 @@ export default {
     return {
       pageObj: {},
       appId: this.$store.state.appId
-    };
+    }
   },
   created() {
-    this.getPageObg(this.$route.params.alias);
+    this.getPageObg(this.$route.params.alias)
     $(function() {
-      $('[data-toggle="tooltip"]').tooltip();
-    });
+      $('[data-toggle="tooltip"]').tooltip()
+    })
   },
   methods: {
     getPageObg(match) {
       this.pageObj =
-        this.$store.state.pageArr.find(item => item.alias == match) || null;
+        this.$store.state.pageArr.find(item => item.alias == match) || null
 
       if (this.pageObj == null) {
-        this.$router.replace("/404");
+        this.$router.replace('/404')
       }
       //console.log("this.pageObj:", this.pageObj);
     }
@@ -60,10 +65,10 @@ export default {
   },
   watch: {
     $route(to, from) {
-      this.getPageObg(to.params.alias);
+      this.getPageObg(to.params.alias)
     }
   }
-};
+}
 </script>
 <style>
 .content a {

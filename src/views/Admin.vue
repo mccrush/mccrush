@@ -30,8 +30,16 @@
       <AdminListRazdel :itogArr="itogArr" :idArr="idArr" />
     </div>
     <div class="col-10">
-      <AdminFormPage v-if="this.$route.params.razdel == 'page' && this.$route.query.alias" :itogArr="itogArr" :idArr="idArr" />
-      <AdminFormApp v-if=" this.$route.params.razdel == 'app' && this.$route.query.alias" :itogArr="itogArr" :idArr="idArr" />
+      <AdminFormPage
+        v-if="this.$route.params.razdel == 'page' && this.$route.query.alias"
+        :itogArr="itogArr"
+        :idArr="idArr"
+      />
+      <AdminFormApp
+        v-if=" this.$route.params.razdel == 'app' && this.$route.query.alias"
+        :itogArr="itogArr"
+        :idArr="idArr"
+      />
     </div>
 
     <!-- <img alt="Vue logo" src="../assets/logo.png" width="150"> -->
@@ -42,13 +50,13 @@
 <script>
 /* eslint-disable no-unused-vars */
 // @ is an alias to /src
-import { auth } from "@/main.js";
-import AdminListRazdel from "@/components/AdminListRazdel.vue";
-import AdminFormPage from "@/components/AdminFormPage.vue";
-import AdminFormApp from "@/components/AdminFormApp.vue";
+import { auth } from '@/main.js'
+import AdminListRazdel from '@/components/AdminListRazdel.vue'
+import AdminFormPage from '@/components/AdminFormPage.vue'
+import AdminFormApp from '@/components/AdminFormApp.vue'
 
 export default {
-  name: "admin",
+  name: 'admin',
   components: {
     AdminListRazdel,
     AdminFormPage,
@@ -62,11 +70,11 @@ export default {
       formObj: {},
       itogArr: [],
       idArr: []
-    };
+    }
   },
   created() {
     //console.log("authStatus:", this.authStatus);
-    this.getItogArr(this.$route.params.razdel);
+    this.getItogArr(this.$route.params.razdel)
   },
   methods: {
     // signIn() {
@@ -91,16 +99,16 @@ export default {
     // },
     getItogArr(arr) {
       this.itogArr =
-        arr == "page" ? this.$store.state.pageArr : this.$store.state.appArr;
+        arr == 'page' ? this.$store.state.pageArr : this.$store.state.appArr
       this.idArr =
-        arr == "page" ? this.$store.state.pageId : this.$store.state.appId;
+        arr == 'page' ? this.$store.state.pageId : this.$store.state.appId
     }
   },
   watch: {
     $route(to, from) {
-      this.getItogArr(to.params.razdel);
+      this.getItogArr(to.params.razdel)
     }
   },
   computed: {}
-};
+}
 </script>

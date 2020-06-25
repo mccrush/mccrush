@@ -1,12 +1,25 @@
 <template>
   <div class="row mt-3">
-    <vueHeadful title="Качественная разработка приложений" description="Современные сайты и веб-приложения (SPA, PWA*), с адаптивным дизайном и офлайн-доступом" />
+    <vueHeadful
+      title="Качественная разработка приложений"
+      description="Современные сайты и веб-приложения (SPA, PWA*), с адаптивным дизайном и офлайн-доступом"
+    />
     <div class="col-12">
       <h3>Качественная разработка приложений</h3>
       <p class="description">
         Современные сайты и веб-приложения (
-        <abbr data-original-title="Single-page application" class="initialism" data-toggle="tooltip" data-placement="bottom">SPA</abbr>,
-        <abbr data-original-title="Progressive Web Apps" class="initialism" data-toggle="tooltip" data-placement="bottom">PWA</abbr>), с адаптивным дизайном и офлайн-доступом
+        <abbr
+          data-original-title="Single-page application"
+          class="initialism"
+          data-toggle="tooltip"
+          data-placement="bottom"
+        >SPA</abbr>,
+        <abbr
+          data-original-title="Progressive Web Apps"
+          class="initialism"
+          data-toggle="tooltip"
+          data-placement="bottom"
+        >PWA</abbr>), с адаптивным дизайном и офлайн-доступом
       </p>
       <hr />
 
@@ -15,19 +28,43 @@
         <tbody>
           <tr>
             <td style="width: 26%; text-align: center; vertical-align: middle;">
-              <img src="img/stec/firebase.png" alt="Firebase" width="64" height="64" data-toggle="tooltip" data-placement="bottom" data-original-title="Firebase - это облачная СУБД, позволяющая разработчикам обрабатывать данные" />
+              <img
+                src="img/stec/firebase.png"
+                alt="Firebase"
+                width="64"
+                height="64"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                data-original-title="Firebase - это облачная СУБД, позволяющая разработчикам обрабатывать данные"
+              />
             </td>
             <td style="width: 12%; text-align: center; vertical-align: middle;">
               <img src="img/stec/arr_right_line.png" alt width="32" height="32" />
             </td>
             <td style="width: 25%; text-align: center; vertical-align: middle;">
-              <img src="img/stec/vuejs.png" alt="Vue.js" width="64" height="64" data-toggle="tooltip" data-placement="bottom" data-original-title="Vue.js - это прогрессивный фреймворк для создания пользовательских интерфейсов" />
+              <img
+                src="img/stec/vuejs.png"
+                alt="Vue.js"
+                width="64"
+                height="64"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                data-original-title="Vue.js - это прогрессивный фреймворк для создания пользовательских интерфейсов"
+              />
             </td>
             <td style="width: 12%; text-align: center; vertical-align: middle;">
               <img src="img/stec/arr_right_line.png" alt width="32" height="32" />
             </td>
             <td style="width: 25%; text-align: center; vertical-align: middle;">
-              <img src="img/stec/bootstrap3.png" alt="Bootstrap" width="64" height="64" data-toggle="tooltip" data-placement="bottom" data-original-title="Bootstrap - это HTML- и CSS-шаблоны оформления для типографики, веб-форм, и прочих компонентов веб-интерфейса" />
+              <img
+                src="img/stec/bootstrap3.png"
+                alt="Bootstrap"
+                width="64"
+                height="64"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                data-original-title="Bootstrap - это HTML- и CSS-шаблоны оформления для типографики, веб-форм, и прочих компонентов веб-интерфейса"
+              />
             </td>
           </tr>
           <tr>
@@ -49,7 +86,10 @@
       <div class="row m-0 d-none d-md-block">
         <div class="col-12">
           <div class="row row-tech-50">
-            <div class="col-12 box-tech shadow-sm rounded" style="border-top: 3px solid #3298F0;">PWA</div>
+            <div
+              class="col-12 box-tech shadow-sm rounded"
+              style="border-top: 3px solid #3298F0;"
+            >PWA</div>
           </div>
 
           <div class="row ml-0 mr-0 mt-2">
@@ -93,7 +133,10 @@
 
             <div class="col-12 col-md-4 p-0">
               <div class="row ml-2 row-tech-100">
-                <div class="col-12 box-tech shadow-sm rounded" style="border-top: 3px solid #9732F0;">Bootstrap</div>
+                <div
+                  class="col-12 box-tech shadow-sm rounded"
+                  style="border-top: 3px solid #9732F0;"
+                >Bootstrap</div>
               </div>
             </div>
           </div>
@@ -101,17 +144,26 @@
           <div class="row mt-2 ml-0 mr-0">
             <div class="col-8 p-0">
               <div class="row mr-1 row-tech-50">
-                <div class="col-12 box-tech shadow-sm rounded" style="border-top: 3px solid #ffd460;">JavaScript</div>
+                <div
+                  class="col-12 box-tech shadow-sm rounded"
+                  style="border-top: 3px solid #ffd460;"
+                >JavaScript</div>
               </div>
             </div>
             <div class="col-2 p-0">
               <div class="row m-0 ml-2 row-tech-50">
-                <div class="col-12 box-tech shadow-sm rounded" style="border-top: 3px solid #f07b3f;">HTML</div>
+                <div
+                  class="col-12 box-tech shadow-sm rounded"
+                  style="border-top: 3px solid #f07b3f;"
+                >HTML</div>
               </div>
             </div>
             <div class="col-2 p-0">
               <div class="row ml-3 row-tech-50">
-                <div class="col-12 box-tech shadow-sm rounded" style="border-top: 3px solid #3298F0;">CSS</div>
+                <div
+                  class="col-12 box-tech shadow-sm rounded"
+                  style="border-top: 3px solid #3298F0;"
+                >CSS</div>
               </div>
             </div>
           </div>
@@ -143,15 +195,24 @@
       <hr />
       <h5 class="mb-3 text-center">Разделы сайта</h5>
       <div class="row mr-0 ml-0">
-        <router-link class="col-12 col-sm-4 shadow-sm rounded box text-decoration-none text-center pt-4" to="/app">
+        <router-link
+          class="col-12 col-sm-4 shadow-sm rounded box text-decoration-none text-center pt-4"
+          to="/app"
+        >
           <img src="img/home/icons_box/app.png" width="56" height="56" alt="Приложения" />
           <p>Приложения</p>
         </router-link>
-        <router-link class="col-6 col-sm-4 shadow-sm rounded box text-decoration-none text-center pt-4" to="/gtd">
+        <router-link
+          class="col-6 col-sm-4 shadow-sm rounded box text-decoration-none text-center pt-4"
+          to="/gtd"
+        >
           <img src="img/home/icons_box/gtd.png" width="56" height="56" alt="GTD" />
           <p>GTD</p>
         </router-link>
-        <router-link class="col-6 col-sm-4 shadow-sm rounded box text-decoration-none text-center pt-4" to="/dev">
+        <router-link
+          class="col-6 col-sm-4 shadow-sm rounded box text-decoration-none text-center pt-4"
+          to="/dev"
+        >
           <img src="img/home/icons_box/dev.png" width="56" height="56" alt="Разработка" />
           <p>Разработка</p>
         </router-link>
@@ -166,25 +227,25 @@
 
 <script>
 /* eslint-disable no-unused-vars */
-import vueHeadful from "vue-headful";
-import $ from "jquery";
+import vueHeadful from 'vue-headful'
+import $ from 'jquery'
 
 export default {
-  name: "home",
+  name: 'home',
   components: {
     vueHeadful
   },
   data() {
-    return {};
+    return {}
   },
   created() {
     $(function() {
-      $('[data-toggle="tooltip"]').tooltip();
-    });
+      $('[data-toggle="tooltip"]').tooltip()
+    })
   },
   methods: {},
   watch: {}
-};
+}
 </script>
 <style scoped>
 .stec-text {

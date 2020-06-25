@@ -1,33 +1,83 @@
 <template>
   <div class="row mt-3">
-    <vueHeadful title="GTD" description="Данный раздел посвящен методикам организации повседневной деятельности, инструментам и способам поддержания своих дел в полном порядке" />
+    <vueHeadful
+      title="GTD"
+      description="Данный раздел посвящен методикам организации повседневной деятельности, инструментам и способам поддержания своих дел в полном порядке"
+    />
     <div class="col-12">
       <h3>GTD</h3>
-      <p class="description">Данный раздел посвящен методикам организации повседневной деятельности, инструментам и способам поддержания своих дел в полном порядке</p>
+      <p
+        class="description"
+      >Данный раздел посвящен методикам организации повседневной деятельности, инструментам и способам поддержания своих дел в полном порядке</p>
       <hr />
 
       <h5>Ссылки на полезные сервисы</h5>
 
       <div class="row mt-4">
-        <div class="col-4 text-center" data-toggle="tooltip" data-placement="bottom" data-original-title="Сохраняйте и делитесь заметками где угодно">
+        <div
+          class="col-4 text-center"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          data-original-title="Сохраняйте и делитесь заметками где угодно"
+        >
           <div class="rounded-circle m-auto d-flex box-round">
-            <img src="img/gtd/icons_gtd/evernote_48.png" width="48" height="48" alt="Evernote" class="mb-4 m-auto" />
+            <img
+              src="img/gtd/icons_gtd/evernote_48.png"
+              width="48"
+              height="48"
+              alt="Evernote"
+              class="mb-4 m-auto"
+            />
           </div>
-          <a class="d-inline-block mt-3" href="https://evernote.com/intl/ru/" target="_blank">Evernote</a>
+          <a
+            class="d-inline-block mt-3"
+            href="https://evernote.com/intl/ru/"
+            target="_blank"
+          >Evernote</a>
         </div>
 
-        <div class="col-4 text-center" data-toggle="tooltip" data-placement="bottom" data-original-title="Веб-приложение для управления проектами">
+        <div
+          class="col-4 text-center"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          data-original-title="Веб-приложение для управления проектами"
+        >
           <div class="rounded-circle m-auto d-flex box-round">
-            <img src="img/gtd/icons_gtd/trello.png" width="56" height="56" alt="Evernote" class="mb-4 m-auto" />
+            <img
+              src="img/gtd/icons_gtd/trello.png"
+              width="56"
+              height="56"
+              alt="Evernote"
+              class="mb-4 m-auto"
+            />
           </div>
-          <a class="d-inline-block mt-3" href="https://trello.com/mccrush/recommend" target="_blank">Trello</a>
+          <a
+            class="d-inline-block mt-3"
+            href="https://trello.com/mccrush/recommend"
+            target="_blank"
+          >Trello</a>
         </div>
 
-        <div class="col-4 text-center" data-toggle="tooltip" data-placement="bottom" data-original-title="Современный инструмент для визуализации процессов, алгоритмов и сложных систем">
+        <div
+          class="col-4 text-center"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          data-original-title="Современный инструмент для визуализации процессов, алгоритмов и сложных систем"
+        >
           <div class="rounded-circle m-auto d-flex box-round">
-            <img src="img/gtd/icons_gtd/flow.png" width="56" height="56" alt="Evernote" class="mb-4 m-auto" />
+            <img
+              src="img/gtd/icons_gtd/flow.png"
+              width="56"
+              height="56"
+              alt="Evernote"
+              class="mb-4 m-auto"
+            />
           </div>
-          <a class="d-inline-block mt-3" href="https://www.knowflow.io/about" target="_blank">Knowflow</a>
+          <a
+            class="d-inline-block mt-3"
+            href="https://www.knowflow.io/about"
+            target="_blank"
+          >Knowflow</a>
         </div>
       </div>
 
@@ -68,7 +118,13 @@
             <td width="35%">
               <strong>Дэвид Аллен</strong>
               <br />
-              <a class="mctbln" title="Как привести дела в порядок" href="http://www.ozon.ru/context/detail/id/138561487/?partner=mccrush" target="_blank" rel="noopener">Как привести дела в порядок</a>
+              <a
+                class="mctbln"
+                title="Как привести дела в порядок"
+                href="http://www.ozon.ru/context/detail/id/138561487/?partner=mccrush"
+                target="_blank"
+                rel="noopener"
+              >Как привести дела в порядок</a>
             </td>
             <td>Пожалуй, лучшая книга в своем роде. Автор подробно рассказывает об эффективных методах организации ежедневных задач.</td>
           </tr>
@@ -77,7 +133,13 @@
             <td width="35%">
               <strong>Стивен Кови</strong>
               <br />
-              <a class="mctbln" title="Семь навыков высокоэффективных людей" href="http://www.ozon.ru/context/detail/id/6974309/?partner=mccrush" target="_blank" rel="noopener">Семь навыков высокоэффективных людей</a>
+              <a
+                class="mctbln"
+                title="Семь навыков высокоэффективных людей"
+                href="http://www.ozon.ru/context/detail/id/6974309/?partner=mccrush"
+                target="_blank"
+                rel="noopener"
+              >Семь навыков высокоэффективных людей</a>
             </td>
             <td>Об этой книге, думаю, слышали многие. Такие простые, но такие эффективные рекомендации, которые помогут наладить свои дела в любых сферах деятельности.</td>
           </tr>
@@ -86,7 +148,13 @@
             <td width="35%">
               <strong>Элияху Голдратт</strong>
               <br />
-              <a class="mctbln" title="Цель. Процесс непрерывного совершенствования" href="http://www.ozon.ru/context/detail/id/26994615/?partner=mccrush" target="_blank" rel="noopener">Цель. Процесс непрерывного совершенствования</a>
+              <a
+                class="mctbln"
+                title="Цель. Процесс непрерывного совершенствования"
+                href="http://www.ozon.ru/context/detail/id/26994615/?partner=mccrush"
+                target="_blank"
+                rel="noopener"
+              >Цель. Процесс непрерывного совершенствования</a>
             </td>
             <td>Это классика. Понимание описанного метода действий, позволит любой процесс сделать максимально эффективным.</td>
           </tr>
@@ -95,7 +163,13 @@
             <td width="35%">
               <strong>Тимоти Феррис</strong>
               <br />
-              <a class="mctbln" title="Как работать по 4 часа в неделю и при этом не торчать в офисе" href="http://www.ozon.ru/context/detail/id/5474657/?partner=mccrush" target="_blank" rel="noopener">Как работать по 4 часа в неделю</a>
+              <a
+                class="mctbln"
+                title="Как работать по 4 часа в неделю и при этом не торчать в офисе"
+                href="http://www.ozon.ru/context/detail/id/5474657/?partner=mccrush"
+                target="_blank"
+                rel="noopener"
+              >Как работать по 4 часа в неделю</a>
             </td>
             <td>В данной книге описаны современные инструменты ведения дел. Мир не стоит на месте, появляются все новые и новые методы решения повседневных проблем. Читайте, и учитесь новому.</td>
           </tr>
@@ -107,25 +181,25 @@
 
 <script>
 /* eslint-disable no-unused-vars */
-import vueHeadful from "vue-headful";
-import $ from "jquery";
+import vueHeadful from 'vue-headful'
+import $ from 'jquery'
 
 export default {
-  name: "home",
+  name: 'home',
   components: {
     vueHeadful
   },
   data() {
-    return {};
+    return {}
   },
   created() {
     $(function() {
-      $('[data-toggle="tooltip"]').tooltip();
-    });
+      $('[data-toggle="tooltip"]').tooltip()
+    })
   },
   methods: {},
   watch: {}
-};
+}
 </script>
 <style scoped>
 .stec-text {

@@ -13,9 +13,9 @@
 
 <script>
 //import { db } from "@/main.js";
-import { auth } from "@/main.js";
-import AppNavbar from "@/components/AppNavbar.vue";
-import AppFoot from "@/components/AppFoot.vue";
+import { auth } from '@/main.js'
+import AppNavbar from '@/components/AppNavbar.vue'
+import AppFoot from '@/components/AppFoot.vue'
 
 export default {
   components: {
@@ -24,11 +24,11 @@ export default {
   },
   mounted() {
     if (auth.currentUser) {
-      this.$store.commit("setUser", auth.currentUser.uid);
+      this.$store.commit('setUser', auth.currentUser.uid)
       //this.uid = auth.currentUser.uid;
     }
   }
-};
+}
 </script>
 
 
@@ -37,7 +37,7 @@ export default {
   text-align: left;
   /* color: #2c3e50; */
   color: #55636f;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   max-width: 800px;
 }
 
@@ -58,6 +58,6 @@ h6 {
   /*color: #000; */
   color: #2c3e50;
 
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 </style>

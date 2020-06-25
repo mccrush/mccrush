@@ -1,6 +1,9 @@
 <template>
   <div class="row justify-content-center mt-3">
-    <vueHeadful title="Компьютерная помощь г. Славгород" description="Установка операционных систем, удаление вирусов, ускорение загрузки" />
+    <vueHeadful
+      title="Компьютерная помощь г. Славгород"
+      description="Установка операционных систем, удаление вирусов, ускорение загрузки"
+    />
     <div class="col-12">
       <h3>
         Компьютерная помощь
@@ -85,7 +88,13 @@
         </tr>
       </thead>
       <tbody>
-        <Usluga v-for="(usluga, index) in uslugi" :key="index+'us'" :usluga="usluga" :index="index" @totalSum="changeItogSum" />
+        <Usluga
+          v-for="(usluga, index) in uslugi"
+          :key="index+'us'"
+          :usluga="usluga"
+          :index="index"
+          @totalSum="changeItogSum"
+        />
         <tr>
           <td colspan="4" class="text-right">
             <strong>Итого:</strong>
@@ -101,12 +110,12 @@
 
 <script>
 /* eslint-disable no-console */
-import vueHeadful from "vue-headful";
-import uslugi from "@/scripts/uslugi";
-import Usluga from "@/components/Usluga.vue";
+import vueHeadful from 'vue-headful'
+import uslugi from '@/scripts/uslugi'
+import Usluga from '@/components/Usluga.vue'
 
 export default {
-  name: "comp",
+  name: 'comp',
   components: {
     vueHeadful,
     Usluga
@@ -116,15 +125,15 @@ export default {
       uslugi: uslugi,
       allSums: [250],
       itogSum: 250
-    };
+    }
   },
   methods: {
     changeItogSum(index, totalSum) {
-      this.allSums[index] = totalSum;
-      this.itogSum = this.allSums.reduce((a, b) => a + b);
+      this.allSums[index] = totalSum
+      this.itogSum = this.allSums.reduce((a, b) => a + b)
     }
   }
-};
+}
 </script>
 
 <style scoped>

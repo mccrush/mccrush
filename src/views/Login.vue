@@ -22,29 +22,29 @@
 </template>
 
 <script>
-import { auth } from "@/main.js";
+import { auth } from '@/main.js'
 
 export default {
-  name: "login",
+  name: 'login',
   data() {
     return {
-      email: "",
-      password: ""
-    };
+      email: '',
+      password: ''
+    }
   },
   methods: {
     login() {
       auth
         .signInWithEmailAndPassword(this.email, this.password)
         .then(user => {
-          this.$store.commit("setUser", user.user.uid);
-          this.$router.push("/adm/page");
+          this.$store.commit('setUser', user.user.uid)
+          this.$router.push('/adm/page')
         })
         .catch(function(error) {
-          var errorCode = error.code;
-          var errorMessage = error.message;
-          alert("Login: errors:", errorCode, "& ", errorMessage);
-        });
+          var errorCode = error.code
+          var errorMessage = error.message
+          alert('Login: errors:', errorCode, '& ', errorMessage)
+        })
     }
 
     // signin() {
@@ -61,5 +61,5 @@ export default {
     //     });
     // }
   }
-};
+}
 </script>
