@@ -36,11 +36,11 @@ const routes = [
     name: 'gtd',
     component: () => import('../pages/Gtd.vue')
   },
-  {
-    path: '/comp',
-    name: 'comp',
-    component: () => import('../pages/Comp.vue')
-  },
+  // {
+  //   path: '/comp',
+  //   name: 'comp',
+  //   component: () => import('../pages/Comp.vue')
+  // },
   {
     path: '/adm/:razdel',
     name: 'admin',

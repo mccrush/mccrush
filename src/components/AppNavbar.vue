@@ -6,7 +6,15 @@
           <img src="/img/logo.png" width="32" height="32" alt="Logo" />
         </router-link>
         <h4 class="d-sm-none m-0">mccrush.ru</h4>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -19,30 +27,45 @@
               &nbsp;
               <router-link :to="'/dev'" class="pl-2 pr-2">Разработка</router-link>&nbsp;
             </li>
-            <li class="nav-item d-none d-sm-inline">
+            <!-- <li class="nav-item d-none d-sm-inline">
               &nbsp;
               <router-link :to="'/comp'" class="pl-2 pr-2">Ремонт</router-link>&nbsp;
-            </li>
+            </li>-->
             <!-- Конец Для компьютеров -->
             <!-- Для телефонов -->
             <li class="nav-item d-sm-none" v-for="item in menuArr" :key="'k-'+item.alias">
-              <router-link :to="'/'+item.alias" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">&nbsp;{{item.title}}&nbsp;</router-link>
+              <router-link
+                :to="'/'+item.alias"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+              >&nbsp;{{item.title}}&nbsp;</router-link>
             </li>
             <li class="nav-item d-sm-none">
               &nbsp;
-              <router-link :to="'/dev'" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">Разработка</router-link>&nbsp;
+              <router-link
+                :to="'/dev'"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+              >Разработка</router-link>&nbsp;
             </li>
-            <li class="nav-item d-sm-none">
+            <!-- <li class="nav-item d-sm-none">
               &nbsp;
               <router-link :to="'/comp'" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">Ремонт</router-link>&nbsp;
-            </li>
+            </li>-->
             <!-- Конец Для телефонов -->
             <!-- Для системные всегда -->
             <li class="nav-item" v-if="this.$store.state.uid">
               &nbsp;
               <router-link :to="'/adm/page'" class="text-muted pl-1 pr-1">Панель</router-link>&nbsp;
             </li>
-            <li class="nav-item" v-if="this.$store.state.uid && (this.$route.path == '/adm/page' || this.$route.path == '/adm/app')">
+            <li
+              class="nav-item"
+              v-if="this.$store.state.uid && (this.$route.path == '/adm/page' || this.$route.path == '/adm/app')"
+            >
               &nbsp;
               <span class="text-muted spanout pl-1 pr-1" @click="logOut()">Выйти</span>&nbsp;
             </li>
@@ -50,7 +73,13 @@
           </ul>
         </div>
         <a class="mr-0 d-none d-sm-block" href="https://github.com/mccrush/" target="_blank">
-          <img src="/img/github_32.png" width="28" height="28" alt="Github/mccrush" title="Github/mccrush" />
+          <img
+            src="/img/github_32.png"
+            width="28"
+            height="28"
+            alt="Github/mccrush"
+            title="Github/mccrush"
+          />
         </a>
       </nav>
     </div>
@@ -62,7 +91,7 @@
 //import { auth } from "@/main.js";
 
 export default {
-  name: "navbar",
+  name: 'navbar',
   props: {
     //pageArr: Array
   },
@@ -70,12 +99,12 @@ export default {
     return {
       menuArr: []
       //authStatus: auth.currentUser
-    };
+    }
   },
   created() {
     this.menuArr = this.$store.state.pageArr.filter(function(item, i) {
-      return i > 0 && item.show;
-    });
+      return i > 0 && item.show
+    })
 
     // this.menuArr = this.pageArr.filter(function(item, i) {
     //   return i > 0;
@@ -92,11 +121,11 @@ export default {
   },
   methods: {
     logOut() {
-      this.$store.commit("logOut");
+      this.$store.commit('logOut')
     }
   },
   computed: {}
-};
+}
 </script>
 
 
