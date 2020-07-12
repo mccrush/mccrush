@@ -211,7 +211,7 @@
             />
             <div class="card-body">
               <h5 class="card-title">VS Code</h5>
-              <p class="card-text">Free. Built on open source. Runs everywhere</p>
+              <p class="card-text">Free. Open source. Runs everywhere</p>
               <a
                 href="https://code.visualstudio.com/"
                 class="btn btn-block btn-sm btn-primary stretched-link"
@@ -251,7 +251,7 @@
             />
             <div class="card-body">
               <h5 class="card-title">Sublime Text</h5>
-              <p class="card-text">A sophisticated text editor for code, markup and prose</p>
+              <p class="card-text">A sophisticated text editor for code</p>
               <a
                 href="https://www.sublimetext.com/"
                 class="btn btn-block btn-sm btn-primary stretched-link"

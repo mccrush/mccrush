@@ -69,15 +69,15 @@
           </tr>
           <tr>
             <td class="stec-text">
-              <strong>Firebase</strong>
+              <h6>Firebase</h6>
             </td>
             <td class="stec-text">&nbsp;</td>
             <td class="stec-text">
-              <strong>Vue.js</strong>
+              <h6>Vue.js</h6>
             </td>
             <td class="stec-text">&nbsp;</td>
             <td class="stec-text">
-              <strong>Bootstrap</strong>
+              <h6>Bootstrap</h6>
             </td>
           </tr>
         </tbody>
@@ -169,8 +169,8 @@
           </div>
         </div>
       </div>
-      <hr />
-      <h5 class="mb-3 text-center">Оказываем услуги</h5>
+      <!-- <hr /> -->
+      <h5 class="mt-5 mb-3 text-center">Оказываем услуги</h5>
       <div class="row">
         <div class="col-12">
           <ul style="list-style: circle;">
@@ -192,8 +192,8 @@
         </div>
       </div>
 
-      <hr />
-      <h5 class="mb-3 text-center">Разделы сайта</h5>
+      <!-- <hr /> -->
+      <h5 class="mt-5 mb-3 text-center">Разделы сайта</h5>
       <div class="row mr-0 ml-0">
         <router-link
           class="col-12 col-sm-4 shadow-sm rounded box text-decoration-none text-center pt-4"

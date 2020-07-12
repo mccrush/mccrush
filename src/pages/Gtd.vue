@@ -116,7 +116,7 @@
           <tr class="warning">
             <td align="center" width="5%">1</td>
             <td width="35%">
-              <strong>Дэвид Аллен</strong>
+              <h6 class="d-inline">Дэвид Аллен</h6>
               <br />
               <a
                 class="mctbln"
@@ -131,7 +131,7 @@
           <tr>
             <td align="center" width="5%">2</td>
             <td width="35%">
-              <strong>Стивен Кови</strong>
+              <h6 class="d-inline">Стивен Кови</h6>
               <br />
               <a
                 class="mctbln"
@@ -146,7 +146,7 @@
           <tr>
             <td align="center" width="5%">3</td>
             <td width="35%">
-              <strong>Элияху Голдратт</strong>
+              <h6 class="d-inline">Элияху Голдратт</h6>
               <br />
               <a
                 class="mctbln"
@@ -161,7 +161,7 @@
           <tr>
             <td align="center" width="5%">4</td>
             <td width="35%">
-              <strong>Тимоти Феррис</strong>
+              <h6 class="d-inline">Тимоти Феррис</h6>
               <br />
               <a
                 class="mctbln"
