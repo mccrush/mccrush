@@ -37,7 +37,9 @@ export default {
   text-align: left;
   /* color: #2c3e50; */
   color: #55636f;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   max-width: 800px;
 }
 
@@ -55,9 +57,8 @@ h3,
 h4,
 h5,
 h6 {
-  /*color: #000; */
   color: #2c3e50;
-
   font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 }
 </style>
