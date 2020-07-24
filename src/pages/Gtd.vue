@@ -78,70 +78,72 @@
       </div>
 
       <h5 class="mt-5">Список книг, которые помогут разобраться в делах</h5>
-      <table class="table table-bordered table-hover mt-3">
-        <tbody>
-          <tr class="warning">
-            <td align="center" width="5%">1</td>
-            <td width="35%">
-              <h6 class="d-inline">Дэвид Аллен</h6>
-              <br />
-              <a
-                class="mctbln"
-                title="Как привести дела в порядок"
-                href="http://www.ozon.ru/context/detail/id/138561487/?partner=mccrush"
-                target="_blank"
-                rel="noopener"
-              >Как привести дела в порядок</a>
-            </td>
-            <td>Пожалуй, лучшая книга в своем роде. Автор подробно рассказывает об эффективных методах организации ежедневных задач.</td>
-          </tr>
-          <tr>
-            <td align="center" width="5%">2</td>
-            <td width="35%">
-              <h6 class="d-inline">Стивен Кови</h6>
-              <br />
-              <a
-                class="mctbln"
-                title="Семь навыков высокоэффективных людей"
-                href="http://www.ozon.ru/context/detail/id/6974309/?partner=mccrush"
-                target="_blank"
-                rel="noopener"
-              >Семь навыков высокоэффективных людей</a>
-            </td>
-            <td>Об этой книге, думаю, слышали многие. Такие простые, но такие эффективные рекомендации, которые помогут наладить свои дела в любых сферах деятельности.</td>
-          </tr>
-          <tr>
-            <td align="center" width="5%">3</td>
-            <td width="35%">
-              <h6 class="d-inline">Элияху Голдратт</h6>
-              <br />
-              <a
-                class="mctbln"
-                title="Цель. Процесс непрерывного совершенствования"
-                href="http://www.ozon.ru/context/detail/id/26994615/?partner=mccrush"
-                target="_blank"
-                rel="noopener"
-              >Цель. Процесс непрерывного совершенствования</a>
-            </td>
-            <td>Это классика. Понимание описанного метода действий, позволит любой процесс сделать максимально эффективным.</td>
-          </tr>
-          <tr>
-            <td align="center" width="5%">4</td>
-            <td width="35%">
-              <h6 class="d-inline">Тимоти Феррис</h6>
-              <br />
-              <a
-                class="mctbln"
-                title="Как работать по 4 часа в неделю и при этом не торчать в офисе"
-                href="http://www.ozon.ru/context/detail/id/5474657/?partner=mccrush"
-                target="_blank"
-                rel="noopener"
-              >Как работать по 4 часа в неделю</a>
-            </td>
-            <td>В данной книге описаны современные инструменты ведения дел. Мир не стоит на месте, появляются все новые и новые методы решения повседневных проблем. Читайте, и учитесь новому.</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="overflow-auto">
+        <table class="table table-bordered table-hover mt-3">
+          <tbody>
+            <tr class="warning">
+              <td align="center" width="5%">1</td>
+              <td width="35%">
+                <h6 class="d-inline">Дэвид Аллен</h6>
+                <br />
+                <a
+                  class="mctbln"
+                  title="Как привести дела в порядок"
+                  href="http://www.ozon.ru/context/detail/id/138561487/?partner=mccrush"
+                  target="_blank"
+                  rel="noopener"
+                >Как привести дела в порядок</a>
+              </td>
+              <td>Пожалуй, лучшая книга в своем роде. Автор подробно рассказывает об эффективных методах организации ежедневных задач.</td>
+            </tr>
+            <tr>
+              <td align="center" width="5%">2</td>
+              <td width="35%">
+                <h6 class="d-inline">Стивен Кови</h6>
+                <br />
+                <a
+                  class="mctbln"
+                  title="Семь навыков высокоэффективных людей"
+                  href="http://www.ozon.ru/context/detail/id/6974309/?partner=mccrush"
+                  target="_blank"
+                  rel="noopener"
+                >Семь навыков высокоэф&shy;фективных людей</a>
+              </td>
+              <td>Об этой книге, думаю, слышали многие. Такие простые, но такие эффективные рекомендации, которые помогут наладить свои дела в любых сферах деятельности.</td>
+            </tr>
+            <tr>
+              <td align="center" width="5%">3</td>
+              <td width="35%">
+                <h6 class="d-inline">Элияху Голдратт</h6>
+                <br />
+                <a
+                  class="mctbln"
+                  title="Цель. Процесс непрерывного совершенствования"
+                  href="http://www.ozon.ru/context/detail/id/26994615/?partner=mccrush"
+                  target="_blank"
+                  rel="noopener"
+                >Цель. Процесс непрерывного совершенство&shy;вания</a>
+              </td>
+              <td>Это классика. Понимание описанного метода действий, позволит любой процесс сделать максимально эффективным.</td>
+            </tr>
+            <tr>
+              <td align="center" width="5%">4</td>
+              <td width="35%">
+                <h6 class="d-inline">Тимоти Феррис</h6>
+                <br />
+                <a
+                  class="mctbln"
+                  title="Как работать по 4 часа в неделю и при этом не торчать в офисе"
+                  href="http://www.ozon.ru/context/detail/id/5474657/?partner=mccrush"
+                  target="_blank"
+                  rel="noopener"
+                >Как работать по 4 часа в неделю</a>
+              </td>
+              <td>В данной книге описаны современные инструменты ведения дел. Мир не стоит на месте, появляются все новые и новые методы решения повседневных проблем. Читайте, и учитесь новому.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </template>
