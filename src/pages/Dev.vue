@@ -312,7 +312,7 @@ li a:hover {
 }
 
 .card-redact:hover {
-  top: -5px;
+  top: -4px;
 }
 
 img.card-img-top {

@@ -1,8 +1,8 @@
 <template>
   <nav class="navbar navbar-expand-sm navbar-light bg-white shadow-sm p-0 pt-2 pb-2 pb-sm-0">
     <div class="container-fluid">
-      <router-link class="navbar-brand pt-1 pt-sm-0 mr-2" to="/home">
-        <img src="/img/logo.png" width="32" height="32" alt="Logo" class="mb-1" />
+      <router-link class="navbar-brand mr-2" to="/home">
+        <img src="/img/logo.png" width="32" height="32" alt="Logo" class="mb-0 mb-sm-1" />
       </router-link>
       <h4 class="d-sm-none m-0">mccrush.ru</h4>
       <button
@@ -18,14 +18,14 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto mb-0">
-          <li class="nav-item">
-            <router-link to="/app" tag="a" class="nav-link mt-1">Приложения</router-link>
+          <li class="nav-item mt-1">
+            <router-link to="/app" tag="a" class="nav-link">Приложения</router-link>
           </li>
-          <li class="nav-item">
-            <router-link to="/dev" tag="a" class="nav-link mt-1">Разработка</router-link>
+          <li class="nav-item mt-1">
+            <router-link to="/dev" tag="a" class="nav-link">Разработка</router-link>
           </li>
-          <li class="nav-item">
-            <router-link to="/gtd" tag="a" class="nav-link mt-1">GTD</router-link>
+          <li class="nav-item mt-1">
+            <router-link to="/gtd" tag="a" class="nav-link">GTD</router-link>
           </li>
         </ul>
       </div>
@@ -36,6 +36,7 @@
           height="28"
           alt="Github/mccrush"
           title="Github/mccrush"
+          class="mb-1"
         />
       </a>
     </div>
@@ -46,8 +47,8 @@
 .nav-item a {
   color: #212529;
   text-decoration: none;
-  /* margin-top: -20px;
-  padding-bottom: 21px; */
+  /* margin-top: -20px;*/
+  padding-bottom: 13px;
   border-bottom: 3px solid rgba(0, 0, 0, 0);
   transition: 0.5s;
 }
@@ -60,6 +61,6 @@
 
 .nav-item a.router-link-exact-active {
   color: #212529;
-  border-bottom: 3px solid #ea5455 /*red*/;
+  border-bottom: 3px solid #ea5455;
 }
 </style>

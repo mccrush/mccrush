@@ -165,7 +165,7 @@ export default {
 }
 
 .card:hover {
-  top: -5px;
+  top: -4px;
 }
 
 img.card-img-top {

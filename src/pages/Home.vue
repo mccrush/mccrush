@@ -12,7 +12,7 @@
             <br />приложений
           </h6>
           <p class="description pt-2">
-            Современные сайты и веб-приложения (
+            Современные сайты&shy; и веб-приложения
             <abbr
               data-original-title="Single-page application"
               class="initialism"
@@ -22,7 +22,7 @@
               data-original-title="Progressive Web Apps"
               class="initialism"
               title="Progressive Web Applications"
-            >PWA</abbr>),
+            >PWA</abbr>,
             <br />с адаптивным дизайном и офлайн-доступом
           </p>
         </div>
@@ -31,19 +31,19 @@
 
       <div class="row text-center">
         <div class="col-12">
-          <h5 class="mt-4 mb-3">Предлагаем услуги</h5>
+          <h5 class="mt-4 mb-4">Предлагаем услуги</h5>
         </div>
         <div class="col-12 col-sm-6 col-md-4">
-          <h6
-            class="box-tech shadow-sm rounded p-3 m-0"
-            style="border-top: 3px solid #ea5455;"
-          >Разработка веб-сайтов и веб-приложений</h6>
+          <h6 class="box-tech shadow-sm rounded p-3 m-0" style="border-top: 3px solid #ea5455;">
+            Разработка веб-сайтов
+            <br />и веб-приложений
+          </h6>
         </div>
         <div class="col-12 col-sm-6 col-md-4 mt-3 mt-sm-0">
-          <h6
-            class="box-tech shadow-sm rounded p-3 m-0"
-            style="border-top: 3px solid #ea5455;"
-          >Администри&shy;рование веб-сайтов</h6>
+          <h6 class="box-tech shadow-sm rounded p-3 m-0" style="border-top: 3px solid #ea5455;">
+            Администри&shy;рование
+            <br />веб-сайтов
+          </h6>
 
           <!--<ul style="list-style: circle;">
             <li>Администрирование веб-сайтов;</li>
@@ -54,16 +54,16 @@
           </ul>-->
         </div>
         <div class="col-12 col-sm-6 col-md-4 mt-3 mt-md-0">
-          <h6
-            class="box-tech shadow-sm rounded p-3 m-0"
-            style="border-top: 3px solid #ea5455;"
-          >Поддержка веб-приложений</h6>
+          <h6 class="box-tech shadow-sm rounded p-3 m-0" style="border-top: 3px solid #ea5455;">
+            Поддержка
+            <br />веб-приложений
+          </h6>
         </div>
       </div>
 
       <div class="row text-center">
         <div class="col-12">
-          <h5 class="mt-5 mb-3">Стоимость услуг</h5>
+          <h5 class="mt-5 mb-4">Стоимость услуг</h5>
         </div>
         <div class="col-6">
           <h6 class="box-tech shadow-sm rounded p-3 m-0" style="border-top: 3px solid #ea5455;">
@@ -91,9 +91,7 @@
                     alt="Firebase"
                     width="64"
                     height="64"
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    data-original-title="Firebase - это облачная СУБД, позволяющая разработчикам обрабатывать данные"
+                    title="Firebase - это облачная СУБД, позволяющая разработчикам обрабатывать данные"
                   />
                 </td>
                 <td style="width: 12%; text-align: center; vertical-align: middle;">
@@ -105,9 +103,7 @@
                     alt="Vue.js"
                     width="64"
                     height="64"
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    data-original-title="Vue.js - это прогрессивный фреймворк для создания пользовательских интерфейсов"
+                    title="Vue.js - это прогрессивный фреймворк для создания пользовательских интерфейсов"
                   />
                 </td>
                 <td style="width: 12%; text-align: center; vertical-align: middle;">
@@ -115,13 +111,11 @@
                 </td>
                 <td style="width: 25%; text-align: center; vertical-align: middle;">
                   <img
-                    src="img/stec/bootstrap3.png"
+                    src="img/stec/bootstrap.png"
                     alt="Bootstrap"
                     width="64"
                     height="64"
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    data-original-title="Bootstrap - это HTML- и CSS-шаблоны оформления для типографики, веб-форм, и прочих компонентов веб-интерфейса"
+                    title="Bootstrap - это HTML- и CSS-шаблоны оформления для типографики, веб-форм, и прочих компонентов веб-интерфейса"
                   />
                 </td>
               </tr>
