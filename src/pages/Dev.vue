@@ -272,14 +272,14 @@ import LazyLoad from 'vanilla-lazyload'
 export default {
   name: 'dev',
   components: {
-    vueHeadful
+    vueHeadful,
   },
   mounted() {
     const lazyContent = new LazyLoad({
       elements_selector: 'img.lazy',
-      use_native: true // <-- there you go
+      use_native: true, // <-- there you go
     })
-  }
+  },
 }
 </script>
 
@@ -296,14 +296,21 @@ ul {
   list-style-type: circle;
 }
 
+a,
 li a {
   color: #0056b3;
   text-decoration: none;
 }
 
+a:hover,
 li a:hover {
   color: #0056b3;
   text-decoration: underline;
+}
+
+.card a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .card-pop {
