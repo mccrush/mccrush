@@ -4,7 +4,7 @@
       <span class="sr-only">Loading...</span>
     </div>
 
-    <AppNavbar v-if="this.$store.state.pageArr[0]" />
+    <Navbar v-if="this.$store.state.pageArr[0]" />
     <transition appear name="fade" mode="out-in">
       <router-view v-if="this.$store.state.pageArr[0]" />
     </transition>
@@ -15,12 +15,12 @@
 <script>
 //import { db } from "@/main.js";
 import { auth } from '@/main.js'
-import AppNavbar from '@/components/AppNavbar.vue'
+import Navbar from '@/components/Navbar.vue'
 import AppFoot from '@/components/AppFoot.vue'
 
 export default {
   components: {
-    AppNavbar,
+    Navbar,
     AppFoot,
   },
   mounted() {
