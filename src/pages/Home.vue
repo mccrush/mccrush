@@ -16,17 +16,66 @@
             <abbr
               data-original-title="Single-page application"
               class="initialism"
+              title="Single Page Application"
             >SPA</abbr>,
-            <abbr data-original-title="Progressive Web Apps" class="initialism">PWA</abbr>),
+            <abbr
+              data-original-title="Progressive Web Apps"
+              class="initialism"
+              title="Progressive Web Applications"
+            >PWA</abbr>),
             <br />с адаптивным дизайном и офлайн-доступом
           </p>
         </div>
       </div>
       <hr />
 
+      <div class="row text-center">
+        <div class="col-12">
+          <h5 class="mt-4 mb-3">Предлагаем услуги</h5>
+        </div>
+        <div class="col-6">
+          <h6
+            class="box-tech shadow-sm rounded p-3 m-0"
+            style="border-top: 3px solid #ea5455;"
+          >Администрирование веб-сайтов</h6>
+
+          <!--<ul style="list-style: circle;">
+            <li>Администрирование веб-сайтов;</li>
+            <li>Поддержка веб-приложений;</li>
+             <li>Создание и добавление компонентов / элементов (HTML, CSS, JavaScript);</li>
+            <li>Установка / настройка модулей CMS (WordPress, Joomla, Moodle, OpenCart);</li>
+            <li>Работа с базами данных (MySQL).</li>
+          </ul>-->
+        </div>
+        <div class="col-6">
+          <h6
+            class="box-tech shadow-sm rounded p-3 m-0"
+            style="border-top: 3px solid #ea5455;"
+          >Поддержка веб-приложений</h6>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-12">
+          <h5 class="mt-5 mb-3">Стоимость услуг</h5>
+        </div>
+        <div class="col-6">
+          <h6 class="box-tech shadow-sm rounded p-3 m-0" style="border-top: 3px solid #ea5455;">
+            На регулярной основе
+            <br />от 7500 р/месяц
+          </h6>
+        </div>
+        <div class="col-6">
+          <h6 class="box-tech shadow-sm rounded p-3 m-0" style="border-top: 3px solid #ea5455;">
+            Сдельная работа
+            <br />от 750 р/час
+          </h6>
+        </div>
+      </div>
+
       <div class="row">
         <div class="col-12">
-          <h5 class="mb-3 text-center">Стек технологий</h5>
+          <h5 class="mb-3 mt-5 text-center">Стек технологий</h5>
           <table class="table table-borderless table-sm" style="width: 100%;">
             <tbody>
               <tr>
@@ -90,7 +139,7 @@
 
       <div class="row">
         <div class="col-12">
-          <h5 class="mt-5 mb-3 text-center d-none d-md-block">Структура технологий</h5>
+          <h5 class="mt-4 mb-3 text-center d-none d-md-block">Структура технологий</h5>
           <div class="row m-0 d-none d-md-block">
             <div class="col-12">
               <div class="row row-tech-50">
@@ -183,29 +232,6 @@
       </div>
 
       <!-- <hr /> -->
-
-      <div class="row">
-        <div class="col-12">
-          <h5 class="mt-5 mb-3 text-center">Оказываем услуги</h5>
-          <ul style="list-style: circle;">
-            <li>Администрирование веб-сайтов;</li>
-            <li>Создание и добавление компонентов / элементов (HTML, CSS, JavaScript);</li>
-            <li>Установка / настройка модулей CMS (WordPress, Joomla, Moodle, OpenCart);</li>
-            <li>Работа с базами данных (MySQL).</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row mr-0 ml-0 mt-1 text-center">
-        <div class="col-6 shadow-sm p-2 box-uslugi1">
-          На регулярной основе
-          <br />от 7500 р/месяц
-        </div>
-        <div class="col-6 shadow-sm p-2 box-uslugi2">
-          Сдельная работа
-          <br />от 750 р/час
-        </div>
-      </div>
 
       <!-- <hr /> -->
       <div class="row">
