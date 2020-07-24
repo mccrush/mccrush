@@ -8,7 +8,7 @@
     <transition appear name="fade" mode="out-in">
       <router-view v-if="this.$store.state.pageArr[0]" />
     </transition>
-    <AppFoot />
+    <Footer />
   </div>
 </template>
 
@@ -16,12 +16,12 @@
 //import { db } from "@/main.js";
 import { auth } from '@/main.js'
 import Navbar from '@/components/Navbar.vue'
-import AppFoot from '@/components/AppFoot.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   components: {
     Navbar,
-    AppFoot,
+    Footer,
   },
   mounted() {
     if (auth.currentUser) {
