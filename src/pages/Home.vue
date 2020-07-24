@@ -5,22 +5,26 @@
       description="Современные сайты и веб-приложения (SPA, PWA*), с адаптивным дизайном и офлайн-доступом"
     />
     <div class="col-12">
-      <h3>Качественная разработка приложений</h3>
-      <p class="description">
-        Современные сайты и веб-приложения (
-        <abbr
-          data-original-title="Single-page application"
-          class="initialism"
-          data-toggle="tooltip"
-          data-placement="bottom"
-        >SPA</abbr>,
-        <abbr
-          data-original-title="Progressive Web Apps"
-          class="initialism"
-          data-toggle="tooltip"
-          data-placement="bottom"
-        >PWA</abbr>), с адаптивным дизайном и офлайн-доступом
-      </p>
+      <div class="row bg-danger">
+        <div class="col-12">
+          <h3>Качественная разработка приложений</h3>
+          <p class="description">
+            Современные сайты и веб-приложения (
+            <abbr
+              data-original-title="Single-page application"
+              class="initialism"
+              data-toggle="tooltip"
+              data-placement="bottom"
+            >SPA</abbr>,
+            <abbr
+              data-original-title="Progressive Web Apps"
+              class="initialism"
+              data-toggle="tooltip"
+              data-placement="bottom"
+            >PWA</abbr>), с адаптивным дизайном и офлайн-доступом
+          </p>
+        </div>
+      </div>
       <hr />
 
       <div class="row">
