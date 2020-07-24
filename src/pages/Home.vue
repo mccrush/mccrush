@@ -5,23 +5,20 @@
       description="Современные сайты и веб-приложения (SPA, PWA*), с адаптивным дизайном и офлайн-доступом"
     />
     <div class="col-12">
-      <div class="row bg-danger">
+      <div class="row text-center p-3">
         <div class="col-12">
-          <h3>Качественная разработка приложений</h3>
-          <p class="description">
+          <h6 class="display-6">
+            Качественная разработка
+            <br />приложений
+          </h6>
+          <p class="description pt-2">
             Современные сайты и веб-приложения (
             <abbr
               data-original-title="Single-page application"
               class="initialism"
-              data-toggle="tooltip"
-              data-placement="bottom"
             >SPA</abbr>,
-            <abbr
-              data-original-title="Progressive Web Apps"
-              class="initialism"
-              data-toggle="tooltip"
-              data-placement="bottom"
-            >PWA</abbr>), с адаптивным дизайном и офлайн-доступом
+            <abbr data-original-title="Progressive Web Apps" class="initialism">PWA</abbr>),
+            <br />с адаптивным дизайном и офлайн-доступом
           </p>
         </div>
       </div>
@@ -336,6 +333,11 @@ small {
   font-size: 0.75em;
 }
 
+.jimbo {
+  background-image: url(../assets/img/winners.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 /*
 Зеленый для Vue #3BA361
 Синий для CSS #3298F0

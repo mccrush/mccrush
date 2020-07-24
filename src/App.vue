@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="container-lg">
+  <div id="app" class="container-md">
     <div v-if="!this.$store.state.pageArr[0]" class="spinner-grow text-danger mt-3" role="status">
       <span class="sr-only">Loading...</span>
     </div>
@@ -39,7 +39,7 @@ export default {
   color: #55636f;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  max-width: 960px;
+  max-width: 880px;
 }
 
 .fade-enter-active,
