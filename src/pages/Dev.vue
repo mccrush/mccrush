@@ -190,12 +190,6 @@
           target="_blank"
         >16-bits.ru/myvideo/nettech/</a>
       </p>
-
-      <!-- <h5>Список YouTube каналов от Андрея Романова</h5>
-      <p>
-        Сайт: страница на
-        <a href="https://github.com/andrew--r/channels" target="_blank">GitHub</a>
-      </p>-->
       <hr />
 
       <h5 class="mb-4">Редакторы для комфортного программирования</h5>
