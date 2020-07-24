@@ -16,7 +16,7 @@
         <div class="col">
           <div class="card border-0 shadow h-100">
             <img
-              src="img/gtd/icons_gtd/evernote_48.png"
+              src="img/gtd/icons_gtd/evernote.jpg"
               height="134"
               alt="Evernote"
               class="card-img-top"
@@ -37,7 +37,7 @@
 
         <div class="col">
           <div class="card border-0 shadow h-100">
-            <img src="img/gtd/icons_gtd/trello.png" height="134" alt="Trello" class="card-img-top" />
+            <img src="img/gtd/icons_gtd/trello.jpg" height="134" alt="Trello" class="card-img-top" />
             <div class="card-body">
               <h6 class="card-title">Trello</h6>
               <p class="card-text small">Веб-приложение для управления проектами</p>
@@ -54,7 +54,12 @@
 
         <div class="col">
           <div class="card border-0 shadow h-100">
-            <img src="img/gtd/icons_gtd/flow.png" height="134" alt="Knowflow" class="card-img-top" />
+            <img
+              src="img/gtd/icons_gtd/knowflow.jpg"
+              height="134"
+              alt="Knowflow"
+              class="card-img-top"
+            />
             <div class="card-body">
               <h6 class="card-title">Knowflow</h6>
               <p
