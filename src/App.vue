@@ -1,25 +1,28 @@
 <template>
   <div id="app" class="container-md">
-    <div v-if="!this.$store.state.pageArr[0]" class="spinner-grow text-danger mt-3" role="status">
+    <!-- <div v-if="!this.$store.state.pageArr[0]" class="spinner-grow text-danger mt-3" role="status">
       <span class="sr-only">Loading...</span>
-    </div>
+    </div>-->
+    <Loader v-if="!this.$store.state.pageArr[0]" />
 
     <Navbar v-if="this.$store.state.pageArr[0]" />
     <transition appear name="fade" mode="out-in">
       <router-view v-if="this.$store.state.pageArr[0]" />
     </transition>
-    <Footer />
+    <Footer v-if="this.$store.state.pageArr[0]" />
   </div>
 </template>
 
 <script>
 //import { db } from "@/main.js";
 import { auth } from '@/main.js'
-import Navbar from '@/components/Navbar.vue'
-import Footer from '@/components/Footer.vue'
+import Loader from '@/components/Loader'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 export default {
   components: {
+    Loader,
     Navbar,
     Footer,
   },
