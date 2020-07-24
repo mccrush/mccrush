@@ -31,7 +31,7 @@
 
       <div class="row text-center">
         <div class="col-12">
-          <h5 class="mt-4 mb-4">Предлагаем услуги</h5>
+          <h5 class="mt-3 mb-4">Предлагаем услуги</h5>
         </div>
         <div class="col-12 col-sm-6 col-md-4">
           <h6 class="box-tech shadow-sm rounded p-3 m-0" style="border-top: 3px solid #ea5455;">
@@ -53,7 +53,7 @@
             <li>Работа с базами данных (MySQL).</li>
           </ul>-->
         </div>
-        <div class="col-12 col-sm-6 col-md-4 mt-3 mt-md-0">
+        <div class="col-12 col-md-4 mt-3 mt-md-0">
           <h6 class="box-tech shadow-sm rounded p-3 m-0" style="border-top: 3px solid #ea5455;">
             Поддержка
             <br />веб-приложений
@@ -234,7 +234,7 @@
       <!-- <hr /> -->
 
       <!-- <hr /> -->
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-12">
           <h5 class="mt-5 mb-3 text-center">Разделы сайта</h5>
           <div class="row mr-0 ml-0">
@@ -259,13 +259,9 @@
               <img src="img/home/icons_box/dev.png" width="56" height="56" alt="Разработка" />
               <p>Разработка</p>
             </router-link>
-            <!-- <router-link class="col-6 col-sm-3 shadow-sm rounded box text-decoration-none text-center pt-4" to="/comp">
-          <img src="img/home/icons_box/comp.png" width="56" height="56" alt="Ремонт" />
-          <p>Ремонт</p>
-            </router-link>-->
           </div>
         </div>
-      </div>
+      </div>-->
     </div>
   </div>
 </template>
