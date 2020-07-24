@@ -195,7 +195,7 @@
       <h5 class="mb-4">Редакторы для комфортного программирования</h5>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mb-3">
         <div class="col">
-          <div class="card shadow h-100">
+          <div class="card shadow h-100 card-redact">
             <img
               src="data:image/gif;base64,R0lGODlhHQAQAIAAAP///wAAACH5BAEAAAEALAAAAAAdABAAAAITjI+py+0Po5y02ouz3rz7D4ZhAQA7"
               data-src="/img/dev/vscode.jpg"
@@ -217,7 +217,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card shadow h-100">
+          <div class="card shadow h-100 card-redact">
             <img
               src="data:image/gif;base64,R0lGODlhHQAQAIAAAP///wAAACH5BAEAAAEALAAAAAAdABAAAAITjI+py+0Po5y02ouz3rz7D4ZhAQA7"
               data-src="/img/dev/storm.jpg"
@@ -239,7 +239,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card shadow h-100">
+          <div class="card shadow h-100 card-redact">
             <img
               src="data:image/gif;base64,R0lGODlhHQAQAIAAAP///wAAACH5BAEAAAEALAAAAAAdABAAAAITjI+py+0Po5y02ouz3rz7D4ZhAQA7"
               data-src="/img/dev/sublime.jpg"
@@ -306,12 +306,12 @@ li a:hover {
   text-decoration: underline;
 }
 
-.card {
+.card-redact {
   transition: 0.3s;
   top: 0px;
 }
 
-.card:hover {
+.card-redact:hover {
   top: -5px;
 }
 

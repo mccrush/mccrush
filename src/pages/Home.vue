@@ -5,7 +5,7 @@
       description="Современные сайты и веб-приложения (SPA, PWA*), с адаптивным дизайном и офлайн-доступом"
     />
     <div class="col-12">
-      <div class="row text-center p-3 pb-0">
+      <div class="row text-center p-5 jimbo">
         <div class="col-12">
           <h6 class="display-6">
             Качественная разработка
@@ -27,13 +27,19 @@
           </p>
         </div>
       </div>
-      <hr />
+      <!-- <hr /> -->
 
       <div class="row text-center">
         <div class="col-12">
           <h5 class="mt-4 mb-3">Предлагаем услуги</h5>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-sm-6 col-md-4">
+          <h6
+            class="box-tech shadow-sm rounded p-3 m-0"
+            style="border-top: 3px solid #ea5455;"
+          >Разработка веб-сайтов и веб-приложений</h6>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mt-3 mt-sm-0">
           <h6
             class="box-tech shadow-sm rounded p-3 m-0"
             style="border-top: 3px solid #ea5455;"
@@ -47,7 +53,7 @@
             <li>Работа с базами данных (MySQL).</li>
           </ul>-->
         </div>
-        <div class="col-6">
+        <div class="col-12 col-sm-6 col-md-4 mt-3 mt-md-0">
           <h6
             class="box-tech shadow-sm rounded p-3 m-0"
             style="border-top: 3px solid #ea5455;"
@@ -75,7 +81,7 @@
 
       <div class="row">
         <div class="col-12">
-          <h5 class="mb-3 mt-5 text-center">Стек технологий</h5>
+          <h5 class="mb-3 mt-5 text-center">Стек технологий разработки</h5>
           <table class="table table-borderless table-sm" style="width: 100%;">
             <tbody>
               <tr>
@@ -137,7 +143,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-12">
           <h5 class="mt-4 mb-3 text-center d-none d-md-block">Структура технологий</h5>
           <div class="row m-0 d-none d-md-block">
@@ -229,7 +235,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>-->
 
       <!-- <hr /> -->
 
@@ -360,9 +366,13 @@ small {
 }
 
 .jimbo {
-  background-image: url(../assets/img/winners.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
+  background: url(../assets/img/insert-backdrop.webp) no-repeat center center;
+  /* background-position: center center;
+  background-repeat: no-repeat; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 /*
 Зеленый для Vue #3BA361
