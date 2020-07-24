@@ -193,9 +193,9 @@
       <hr />
 
       <h5 class="mb-4">Редакторы для комфортного программирования</h5>
-      <div class="row">
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="card shadow mb-3 card-pop">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mb-3">
+        <div class="col">
+          <div class="card shadow h-100">
             <img
               src="data:image/gif;base64,R0lGODlhHQAQAIAAAP///wAAACH5BAEAAAEALAAAAAAdABAAAAITjI+py+0Po5y02ouz3rz7D4ZhAQA7"
               data-src="/img/dev/vscode.jpg"
@@ -205,7 +205,9 @@
             />
             <div class="card-body">
               <h5 class="card-title">VS Code</h5>
-              <p class="card-text">Free. Open source. Runs everywhere</p>
+              <p class="card-text small">Free. Open source. Runs everywhere</p>
+            </div>
+            <div class="card-footer pt-0 pb-3 bg-white border-0">
               <a
                 href="https://code.visualstudio.com/"
                 class="btn btn-block btn-sm btn-primary stretched-link"
@@ -214,8 +216,8 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="card shadow mb-3 card-pop">
+        <div class="col">
+          <div class="card shadow h-100">
             <img
               src="data:image/gif;base64,R0lGODlhHQAQAIAAAP///wAAACH5BAEAAAEALAAAAAAdABAAAAITjI+py+0Po5y02ouz3rz7D4ZhAQA7"
               data-src="/img/dev/storm.jpg"
@@ -225,7 +227,9 @@
             />
             <div class="card-body">
               <h5 class="card-title">WebStorm</h5>
-              <p class="card-text">The smartest JavaScript IDE</p>
+              <p class="card-text small">The smartest JavaScript IDE</p>
+            </div>
+            <div class="card-footer pt-0 pb-3 bg-white border-0">
               <a
                 href="https://www.jetbrains.com/webstorm/"
                 class="btn btn-block btn-sm btn-primary stretched-link"
@@ -234,8 +238,8 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 ml-sm-auto mr-sm-auto">
-          <div class="card shadow mb-3 card-pop">
+        <div class="col">
+          <div class="card shadow h-100">
             <img
               src="data:image/gif;base64,R0lGODlhHQAQAIAAAP///wAAACH5BAEAAAEALAAAAAAdABAAAAITjI+py+0Po5y02ouz3rz7D4ZhAQA7"
               data-src="/img/dev/sublime.jpg"
@@ -245,7 +249,9 @@
             />
             <div class="card-body">
               <h5 class="card-title">Sublime Text</h5>
-              <p class="card-text">A sophisticated text editor for code</p>
+              <p class="card-text small">A sophisticated text editor for code</p>
+            </div>
+            <div class="card-footer pt-0 pb-3 bg-white border-0">
               <a
                 href="https://www.sublimetext.com/"
                 class="btn btn-block btn-sm btn-primary stretched-link"
@@ -300,12 +306,12 @@ li a:hover {
   text-decoration: underline;
 }
 
-.card-pop {
+.card {
   transition: 0.3s;
   top: 0px;
 }
 
-.card-pop:hover {
+.card:hover {
   top: -5px;
 }
 
