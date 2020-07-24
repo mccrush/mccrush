@@ -12,7 +12,7 @@
       <hr />
 
       <h5 class="mb-3">Ссылки на полезные сервисы</h5>
-      <div class="row row-cols-1 row-cols-sm-3 g-4">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
         <div class="col">
           <div class="card border-0 shadow h-100">
             <img
