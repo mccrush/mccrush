@@ -25,15 +25,16 @@
             </li>
             <li class="nav-item d-none d-sm-inline">
               &nbsp;
-              <router-link :to="'/dev'" class="pl-2 pr-2">Разработка</router-link>&nbsp;
+              <router-link to="/dev" class="pl-2 pr-2">Разработка</router-link>&nbsp;
             </li>
             <!-- <li class="nav-item d-none d-sm-inline">
               &nbsp;
               <router-link :to="'/comp'" class="pl-2 pr-2">Ремонт</router-link>&nbsp;
             </li>-->
             <!-- Конец Для компьютеров -->
+
             <!-- Для телефонов -->
-            <li class="nav-item d-sm-none" v-for="item in menuArr" :key="'k-'+item.alias">
+            <!-- <li class="nav-item d-sm-none" v-for="item in menuArr" :key="'k-'+item.alias">
               <router-link
                 :to="'/'+item.alias"
                 data-toggle="collapse"
@@ -41,11 +42,31 @@
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false"
               >&nbsp;{{item.title}}&nbsp;</router-link>
+            </li>-->
+            <li class="nav-item d-sm-none">
+              &nbsp;
+              <router-link
+                to="/app"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+              >Приложения</router-link>&nbsp;
             </li>
             <li class="nav-item d-sm-none">
               &nbsp;
               <router-link
-                :to="'/dev'"
+                to="/gtd"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+              >GTD</router-link>&nbsp;
+            </li>
+            <li class="nav-item d-sm-none">
+              &nbsp;
+              <router-link
+                to="/dev"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent"

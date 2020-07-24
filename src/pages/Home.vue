@@ -5,7 +5,7 @@
       description="Современные сайты и веб-приложения (SPA, PWA*), с адаптивным дизайном и офлайн-доступом"
     />
     <div class="col-12">
-      <div class="row text-center p-4 pb-0">
+      <div class="row text-center p-3 pb-0">
         <div class="col-12">
           <h6 class="display-6">
             Качественная разработка
