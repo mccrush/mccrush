@@ -5,7 +5,7 @@
       description="Современные сайты и веб-приложения (SPA, PWA*), с адаптивным дизайном и офлайн-доступом"
     />
     <div class="col-12">
-      <div class="row text-center p-3">
+      <div class="row text-center p-4 pb-0">
         <div class="col-12">
           <h6 class="display-6">
             Качественная разработка
@@ -199,11 +199,11 @@
       <div class="row mr-0 ml-0 mt-1 text-center">
         <div class="col-6 shadow-sm p-2 box-uslugi1">
           На регулярной основе
-          <br />от 7000 р/месяц
+          <br />от 7500 р/месяц
         </div>
         <div class="col-6 shadow-sm p-2 box-uslugi2">
           Сдельная работа
-          <br />от 450 р/час
+          <br />от 750 р/час
         </div>
       </div>
 
