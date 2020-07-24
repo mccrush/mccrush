@@ -296,21 +296,14 @@ ul {
   list-style-type: circle;
 }
 
-a,
 li a {
   color: #0056b3;
   text-decoration: none;
 }
 
-a:hover,
 li a:hover {
   color: #0056b3;
   text-decoration: underline;
-}
-
-.card a {
-  color: #fff;
-  text-decoration: none;
 }
 
 .card-pop {
