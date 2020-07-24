@@ -1,7 +1,7 @@
 <template>
   <div class="row">
-    <div class="col pl-0 pr-0">
-      <nav class="navbar navbar-expand-sm navbar-light bg-white shadow-sm pt-3 pb-3">
+    <div class="col-12">
+      <nav class="navbar navbar-expand-sm navbar-light bg-white shadow-sm p-3">
         <router-link class="mr-1" to="/home">
           <img src="/img/logo.png" width="32" height="32" alt="Logo" />
         </router-link>
@@ -97,12 +97,12 @@ export default {
   },
   data() {
     return {
-      menuArr: []
+      menuArr: [],
       //authStatus: auth.currentUser
     }
   },
   created() {
-    this.menuArr = this.$store.state.pageArr.filter(function(item, i) {
+    this.menuArr = this.$store.state.pageArr.filter(function (item, i) {
       return i > 0 && item.show
     })
 
@@ -122,9 +122,9 @@ export default {
   methods: {
     logOut() {
       this.$store.commit('logOut')
-    }
+    },
   },
-  computed: {}
+  computed: {},
 }
 </script>
 
@@ -132,6 +132,7 @@ export default {
 <style scoped>
 .nav-item a {
   color: #212529;
+  text-decoration: none;
   margin-top: -20px;
   padding-bottom: 21px;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
@@ -161,6 +162,7 @@ export default {
     margin-top: -20px;
     padding-bottom: 18px;
     border-bottom: none;
+    text-decoration: none;
   }
 
   .nav-item a:hover {
