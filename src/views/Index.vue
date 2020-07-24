@@ -28,37 +28,37 @@
 /* eslint-disable no-unused-vars */
 // @ is an alias to /src
 import vueHeadful from 'vue-headful'
-import $ from 'jquery'
+// import $ from 'jquery'
 import CardApp from '@/components/CardApp.vue'
 
 export default {
   name: 'index',
   components: {
     vueHeadful,
-    CardApp
+    CardApp,
   },
   data() {
     return {
       pageObj: {},
-      appId: this.$store.state.appId
+      appId: this.$store.state.appId,
     }
   },
   created() {
     this.getPageObg(this.$route.params.alias)
-    $(function() {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
+    // $(function() {
+    //   $('[data-toggle="tooltip"]').tooltip()
+    // })
   },
   methods: {
     getPageObg(match) {
       this.pageObj =
-        this.$store.state.pageArr.find(item => item.alias == match) || null
+        this.$store.state.pageArr.find((item) => item.alias == match) || null
 
       if (this.pageObj == null) {
         this.$router.replace('/404')
       }
       //console.log("this.pageObj:", this.pageObj);
-    }
+    },
     // getPageObg(match) {
     //   this.pageObj = this.pageArr.find(item => item.alias == match);
     // }
@@ -66,8 +66,8 @@ export default {
   watch: {
     $route(to, from) {
       this.getPageObg(to.params.alias)
-    }
-  }
+    },
+  },
 }
 </script>
 <style>

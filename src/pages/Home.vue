@@ -246,7 +246,7 @@
 <script>
 /* eslint-disable no-unused-vars */
 import vueHeadful from 'vue-headful'
-import $ from 'jquery'
+// import $ from 'jquery'
 
 export default {
   name: 'home',
@@ -257,9 +257,9 @@ export default {
     return {}
   },
   created() {
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
+    // $(function () {
+    //   $('[data-toggle="tooltip"]').tooltip()
+    // })
   },
   methods: {},
   watch: {},

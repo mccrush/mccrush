@@ -182,23 +182,23 @@
 <script>
 /* eslint-disable no-unused-vars */
 import vueHeadful from 'vue-headful'
-import $ from 'jquery'
+// import $ from 'jquery'
 
 export default {
   name: 'home',
   components: {
-    vueHeadful
+    vueHeadful,
   },
   data() {
     return {}
   },
   created() {
-    $(function() {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
+    // $(function() {
+    //   $('[data-toggle="tooltip"]').tooltip()
+    // })
   },
   methods: {},
-  watch: {}
+  watch: {},
 }
 </script>
 <style scoped>
