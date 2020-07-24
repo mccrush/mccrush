@@ -37,7 +37,7 @@
           <h6
             class="box-tech shadow-sm rounded p-3 m-0"
             style="border-top: 3px solid #ea5455;"
-          >Администрирование веб-сайтов</h6>
+          >Администри&shy;рование веб-сайтов</h6>
 
           <!--<ul style="list-style: circle;">
             <li>Администрирование веб-сайтов;</li>
