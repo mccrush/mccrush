@@ -327,6 +327,11 @@ export default {
   transition: 0.3s;
 }
 
+.small,
+small {
+  font-size: 0.75em;
+}
+
 /*
 Зеленый для Vue #3BA361
 Синий для CSS #3298F0

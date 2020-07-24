@@ -1,5 +1,5 @@
 <template>
-  <div class="col-12 col-sm-6 pl-0 pr-0 mb-4">
+  <div class="col">
     <div class="card shadow-sm">
       <div class="card-body">
         <h5 class="card-title">{{item.title}}</h5>
@@ -56,7 +56,7 @@ export default {
   name: 'cardapp',
   props: {
     item: Object,
-    itemId: String
+    itemId: String,
   },
   computed: {
     dateFormat() {
@@ -67,7 +67,7 @@ export default {
         '.' +
         this.item.dateUpdate.slice(0, 4)
       )
-    }
+    },
   },
   methods: {
     countClick() {
@@ -75,11 +75,11 @@ export default {
       this.$store.commit('updateItem', {
         col: 'app',
         id: this.itemId,
-        item: { btnclick: this.item.btnclick }
+        item: { btnclick: this.item.btnclick },
       })
       return true
-    }
-  }
+    },
+  },
 }
 </script>
 <style scoped>

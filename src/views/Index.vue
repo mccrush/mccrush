@@ -12,7 +12,7 @@
       <div v-if="!this.$store.state.appArr[0]" class="spinner-grow text-danger mt-3" role="status">
         <span class="sr-only">Loading...</span>
       </div>
-      <div v-if="this.$store.state.appArr[0]" class="card-deck">
+      <div v-if="this.$store.state.appArr[0]" class="row row-cols-1 row-cols-sm-2 g-4">
         <CardApp
           v-for="(item, index) in this.$store.state.appArr"
           :key="'card-'+item.alias"
