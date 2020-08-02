@@ -79,6 +79,10 @@
         </div>
       </div>
 
+      <div class="row text-center">
+        <PriceCalc />
+      </div>
+
       <div class="row">
         <div class="col-12">
           <h5 class="mb-3 mt-5 text-center">Стек технологий разработки</h5>
@@ -269,12 +273,14 @@
 <script>
 /* eslint-disable no-unused-vars */
 import vueHeadful from 'vue-headful'
+import PriceCalc from '@/components/PriceCalc'
 // import $ from 'jquery'
 
 export default {
   name: 'home',
   components: {
     vueHeadful,
+    PriceCalc,
   },
   data() {
     return {}
