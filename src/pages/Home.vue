@@ -63,7 +63,7 @@
 
       <div class="row text-center">
         <div class="col-12">
-          <h5 class="mt-5 mb-4">Стоимость услуг</h5>
+          <h5 class="mt-5 mb-4">Стоимость услуг администрирования</h5>
         </div>
         <div class="col-6">
           <h6 class="box-tech shadow-sm rounded p-3 m-0" style="border-top: 3px solid #ea5455;">

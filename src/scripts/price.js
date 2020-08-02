@@ -10,7 +10,7 @@ export default [
     id: 2,
     title: 'Верстка 1 страницы',
     description: 'Кроме Лендинга',
-    price: 1200,
+    price: 0,
     select: false
   },
   {
