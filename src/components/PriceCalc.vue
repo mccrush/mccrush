@@ -35,6 +35,7 @@
             max="9"
             step="1"
             class="form-control form-control-sm d-inline w-25"
+            :class="{'border-danger': verstka === 2}"
             v-model.number="countPage"
             :disabled="verstka != 2"
           />
