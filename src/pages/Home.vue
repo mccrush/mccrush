@@ -62,6 +62,10 @@
       </div>
 
       <div class="row text-center">
+        <PriceCalc />
+      </div>
+
+      <div class="row text-center">
         <div class="col-12">
           <h5 class="mt-5 mb-4">Стоимость услуг администрирования</h5>
         </div>
@@ -77,10 +81,6 @@
             <br />от 750 р/час
           </h6>
         </div>
-      </div>
-
-      <div class="row text-center">
-        <PriceCalc />
       </div>
 
       <div class="row">
