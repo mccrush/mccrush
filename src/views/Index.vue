@@ -25,8 +25,6 @@
 </template>
 
 <script>
-/* eslint-disable no-unused-vars */
-// @ is an alias to /src
 import vueHeadful from 'vue-headful'
 // import $ from 'jquery'
 import CardApp from '@/components/CardApp.vue'
@@ -45,10 +43,8 @@ export default {
   },
   created() {
     this.getPageObg(this.$route.params.alias)
-    // $(function() {
-    //   $('[data-toggle="tooltip"]').tooltip()
-    // })
   },
+
   methods: {
     getPageObg(match) {
       this.pageObj =

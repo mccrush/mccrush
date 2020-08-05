@@ -193,7 +193,7 @@
       <hr />
 
       <h5 class="mb-4">Редакторы для комфортного программирования</h5>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mb-3">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mb-3" id="imgRow">
         <div class="col">
           <div class="card shadow h-100 card-redact">
             <img
@@ -278,6 +278,8 @@ export default {
     const lazyContent = new LazyLoad({
       elements_selector: 'img.lazy',
       use_native: true, // <-- there you go
+      threshold: 500,
+      container: document.getElementById('imgRow'),
     })
   },
 }
