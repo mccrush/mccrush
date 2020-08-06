@@ -5,18 +5,9 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/404', // Первая, для перекрытия остальных
-    name: '404',
-    component: () => import('../views/NotFound.vue')
-  },
-  {
-    path: '/index',
+    path: '/',
     name: 'index',
     component: () => import('../views/Index.vue')
-  },
-  {
-    path: '/',
-    redirect: '/index'
   },
   {
     path: '/dev',
@@ -35,13 +26,13 @@ const routes = [
   },
   {
     path: '*', // Для всех прочих кроме существующих
-    redirect: '/404'
+    name: '404',
+    component: () => import('../views/NotFound.vue')
   }
 ]
 
 const router = new VueRouter({
   mode: 'history',
-
   base: process.env.BASE_URL,
   routes
 })

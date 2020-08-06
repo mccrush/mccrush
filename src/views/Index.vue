@@ -145,7 +145,7 @@ import LazyLoad from 'vanilla-lazyload'
 import PriceCalc from '@/components/index/PriceCalc'
 
 export default {
-  name: 'home',
+  name: 'index',
   components: {
     vueHeadful,
     PriceCalc,

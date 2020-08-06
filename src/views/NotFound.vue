@@ -5,16 +5,14 @@
       <h3 class="text-center">Ошибка 404</h3>
       <p class="text-center">
         Вернуться на
-        <router-link to="/home">главную</router-link>
+        <router-link to="/">главную</router-link>
       </p>
     </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
-  name: 'NotFound'
+  name: 'NotFound',
 }
 </script>

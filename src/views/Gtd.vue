@@ -152,7 +152,7 @@
 import vueHeadful from 'vue-headful'
 
 export default {
-  name: 'home',
+  name: 'gtd',
   components: {
     vueHeadful,
   },

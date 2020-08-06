@@ -1,7 +1,5 @@
 <template>
   <div id="app" class="container-md">
-    <!-- <Loader /> -->
-
     <Navbar />
     <transition appear name="fade" mode="out-in">
       <router-view />
@@ -11,13 +9,12 @@
 </template>
 
 <script>
-//import Loader from '@/components/Loader'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 export default {
+  name: 'app',
   components: {
-    //Loader,
     Navbar,
     Footer,
   },
