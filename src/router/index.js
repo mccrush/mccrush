@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
@@ -12,13 +10,13 @@ const routes = [
     component: () => import('../views/NotFound.vue')
   },
   {
-    path: '/home',
-    name: 'home',
-    component: () => import('../views/Home.vue')
+    path: '/index',
+    name: 'index',
+    component: () => import('../views/Index.vue')
   },
   {
     path: '/',
-    redirect: '/home'
+    redirect: '/index'
   },
   {
     path: '/dev',

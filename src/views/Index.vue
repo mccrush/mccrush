@@ -44,14 +44,6 @@
             Администри&shy;рование
             <br />веб-сайтов
           </h6>
-
-          <!--<ul style="list-style: circle;">
-            <li>Администрирование веб-сайтов;</li>
-            <li>Поддержка веб-приложений;</li>
-             <li>Создание и добавление компонентов / элементов (HTML, CSS, JavaScript);</li>
-            <li>Установка / настройка модулей CMS (WordPress, Joomla, Moodle, OpenCart);</li>
-            <li>Работа с базами данных (MySQL).</li>
-          </ul>-->
         </div>
         <div class="col-12 col-md-4 mt-3 mt-md-0">
           <h6 class="box-tech shadow-sm rounded p-3 m-0" style="border-top: 3px solid #ea5455;">
@@ -148,11 +140,9 @@
 </template>
 
 <script>
-/* eslint-disable no-unused-vars */
 import vueHeadful from 'vue-headful'
 import LazyLoad from 'vanilla-lazyload'
-import PriceCalc from '@/components/PriceCalc'
-// import $ from 'jquery'
+import PriceCalc from '@/components/index/PriceCalc'
 
 export default {
   name: 'home',

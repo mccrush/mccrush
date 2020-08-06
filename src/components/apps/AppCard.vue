@@ -1,6 +1,6 @@
 <template>
   <div class="col">
-    <div class="card border-0 shadow-sm h-100">
+    <div class="card border-0 shadow h-100">
       <img :src="'img/apps/'+app.img" height="134" :alt="app.title" class="card-img-top" />
       <div class="card-body">
         <h6 class="card-title">{{app.title}}</h6>

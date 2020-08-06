@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-sm navbar-light bg-white shadow-sm p-0 pt-2 pb-2 pb-sm-0">
     <div class="container-fluid">
-      <router-link class="navbar-brand mr-2" to="/home">
+      <router-link class="navbar-brand mr-2" to="/">
         <img src="/img/logo.png" width="32" height="32" alt="Logo" class="mb-0 mb-sm-1" />
       </router-link>
       <h4 class="d-sm-none m-0">mccrush.ru</h4>
