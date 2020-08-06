@@ -1,6 +1,7 @@
 <template>
-  <footer class="row footer border-top mt-3 pt-3">
+  <footer class="row footer mt-3 pt-3">
     <div class="col-12 text-center">
+      <hr />
       <p>
         &copy; {{new Date().getFullYear()}} mccrush.ru&nbsp;&nbsp;
         <!-- <small>|</small>&nbsp;&nbsp; -->

@@ -19,7 +19,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto mb-0">
           <li class="nav-item mt-1">
-            <router-link to="/app" tag="a" class="nav-link">Приложения</router-link>
+            <router-link to="/apps" tag="a" class="nav-link">Приложения</router-link>
           </li>
           <li class="nav-item mt-1">
             <router-link to="/dev" tag="a" class="nav-link">Разработка</router-link>

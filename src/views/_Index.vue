@@ -1,6 +1,7 @@
 <template>
   <div class="row mt-3">
     <vueHeadful :title="pageObj.title" :description="pageObj.description" />
+
     <div v-if="this.pageObj !== null" class="col-12">
       <h3>{{pageObj.title}}</h3>
       <p class="description">{{pageObj.description}}</p>
