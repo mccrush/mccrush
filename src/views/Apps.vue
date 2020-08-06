@@ -3,7 +3,7 @@
     <vueHeadful title="Приложения" description="mccrush.ru - бесплатные, Open Source приложения" />
     <div class="col-12">
       <h3>Приложения</h3>
-      <p>Бесплатные, Open Source приложения</p>
+      <p>Бесплатные, open-source приложения</p>
       <hr />
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
         <AppCard v-for="app in apps" :key="'card-'+app.alias" :app="app" />
