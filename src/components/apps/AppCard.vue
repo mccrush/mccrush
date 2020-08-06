@@ -1,7 +1,7 @@
 <template>
   <div class="col">
     <div class="card border-0 shadow-sm h-100">
-      <img src="img/gtd/icons_gtd/evernote.jpg" height="134" :alt="app.title" class="card-img-top" />
+      <img :src="'img/apps/'+app.img" height="134" :alt="app.title" class="card-img-top" />
       <div class="card-body">
         <h6 class="card-title">{{app.title}}</h6>
         <span class="small">
@@ -9,6 +9,7 @@
             <strong>Тип:</strong>
             {{app.type}}
           </span>
+          <br />
           <span class="small d-inline-block">
             <strong>Версия:</strong>
             {{app.version}}
@@ -20,12 +21,12 @@
       </div>
       <div class="card-footer pt-0 pb-3 bg-white border-0">
         <a
-          class="btn btn-sm btn-block btn-danger"
+          class="btn btn-sm btn-block btn-danger rounded-pill"
           :href="app.link"
           target="_blank"
         >{{app['button-text']}}</a>
         <a
-          class="btn btn-sm btn-block btn-light"
+          class="btn btn-sm btn-block btn-light rounded-pill"
           :href="app.github"
           target="_blank"
         >Описание на GitHub</a>

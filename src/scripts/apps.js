@@ -10,7 +10,7 @@ export default [
     position: 1,
     'date-update': '21.03.2020',
     'button-text': 'Открыть',
-    img: ''
+    img: 'simpin.jpg'
   },
   {
     title: 'Часы Google Chrome ™',
@@ -23,7 +23,7 @@ export default [
     position: 2,
     'date-update': '18.09.2015',
     'button-text': 'Установить',
-    img: ''
+    img: 'clockgooglechrome.jpg'
   },
   {
     title: 'Тест Струпа',
@@ -36,7 +36,7 @@ export default [
     position: 3,
     'date-update': '06.06.2020',
     'button-text': 'Открыть',
-    img: ''
+    img: 'teststrup.jpg'
   },
   {
     title: 'PomoTime',
@@ -49,7 +49,7 @@ export default [
     position: 4,
     'date-update': '10.09.2018',
     'button-text': 'Скачать',
-    img: ''
+    img: 'pomotime.jpg'
   },
   {
     title: 'Игра Алфавит',
@@ -62,7 +62,7 @@ export default [
     position: 5,
     'date-update': '08.04.2019',
     'button-text': 'Открыть',
-    img: ''
+    img: 'alphabet.jpg'
   },
   {
     title: 'WelcomePage',
@@ -75,6 +75,6 @@ export default [
     position: 0,
     'date-update': '21.09.2018',
     'button-text': 'Установить',
-    img: ''
+    img: 'welcomePage.jpg'
   }
 ]
