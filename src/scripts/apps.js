@@ -75,6 +75,6 @@ export default [
     position: 0,
     'date-update': '21.09.2018',
     'button-text': 'Установить',
-    img: 'welcomePage.jpg'
+    img: 'welcomepage.jpg'
   }
 ]
