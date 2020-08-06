@@ -210,7 +210,7 @@
             <div class="card-footer pt-0 pb-3 bg-white border-0">
               <a
                 href="https://code.visualstudio.com/"
-                class="btn btn-block btn-sm btn-primary stretched-link"
+                class="btn btn-block btn-sm btn-danger stretched-link"
                 target="_blank"
               >Перейти</a>
             </div>
@@ -232,7 +232,7 @@
             <div class="card-footer pt-0 pb-3 bg-white border-0">
               <a
                 href="https://www.jetbrains.com/webstorm/"
-                class="btn btn-block btn-sm btn-primary stretched-link"
+                class="btn btn-block btn-sm btn-danger stretched-link"
                 target="_blank"
               >Перейти</a>
             </div>
@@ -254,7 +254,7 @@
             <div class="card-footer pt-0 pb-3 bg-white border-0">
               <a
                 href="https://www.sublimetext.com/"
-                class="btn btn-block btn-sm btn-primary stretched-link"
+                class="btn btn-block btn-sm btn-danger stretched-link"
                 target="_blank"
               >Перейти</a>
             </div>

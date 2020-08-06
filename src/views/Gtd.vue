@@ -27,7 +27,7 @@
             </div>
             <div class="card-footer pt-0 pb-3 bg-white border-0">
               <a
-                class="btn btn-sm btn-block btn-primary stretched-link"
+                class="btn btn-sm btn-block btn-danger stretched-link"
                 href="https://evernote.com/intl/ru/"
                 target="_blank"
               >Перейти</a>
@@ -44,7 +44,7 @@
             </div>
             <div class="card-footer pt-0 pb-3 bg-white border-0">
               <a
-                class="btn btn-sm btn-block btn-primary stretched-link"
+                class="btn btn-sm btn-block btn-danger stretched-link"
                 href="https://trello.com/mccrush/recommend"
                 target="_blank"
               >Перейти</a>
@@ -68,7 +68,7 @@
             </div>
             <div class="card-footer pt-0 pb-3 bg-white border-0">
               <a
-                class="btn btn-sm btn-block btn-primary stretched-link"
+                class="btn btn-sm btn-block btn-danger stretched-link"
                 href="https://www.knowflow.io/about"
                 target="_blank"
               >Перейти</a>

@@ -8,20 +8,23 @@
       <h3>Приложения</h3>
       <p>Некоторые из публичных работ. Полезные и не очень: приложения, сервисы и программы</p>
       <hr />
-      <CardApp v-for="item in apps" :key="'card-'+item.alias" :item="item" />
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <AppCard v-for="app in apps" :key="'card-'+app.alias" :app="app" />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import vueHeadful from 'vue-headful'
-import CardApp from '@/components/CardApp'
+import AppCard from '@/components/apps/AppCard'
 import apps from '@/scripts/apps'
 
 export default {
+  name: 'apps',
   components: {
     vueHeadful,
-    CardApp,
+    AppCard,
   },
   data() {
     return {
@@ -31,5 +34,5 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 </style>
