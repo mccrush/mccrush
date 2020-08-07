@@ -1,7 +1,16 @@
 <template>
   <div class="col">
     <div class="card border-0 shadow h-100">
-      <img :src="'img/apps/'+app.img" height="134" :alt="app.title" class="card-img-top" />
+      <div class="jimbo d-flex justify-content-center">
+        <img
+          :src="'img/apps_ocons/'+app.img"
+          width="96"
+          height="96"
+          :alt="app.title"
+          class="align-self-center"
+        />
+      </div>
+
       <div class="card-body">
         <h6 class="card-title">{{app.title}}</h6>
         <span class="small">
@@ -47,6 +56,17 @@ export default {
 </script>
 
 <style scoped>
+.jimbo {
+  height: 134px;
+  background: url(../../assets/img/insert-backdrop.webp) no-repeat center center;
+  /* background-position: center center;
+  background-repeat: no-repeat; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 img.card-img-top {
   object-fit: contain;
 }
