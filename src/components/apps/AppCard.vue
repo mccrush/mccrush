@@ -48,6 +48,6 @@ export default {
 
 <style scoped>
 img.card-img-top {
-  object-fit: cover;
+  object-fit: contain;
 }
 </style>
