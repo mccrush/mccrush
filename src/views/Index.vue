@@ -75,7 +75,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-12">
           <h5 class="mb-3 mt-5 text-center">Стек технологий разработки</h5>
           <table class="table table-borderless table-sm" style="width: 100%;" id="imgRow">
@@ -134,7 +134,7 @@
             </tbody>
           </table>
         </div>
-      </div>
+      </div>-->
     </div>
   </div>
 </template>
