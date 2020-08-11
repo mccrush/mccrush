@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     showEmail() {
-      this.email = 'mccrush2027@gmail.com'
+      this.email = 'mccrush@mail.ru'
     },
   },
 }
