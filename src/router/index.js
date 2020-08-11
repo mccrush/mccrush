@@ -9,11 +9,11 @@ const routes = [
     name: 'index',
     component: () => import('../views/Index.vue')
   },
-  {
-    path: '/dev',
-    name: 'dev',
-    component: () => import('../views/Dev.vue')
-  },
+  // {
+  //   path: '/dev',
+  //   name: 'dev',
+  //   component: () => import('../views/Dev.vue')
+  // },
   {
     path: '/apps',
     name: 'apps',

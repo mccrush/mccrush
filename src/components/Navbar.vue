@@ -21,9 +21,9 @@
           <li class="nav-item mt-1">
             <router-link to="/apps" tag="a" class="nav-link">Приложения</router-link>
           </li>
-          <li class="nav-item mt-1">
+          <!-- <li class="nav-item mt-1">
             <router-link to="/dev" tag="a" class="nav-link">Разработка</router-link>
-          </li>
+          </li>-->
           <li class="nav-item mt-1">
             <router-link to="/gtd" tag="a" class="nav-link">GTD</router-link>
           </li>
