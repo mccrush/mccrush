@@ -141,7 +141,7 @@
 
 <script>
 import vueHeadful from 'vue-headful'
-import LazyLoad from 'vanilla-lazyload'
+//import LazyLoad from 'vanilla-lazyload'
 import PriceCalc from '@/components/index/PriceCalc'
 
 export default {
@@ -150,14 +150,14 @@ export default {
     vueHeadful,
     PriceCalc,
   },
-  mounted() {
-    const lazyContent = new LazyLoad({
-      elements_selector: 'img.lazy',
-      use_native: true, // <-- there you go
-      threshold: 150,
-      container: document.getElementById('imgRow'),
-    })
-  },
+  // mounted() {
+  //   const lazyContent = new LazyLoad({
+  //     elements_selector: 'img.lazy',
+  //     use_native: true, // <-- there you go
+  //     threshold: 150,
+  //     container: document.getElementById('imgRow'),
+  //   })
+  // },
 }
 </script>
 <style scoped>
