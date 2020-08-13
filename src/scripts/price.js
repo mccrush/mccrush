@@ -43,7 +43,7 @@ export default [
   },
   {
     id: 7,
-    title: 'Лендинг пейдж',
+    title: 'Landing page',
     description: 'Посадочная страница',
     price: 5000,
     select: false
