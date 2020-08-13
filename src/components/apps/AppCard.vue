@@ -1,7 +1,7 @@
 <template>
   <div class="col">
-    <div class="card border-0 shadow h-100">
-      <div class="jimbo d-flex justify-content-center">
+    <div class="card border-0 shadow-sm h-100">
+      <div class="jimbo d-flex justify-content-center bg-light">
         <img
           :src="'img/apps_ocons/'+app.img"
           width="96"
@@ -58,7 +58,7 @@ export default {
 <style scoped>
 .jimbo {
   height: 134px;
-  background: url(../../assets/img/insert-backdrop.webp) no-repeat center center;
+  /* background: url(../../assets/img/insert-backdrop.webp) no-repeat center center; */
   /* background-position: center center;
   background-repeat: no-repeat; */
   -webkit-background-size: cover;
