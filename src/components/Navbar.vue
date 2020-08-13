@@ -6,7 +6,7 @@
       </router-link>
       <!-- <h4 class="d-sm-none m-0">mccrush.ru</h4> -->
       <span class="d-sm-none m-0 pt-1">
-        <strong>8 906 940 4069</strong>
+        <strong>+7 906 940 4069</strong>
       </span>
       <button
         class="navbar-toggler"
@@ -34,7 +34,7 @@
       </div>
       <div class="d-none d-sm-flex justify-content-between">
         <div class="phone d-none d-sm-block pt-1">
-          <strong>8 906 940 4069</strong>
+          <strong>+7 906 940 4069</strong>
         </div>
 
         <a class="mr-0 d-none d-sm-block" href="https://github.com/mccrush/" target="_blank">
