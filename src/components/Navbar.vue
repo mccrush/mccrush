@@ -4,7 +4,10 @@
       <router-link class="navbar-brand mr-2" to="/">
         <img src="/img/logo.png" width="32" height="32" alt="Logo" class="mb-0 mb-sm-1" />
       </router-link>
-      <h4 class="d-sm-none m-0">mccrush.ru</h4>
+      <!-- <h4 class="d-sm-none m-0">mccrush.ru</h4> -->
+      <span class="d-sm-none m-0 pt-1">
+        <strong>8 906 940 4069</strong>
+      </span>
       <button
         class="navbar-toggler"
         type="button"
@@ -29,16 +32,22 @@
           </li>
         </ul>
       </div>
-      <a class="mr-0 d-none d-sm-block" href="https://github.com/mccrush/" target="_blank">
-        <img
-          src="/img/github_32.png"
-          width="28"
-          height="28"
-          alt="Github/mccrush"
-          title="Github/mccrush"
-          class="mb-1"
-        />
-      </a>
+      <div class="d-none d-sm-flex justify-content-between">
+        <div class="phone d-none d-sm-block pt-1">
+          <strong>8 906 940 4069</strong>
+        </div>
+
+        <a class="mr-0 d-none d-sm-block" href="https://github.com/mccrush/" target="_blank">
+          <img
+            src="/img/github_32.png"
+            width="28"
+            height="28"
+            alt="Github/mccrush"
+            title="Github/mccrush"
+            class="mb-1"
+          />
+        </a>
+      </div>
     </div>
   </nav>
 </template>
@@ -62,5 +71,9 @@
 .nav-item a.router-link-exact-active {
   color: #212529;
   border-bottom: 3px solid #ea5455;
+}
+
+.phone {
+  width: 150px;
 }
 </style>
