@@ -58,6 +58,7 @@ export default {
 <style scoped>
 .jimbo {
   height: 134px;
+  border-top: 2px solid #fff;
   /* background: url(../../assets/img/insert-backdrop.webp) no-repeat center center; */
   /* background-position: center center;
   background-repeat: no-repeat; */
