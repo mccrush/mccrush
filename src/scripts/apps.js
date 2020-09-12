@@ -40,19 +40,19 @@ export default [
     'button-text': 'Скачать',
     img: 'pomotime.png'
   },
-  {
-    title: 'Simpin',
-    alias: 'simpin',
-    description: `<p class="small">Simpin - это приложение для создания простых инструкций. Один шаг - одно простое действие</p>`,
-    type: 'веб-приложение',
-    version: '1.0.3',
-    github: 'https://github.com/mccrush/simpin',
-    link: 'https://simpin.ru/',
-    position: 4,
-    'date-update': '21.03.2020',
-    'button-text': 'Открыть',
-    img: 'simpin.png'
-  },
+  // {
+  //   title: 'Simpin',
+  //   alias: 'simpin',
+  //   description: `<p class="small">Simpin - это приложение для создания простых инструкций. Один шаг - одно простое действие</p>`,
+  //   type: 'веб-приложение',
+  //   version: '1.0.3',
+  //   github: 'https://github.com/mccrush/simpin',
+  //   link: 'https://simpin.ru/',
+  //   position: 4,
+  //   'date-update': '21.03.2020',
+  //   'button-text': 'Открыть',
+  //   img: 'simpin.png'
+  // },
   {
     title: 'Игра Алфавит',
     alias: 'alphabet',

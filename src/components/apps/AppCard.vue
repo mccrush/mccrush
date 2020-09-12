@@ -47,11 +47,7 @@
 <script>
 export default {
   name: 'app-card',
-  props: {
-    app: {
-      type: Object,
-    },
-  },
+  props: ['app'],
 }
 </script>
 
