@@ -17,13 +17,14 @@
               data-original-title="Single-page application"
               class="initialism"
               title="Single Page Application"
-            >SPA</abbr>,
+              >SPA</abbr
+            >,
             <abbr
               data-original-title="Progressive Web Apps"
               class="initialism"
               title="Progressive Web Applications"
-            >PWA</abbr>,
-            <br />с адаптивным дизайном и офлайн-доступом
+              >PWA</abbr
+            >, <br />с адаптивным дизайном и офлайн-доступом
           </p>
         </div>
       </div>
@@ -34,19 +35,28 @@
           <h5 class="mt-3 mb-4">Предлагаем услуги</h5>
         </div>
         <div class="col-12 col-sm-6 col-md-4">
-          <h6 class="box-tech shadow-sm rounded p-3 m-0" style="border-top: 3px solid #ea5455;">
+          <h6
+            class="box-tech shadow-sm rounded p-3 m-0"
+            style="border-top: 3px solid #ea5455"
+          >
             Разработка веб-сайтов
             <br />и веб-приложений
           </h6>
         </div>
         <div class="col-12 col-sm-6 col-md-4 mt-3 mt-sm-0">
-          <h6 class="box-tech shadow-sm rounded p-3 m-0" style="border-top: 3px solid #ea5455;">
+          <h6
+            class="box-tech shadow-sm rounded p-3 m-0"
+            style="border-top: 3px solid #ea5455"
+          >
             Администри&shy;рование
             <br />веб-сайтов
           </h6>
         </div>
         <div class="col-12 col-md-4 mt-3 mt-md-0">
-          <h6 class="box-tech shadow-sm rounded p-3 m-0" style="border-top: 3px solid #ea5455;">
+          <h6
+            class="box-tech shadow-sm rounded p-3 m-0"
+            style="border-top: 3px solid #ea5455"
+          >
             Поддержка
             <br />веб-приложений
           </h6>
@@ -59,16 +69,24 @@
 
       <div class="row text-center">
         <div class="col-12">
-          <h5 class="mt-5 mb-4">Стоимость услуг администрирования</h5>
+          <h5 class="mt-5 mb-4">
+            Стоимость услуг администрирования и поддержки
+          </h5>
         </div>
         <div class="col-6">
-          <h6 class="box-tech shadow-sm rounded p-3 m-0" style="border-top: 3px solid #ea5455;">
+          <h6
+            class="box-tech shadow-sm rounded p-3 m-0"
+            style="border-top: 3px solid #ea5455"
+          >
             На регулярной основе
             <br />от 7500 р/месяц
           </h6>
         </div>
         <div class="col-6">
-          <h6 class="box-tech shadow-sm rounded p-3 m-0" style="border-top: 3px solid #ea5455;">
+          <h6
+            class="box-tech shadow-sm rounded p-3 m-0"
+            style="border-top: 3px solid #ea5455"
+          >
             Сдельная работа
             <br />от 750 р/час
           </h6>
