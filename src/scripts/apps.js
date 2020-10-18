@@ -13,19 +13,19 @@ export default [
     'button-text': 'Установить',
     img: 'clockgooglechrome.png'
   },
-  {
-    title: 'Тест Струпа',
-    alias: 'teststrup',
-    description: `<p class="small">Тест Струпа развивает навыки восприятия</p>`,
-    type: 'веб-приложение',
-    version: '3.0.1',
-    github: 'https://github.com/mccrush/teststrup',
-    link: 'https://mccrush.github.io/teststrup/',
-    position: 2,
-    'date-update': '06.06.2020',
-    'button-text': 'Открыть',
-    img: 'teststrup.png'
-  },
+  // {
+  //   title: 'Тест Струпа',
+  //   alias: 'teststrup',
+  //   description: `<p class="small">Тест Струпа развивает навыки восприятия</p>`,
+  //   type: 'веб-приложение',
+  //   version: '3.0.1',
+  //   github: 'https://github.com/mccrush/teststrup',
+  //   link: 'https://mccrush.github.io/teststrup/',
+  //   position: 2,
+  //   'date-update': '06.06.2020',
+  //   'button-text': 'Открыть',
+  //   img: 'teststrup.png'
+  // },
 
   {
     title: 'PomoTime',
@@ -53,19 +53,19 @@ export default [
   //   'button-text': 'Открыть',
   //   img: 'simpin.png'
   // },
-  {
-    title: 'Игра Алфавит',
-    alias: 'alphabet',
-    description: `<p class="small">Данное приложение способствует развитию навыков восприятия, концентрации внимания`,
-    type: 'веб-приложение',
-    version: '2.1.1',
-    github: 'https://github.com/mccrush/alphabet',
-    link: 'https://mccrush.github.io/alphabet/',
-    position: 5,
-    'date-update': '08.04.2019',
-    'button-text': 'Открыть',
-    img: 'alphabet.png'
-  },
+  // {
+  //   title: 'Игра Алфавит',
+  //   alias: 'alphabet',
+  //   description: `<p class="small">Данное приложение способствует развитию навыков восприятия, концентрации внимания`,
+  //   type: 'веб-приложение',
+  //   version: '2.1.1',
+  //   github: 'https://github.com/mccrush/alphabet',
+  //   link: 'https://mccrush.github.io/alphabet/',
+  //   position: 5,
+  //   'date-update': '08.04.2019',
+  //   'button-text': 'Открыть',
+  //   img: 'alphabet.png'
+  // },
   {
     title: 'WelcomePage',
     alias: 'welcomepage',
