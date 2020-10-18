@@ -1,12 +1,26 @@
 <template>
-  <nav class="navbar navbar-expand-sm navbar-light bg-white shadow-sm p-0 pt-2 pb-2 pb-sm-0">
+  <nav
+    class="navbar navbar-expand-sm navbar-light bg-white shadow-sm p-0 pt-2 pb-2 pb-sm-0"
+  >
     <div class="container-fluid">
       <router-link class="navbar-brand mr-2" to="/">
-        <img src="/img/logo.png" width="32" height="32" alt="Logo" class="mb-0 mb-sm-1" />
+        <img
+          src="/img/logo.png"
+          width="32"
+          height="32"
+          alt="Logo"
+          class="mb-0 mb-sm-1"
+        />
       </router-link>
       <!-- <h4 class="d-sm-none m-0">mccrush.ru</h4> -->
       <span class="d-sm-none m-0 pt-1">
-        <img src="img/whatsapp.svg" width="24" height="24" class="pb-1" alt="whatsapp" />
+        <img
+          src="img/whatsapp.svg"
+          width="24"
+          height="24"
+          class="pb-1"
+          alt="whatsapp"
+        />
         <strong>+7 906 940 4069</strong>
       </span>
       <button
@@ -23,7 +37,9 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto mb-0">
           <li class="nav-item mt-1">
-            <router-link to="/apps" tag="a" class="nav-link">Приложения</router-link>
+            <router-link to="/apps" tag="a" class="nav-link"
+              >Приложения</router-link
+            >
           </li>
           <!-- <li class="nav-item mt-1">
             <router-link to="/dev" tag="a" class="nav-link">Разработка</router-link>
@@ -35,11 +51,21 @@
       </div>
       <div class="d-none d-sm-flex justify-content-between">
         <div class="phone d-none d-sm-block pt-1">
-          <img src="img/whatsapp.svg" width="24" height="24" class="pb-1" alt="whatsapp" />
+          <img
+            src="img/whatsapp.svg"
+            width="24"
+            height="24"
+            class="pb-1"
+            alt="whatsapp"
+          />
           <strong>+7 906 940 4069</strong>
         </div>
 
-        <a class="mr-0 d-none d-sm-block" href="https://github.com/mccrush/" target="_blank">
+        <a
+          class="mr-0 d-none d-sm-block"
+          href="https://github.com/mccrush/"
+          target="_blank"
+        >
           <img
             src="/img/github_32.png"
             width="28"
@@ -53,6 +79,11 @@
     </div>
   </nav>
 </template>
+
+<script>
+import { Collapse } from 'bootstrap'
+export default {}
+</script>
 
 <style scoped>
 .nav-item a {
