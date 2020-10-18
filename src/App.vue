@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="container-md">
+  <div id="apps" class="container-md">
     <Navbar />
     <transition appear name="fade" mode="out-in">
       <router-view />
@@ -24,7 +24,7 @@ export default {
 
 
 <style>
-#app {
+#apps {
   text-align: left;
   color: #55636f;
   font-family: 'Montserrat', sans-serif;
