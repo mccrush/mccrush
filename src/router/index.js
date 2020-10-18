@@ -1,7 +1,9 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+// import Vue from 'vue'
+// import VueRouter from 'vue-router'
 
-Vue.use(VueRouter)
+// Vue.use(VueRouter)
+
+import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   {
@@ -25,15 +27,14 @@ const routes = [
     component: () => import('../views/Gtd.vue')
   },
   {
-    path: '*', // Для всех прочих кроме существующих
-    name: '404',
+    path: '/:catchAll(.*)', // Для всех прочих кроме существующих
+    name: 'notfound',
     component: () => import('../views/NotFound.vue')
   }
 ]
 
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
   routes
 })
 
