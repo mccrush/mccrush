@@ -1,8 +1,3 @@
-// import Vue from 'vue'
-// import VueRouter from 'vue-router'
-
-// Vue.use(VueRouter)
-
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
