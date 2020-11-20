@@ -14,14 +14,14 @@
       </router-link>
       <!-- <h4 class="d-sm-none m-0">mccrush.ru</h4> -->
       <span class="d-sm-none m-0 pt-1">
-        <img
+        <!-- <img
           src="img/whatsapp.svg"
           width="24"
           height="24"
           class="pb-1"
           alt="whatsapp"
-        />
-        <strong>+7 906 940 4069</strong>
+        /> -->
+        <strong>WA: +7 906 940 4069</strong>
       </span>
       <button
         class="navbar-toggler"
@@ -50,15 +50,15 @@
         </ul>
       </div>
       <div class="d-none d-sm-flex justify-content-between">
-        <div class="phone d-none d-sm-block pt-1">
-          <img
+        <div class="phone d-none d-sm-block pt-1 mr-2">
+          <!-- <img
             src="img/whatsapp.svg"
             width="24"
             height="24"
             class="pb-1"
             alt="whatsapp"
-          />
-          <strong>+7 906 940 4069</strong>
+          /> -->
+          <strong>WA: +7 906 940 4069</strong>
         </div>
 
         <a
