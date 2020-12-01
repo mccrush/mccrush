@@ -21,7 +21,7 @@
           class="pb-1"
           alt="whatsapp"
         /> -->
-        <strong>WA: +7 906 940 4069</strong>
+        <strong>WA: 89069404069</strong>
       </span>
       <button
         class="navbar-toggler"
@@ -58,7 +58,7 @@
             class="pb-1"
             alt="whatsapp"
           /> -->
-          <strong>WA: +7 906 940 4069</strong>
+          <strong>WA: 89069404069</strong>
         </div>
 
         <a
