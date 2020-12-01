@@ -267,6 +267,7 @@ small {
 .bez-sdel {
   margin-top: 24px;
   margin-bottom: 0px;
+  text-align: center;
 }
 
 /*
