@@ -154,6 +154,15 @@
         </div>
       </div>-->
     </div>
+    <p class="bez-sdel">
+      Для «безопасных сделок» используется сервис
+      <a
+        href="https://kwork.ru/website-development/624937/razrabotka-veb-prilozheniya-spa-pwa?ref=656"
+        title="Ссылка на сайт Kwork"
+        target="_blank"
+        >Kwork</a
+      >
+    </p>
   </div>
 </template>
 
@@ -254,6 +263,12 @@ small {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.bez-sdel {
+  margin-top: 24px;
+  margin-bottom: 0px;
+}
+
 /*
 Зеленый для Vue #3BA361
 Синий для CSS #3298F0
