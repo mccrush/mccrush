@@ -48,6 +48,12 @@ h6 {
   font-weight: 500;
 }
 
+a,
+a:hover,
+a:active {
+  color: #fff;
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;
