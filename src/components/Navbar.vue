@@ -1,9 +1,7 @@
 <template>
-  <nav
-    class="navbar navbar-expand-sm navbar-light bg-white shadow-sm p-0 pt-2 pb-2 pb-sm-0"
-  >
+  <nav class="navbar navbar-expand-sm navbar-light p-0 pt-2 pb-2 pb-sm-0">
     <div class="container-fluid">
-      <router-link class="navbar-brand mr-2" to="/">
+      <router-link class="navbar-brand me-2" to="/">
         <img
           src="/img/logo.png"
           width="32"
@@ -35,7 +33,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto mb-0">
+        <ul class="navbar-nav me-auto mb-0">
           <li class="nav-item mt-1">
             <router-link to="/apps" tag="a" class="nav-link"
               >Приложения</router-link
@@ -50,7 +48,7 @@
         </ul>
       </div>
       <div class="d-none d-sm-flex justify-content-between">
-        <div class="phone d-none d-sm-block pt-1 mr-2">
+        <div class="phone d-none d-sm-block pt-1 me-2">
           <!-- <img
             src="img/whatsapp.svg"
             width="24"
@@ -58,7 +56,7 @@
             class="pb-1"
             alt="whatsapp"
           /> -->
-          <strong>WA: 89069404069</strong>
+          <span class="fw-500">WA: 89069404069</span>
         </div>
 
         <a
@@ -86,8 +84,9 @@ export default {}
 </script>
 
 <style scoped>
-.nav-item a {
-  color: #212529;
+.nav-item a.nav-link {
+  /* color: #212529; */
+  color: #fff;
   text-decoration: none;
   /* margin-top: -20px;*/
   padding-bottom: 13px;
@@ -95,18 +94,24 @@ export default {}
   transition: 0.5s;
 }
 
-.nav-item a:hover {
-  color: #212529;
+.nav-item a.nav-link:hover {
+  color: #fff;
   text-decoration: none;
-  border-bottom: 3px solid #ea5455 /*red*/;
+  /*border-bottom: 3px solid #ea5455 red*/
+  border-bottom: 3px solid #fff;
 }
 
-.nav-item a.router-link-exact-active {
-  color: #212529;
-  border-bottom: 3px solid #ea5455;
+.nav-item a.nav-link.router-link-exact-active {
+  color: #fff;
+  /* border-bottom: 3px solid #ea5455; */
+  border-bottom: 3px solid #fff;
 }
 
 .phone {
   width: 180px;
+}
+
+.fw-500 {
+  font-weight: 500;
 }
 </style>
