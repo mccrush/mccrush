@@ -6,9 +6,10 @@
     />
     <div class="col-12">
       <h3>GTD</h3>
-      <p
-        class="description"
-      >Данный раздел посвящен методикам организации повседневной деятельности, инструментам и способам поддержания своих дел в полном порядке</p>
+      <p class="description">
+        Данный раздел посвящен методикам организации повседневной деятельности,
+        инструментам и способам поддержания своих дел в полном порядке
+      </p>
       <hr />
 
       <h5 class="mb-3">Ссылки на полезные сервисы</h5>
@@ -23,31 +24,42 @@
             />
             <div class="card-body">
               <h6 class="card-title">Evernote</h6>
-              <p class="card-text small">Сохраняйте и делитесь заметками где угодно</p>
+              <p class="card-text small">
+                Сохраняйте и делитесь заметками где угодно
+              </p>
             </div>
-            <div class="card-footer pt-0 pb-3 bg-white border-0">
+            <div class="card-footer pt-0 pb-3 border-0">
               <a
-                class="btn btn-sm btn-block btn-danger stretched-link rounded-pill"
+                class="btn btn-sm btn-outline-light stretched-link rounded-pill w-100"
                 href="https://evernote.com/intl/ru/"
                 target="_blank"
-              >Перейти</a>
+                >Перейти</a
+              >
             </div>
           </div>
         </div>
 
         <div class="col">
           <div class="card border-0 shadow h-100">
-            <img src="img/gtd/icons_gtd/trello.jpg" height="134" alt="Trello" class="card-img-top" />
+            <img
+              src="img/gtd/icons_gtd/trello.jpg"
+              height="134"
+              alt="Trello"
+              class="card-img-top"
+            />
             <div class="card-body">
               <h6 class="card-title">Trello</h6>
-              <p class="card-text small">Веб-приложение для управления проектами</p>
+              <p class="card-text small">
+                Веб-приложение для управления проектами
+              </p>
             </div>
-            <div class="card-footer pt-0 pb-3 bg-white border-0">
+            <div class="card-footer pt-0 pb-3 border-0">
               <a
-                class="btn btn-sm btn-block btn-danger stretched-link rounded-pill"
+                class="btn btn-sm btn-outline-light stretched-link rounded-pill w-100"
                 href="https://trello.com/mccrush/recommend"
                 target="_blank"
-              >Перейти</a>
+                >Перейти</a
+              >
             </div>
           </div>
         </div>
@@ -62,16 +74,18 @@
             />
             <div class="card-body">
               <h6 class="card-title">Knowflow</h6>
-              <p
-                class="card-text small"
-              >Современный инструмент для визуализации процессов, алгоритмов и сложных систем</p>
+              <p class="card-text small">
+                Современный инструмент для визуализации процессов, алгоритмов и
+                сложных систем
+              </p>
             </div>
-            <div class="card-footer pt-0 pb-3 bg-white border-0">
+            <div class="card-footer pt-0 pb-3 border-0">
               <a
-                class="btn btn-sm btn-block btn-danger stretched-link rounded-pill"
+                class="btn btn-sm btn-outline-light stretched-link rounded-pill w-100"
                 href="https://www.knowflow.io/about"
                 target="_blank"
-              >Перейти</a>
+                >Перейти</a
+              >
             </div>
           </div>
         </div>
@@ -79,7 +93,7 @@
 
       <h5 class="mt-5">Список книг, которые помогут разобраться в делах</h5>
       <div class="overflow-auto">
-        <table class="table table-bordered table-hover mt-3">
+        <table class="table table-bordered text-white mt-3">
           <tbody>
             <tr class="warning">
               <td align="center" width="5%">1</td>
@@ -92,9 +106,13 @@
                   href="http://www.ozon.ru/context/detail/id/138561487/?partner=mccrush"
                   target="_blank"
                   rel="noopener"
-                >Как привести дела в порядок</a>
+                  >Как привести дела в порядок</a
+                >
               </td>
-              <td>Пожалуй, лучшая книга в своем роде. Автор подробно рассказывает об эффективных методах организации ежедневных задач.</td>
+              <td>
+                Пожалуй, лучшая книга в своем роде. Автор подробно рассказывает
+                об эффективных методах организации ежедневных задач.
+              </td>
             </tr>
             <tr>
               <td align="center" width="5%">2</td>
@@ -107,9 +125,14 @@
                   href="http://www.ozon.ru/context/detail/id/6974309/?partner=mccrush"
                   target="_blank"
                   rel="noopener"
-                >Семь навыков высокоэф&shy;фективных людей</a>
+                  >Семь навыков высокоэф&shy;фективных людей</a
+                >
               </td>
-              <td>Об этой книге, думаю, слышали многие. Такие простые, но такие эффективные рекомендации, которые помогут наладить свои дела в любых сферах деятельности.</td>
+              <td>
+                Об этой книге, думаю, слышали многие. Такие простые, но такие
+                эффективные рекомендации, которые помогут наладить свои дела в
+                любых сферах деятельности.
+              </td>
             </tr>
             <tr>
               <td align="center" width="5%">3</td>
@@ -122,9 +145,13 @@
                   href="http://www.ozon.ru/context/detail/id/26994615/?partner=mccrush"
                   target="_blank"
                   rel="noopener"
-                >Цель. Процесс непрерывного совершенство&shy;вания</a>
+                  >Цель. Процесс непрерывного совершенство&shy;вания</a
+                >
               </td>
-              <td>Это классика. Понимание описанного метода действий, позволит любой процесс сделать максимально эффективным.</td>
+              <td>
+                Это классика. Понимание описанного метода действий, позволит
+                любой процесс сделать максимально эффективным.
+              </td>
             </tr>
             <tr>
               <td align="center" width="5%">4</td>
@@ -137,9 +164,14 @@
                   href="http://www.ozon.ru/context/detail/id/5474657/?partner=mccrush"
                   target="_blank"
                   rel="noopener"
-                >Как работать по 4 часа в неделю</a>
+                  >Как работать по 4 часа в неделю</a
+                >
               </td>
-              <td>В данной книге описаны современные инструменты ведения дел. Мир не стоит на месте, появляются все новые и новые методы решения повседневных проблем. Читайте, и учитесь новому.</td>
+              <td>
+                В данной книге описаны современные инструменты ведения дел. Мир
+                не стоит на месте, появляются все новые и новые методы решения
+                повседневных проблем. Читайте, и учитесь новому.
+              </td>
             </tr>
           </tbody>
         </table>
@@ -154,8 +186,8 @@ import vueHeadful from 'vue-headful'
 export default {
   name: 'gtd',
   components: {
-    vueHeadful,
-  },
+    vueHeadful
+  }
 }
 </script>
 <style scoped>
@@ -164,11 +196,20 @@ export default {
   top: 0px;
 }
 
+.card,
+.card-footer {
+  background: none;
+}
+
 .card:hover {
   top: -4px;
 }
 
 img.card-img-top {
   object-fit: cover;
+}
+
+a.mctbln {
+  color: #fff;
 }
 </style>
