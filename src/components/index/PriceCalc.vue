@@ -5,45 +5,52 @@
       <div class="col-12 col-sm-8 col-md-9 text-left">
         <div
           v-for="(price, index) in prices"
-          :key="'pr'+index"
-          class="d-inline-block small shadow-sm mr-2 mb-2 p-1 pl-2 pr-2 rounded-sm price-block"
+          :key="'pr' + index"
+          class="price-block d-inline-block small shadow-sm me-2 mb-2 p-1 ps-2 pe-2 rounded-1"
           @click="toggleCard(price.id)"
-          :class="price.select ? 'border-danger' : 'border-gray'"
+          :class="price.select ? 'border-white' : ''"
         >
-          <span>{{price.title}}</span>
+          <span class="fw-500">{{ price.title }}</span>
           <br />
-          <span class="text-muted small">{{price.description}}</span>
+          <span class="text-light small">{{ price.description }}</span>
         </div>
       </div>
-      <div class="col-12 col-sm-4 col-md-3 calc d-flex flex-column align-items-start small">
+      <div
+        class="calc col-12 col-sm-4 col-md-3 d-flex flex-column align-items-start small"
+      >
         <div class="w-100 overflow-auto mb-auto">
           <div
             v-for="(price, index) in selectedPrice"
-            :key="'pr'+index"
-            class="text-left small border mb-2 p-0 pl-2 pr-2 rounded-sm"
+            :key="'pr' + index"
+            class="text-left small border border-white mb-2 p-0 ps-2 pe-2 rounded-1"
           >
-            <span>{{price.title}}</span>
+            <span>{{ price.title }}</span>
             <br />
-            <span class="text-muted">{{price.price}}</span>
+            <span v-if="price.id !== 2" class="text-light">{{
+              price.price
+            }}</span>
+            <span v-else class="text-light">1200</span>
           </div>
         </div>
-        <div class="w-100 border-top pt-1 pb-1">
-          <span class="d-inline-block w-75 pl-1 pr-1 text-left small">количество страниц</span>
+        <div class="w-100 border-top border-light pt-1 pb-1">
+          <span class="d-inline-block w-75 ps-1 pe-1 text-left small"
+            >количество страниц</span
+          >
           <input
             type="number"
             min="0"
             max="9"
             step="1"
             class="form-control form-control-sm d-inline w-25"
-            :class="{'border-danger': verstka === 2}"
+            :class="{ 'border-danger': verstka === 2 }"
             v-model.number="countPage"
             :disabled="verstka != 2"
           />
         </div>
-        <div class="w-100 border-top pt-1">
-          <span class="d-inline-block w-50 text-right pr-1">итого:</span>
-          <span class="d-inline-block w-50 text-left text-danger">
-            <strong>{{itogSumm}}</strong>
+        <div class="w-100 border-top border-light pt-1">
+          <span class="d-inline-block w-50 text-right pe-1">итого:</span>
+          <span class="fw-500 d-inline-block w-50 text-left">
+            {{ itogSumm }}
           </span>
         </div>
       </div>
@@ -60,7 +67,7 @@ export default {
       prices,
       selectedPrice: [],
       countPage: 0,
-      verstka: 0,
+      verstka: 0
     }
   },
   mounted() {},
@@ -68,7 +75,7 @@ export default {
     itogSumm() {
       if (this.selectedPrice.length) {
         let summ = this.countPage * 1200
-        this.selectedPrice.forEach((item) => {
+        this.selectedPrice.forEach(item => {
           summ += item.price
         })
         summ = summ.toString()
@@ -78,11 +85,11 @@ export default {
       } else {
         return 0
       }
-    },
+    }
   },
   methods: {
     toggleCard(id) {
-      let index = this.prices.findIndex((item) => item.id === id)
+      let index = this.prices.findIndex(item => item.id === id)
       if (this.prices[index].select) {
         if (id === 2) {
           this.verstka = 0
@@ -90,7 +97,7 @@ export default {
         }
         this.prices[index].select = false
         this.selectedPrice = this.selectedPrice.filter(
-          (item) => item.price != this.prices[index].price
+          item => item.price != this.prices[index].price
         )
       } else {
         if (id === 2) {
@@ -99,11 +106,11 @@ export default {
         this.prices[index].select = true
         this.selectedPrice.push(this.prices[index])
       }
-    },
+    }
     // addPage() {
     //   this.itogSumm = this.itogSumm + this.countPage * 1200
     // },
-  },
+  }
 }
 </script>
 
@@ -115,7 +122,12 @@ export default {
 .price-block {
   cursor: pointer;
   user-select: none;
-  border-top: 3px solid #dee2e6;
+  /* border-top: 3px solid #dee2e6; */
+  border-top: 3px solid rgba(0, 0, 0, 0);
   transition: 0.3s;
+}
+
+.fw-500 {
+  font-weight: 500;
 }
 </style>
