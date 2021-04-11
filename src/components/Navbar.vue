@@ -1,13 +1,13 @@
 <template>
-  <nav class="navbar navbar-light p-0 pt-2 pb-2 pb-sm-0">
-    <div class="container-fluid">
+  <nav class="navbar navbar-dark border-bottom">
+    <div class="container-fluid pt-1">
       <div class="navbar-brand me-2">
         <img
-          src="/img/logo.png"
+          src="/img/logo_2021.png"
           width="32"
           height="32"
           alt="Logo mccrush.ru"
-          class="mb-0 mb-sm-1"
+          class="mb-0"
         />
       </div>
 
@@ -22,7 +22,7 @@
           target="_blank"
         >
           <img
-            src="/img/github_32_w.png"
+            src="/img/github_32.png"
             width="32"
             height="32"
             alt="Github/mccrush"

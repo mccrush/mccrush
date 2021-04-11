@@ -1,9 +1,9 @@
 <template>
-  <div class="row mt-3">
+  <div class="row mt-4">
     <div class="col-12">
       <div class="row text-center p-5 jimbo">
         <div class="col-12">
-          <h6 class="display-6">
+          <h6 class="fw-500 display-6">
             Качественная разработка
             <br />приложений
           </h6>
@@ -26,9 +26,9 @@
       </div>
       <!-- <hr /> -->
 
-      <div class="row text-center">
+      <div class="row text-center pb-5">
         <div class="col-12">
-          <h5 class="mt-3 mb-4">Предлагаем услуги</h5>
+          <h5 class="mt-4 mb-4">Предлагаем услуги</h5>
         </div>
         <div class="col-12 col-sm-6 col-md-4">
           <h6 class="box-tech shadow-sm rounded p-3 m-0">
@@ -50,11 +50,11 @@
         </div>
       </div>
 
-      <div class="row text-center">
+      <div class="row text-center pb-5">
         <PriceCalc />
       </div>
 
-      <div class="row text-center">
+      <div class="row text-center pb-2">
         <div class="col-12">
           <h5 class="mt-5 mb-4">
             Стоимость услуг администрирования и поддержки
@@ -98,16 +98,15 @@ export default {
 </script>
 <style scoped>
 .stec-text {
-  color: #212529;
   text-align: center;
   vertical-align: middle;
 }
 .box {
-  color: #212529;
   /* border-top: 3px solid rgba(255, 0, 0, 0.5); */
   /* border-bottom: 2px solid white; */
   transition: 0.3s;
 }
+
 .box:hover {
   box-shadow: 0 0.5rem 1rem rgba(256, 0, 0, 0.15) !important;
   /* border-top: 3px solid rgba(255, 0, 0, 0.75); */
@@ -129,7 +128,8 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 3px solid #fff;
+  /* border-top: 3px solid #fff; */
+  border-top: 3px solid #673ab7;
   transition: 0.3s;
 }
 
@@ -162,7 +162,7 @@ small {
 }
 
 .jimbo {
-  background: url(../assets/img/insert-backdrop.webp) no-repeat center center;
+  /* background: url(../assets/img/insert-backdrop.webp) no-repeat center center; */
   /* background-position: center center;
   background-repeat: no-repeat; */
   -webkit-background-size: cover;

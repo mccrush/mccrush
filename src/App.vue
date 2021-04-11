@@ -1,5 +1,5 @@
 <template>
-  <div id="apps" class="container-md">
+  <div id="container" class="container-lg">
     <Navbar />
     <Index />
     <Footer />
@@ -24,18 +24,17 @@ export default {
 
 
 <style>
-#app {
-  background: #ca9800;
-  color: #fff;
+#container {
+  max-width: 960px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
+/* 
 #apps {
   text-align: left;
-  /* color: #55636f; */
   max-width: 880px;
-}
+} */
 
 h1,
 h2,
@@ -51,7 +50,20 @@ h6 {
 a,
 a:hover,
 a:active {
-  color: #fff;
+  /* color: #fff; */
+  color: #212529;
+}
+
+.btn:focus,
+.form-control:focus,
+.form-select:focus,
+.navbar-toggler:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.fw-500 {
+  font-weight: 500;
 }
 
 .fade-enter-active,

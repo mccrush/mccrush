@@ -6,13 +6,13 @@
         <div
           v-for="(price, index) in prices"
           :key="'pr' + index"
-          class="price-block d-inline-block small shadow-sm me-2 mb-2 p-1 ps-2 pe-2 rounded-1"
+          class="price-block d-inline-block small shadow-sm me-2 mb-2 pt-2 pb-2 ps-3 pe-3 rounded-1"
           @click="toggleCard(price.id)"
-          :class="price.select ? 'border-white' : ''"
+          :class="price.select ? 'border-purpur' : ''"
         >
           <span class="fw-500">{{ price.title }}</span>
           <br />
-          <span class="text-light small">{{ price.description }}</span>
+          <span class="small">{{ price.description }}</span>
         </div>
       </div>
       <div
@@ -22,14 +22,12 @@
           <div
             v-for="(price, index) in selectedPrice"
             :key="'pr' + index"
-            class="text-left small border border-white mb-2 p-0 ps-2 pe-2 rounded-1"
+            class="text-left small border-purpur-outline mb-2 p-0 ps-2 pe-2 rounded-1"
           >
             <span>{{ price.title }}</span>
             <br />
-            <span v-if="price.id !== 2" class="text-light">{{
-              price.price
-            }}</span>
-            <span v-else class="text-light">1200</span>
+            <span v-if="price.id !== 2" class="">{{ price.price }}</span>
+            <span v-else class="">1200</span>
           </div>
         </div>
         <div class="w-100 border-top border-light pt-1 pb-1">
@@ -42,7 +40,7 @@
             max="9"
             step="1"
             class="form-control form-control-sm d-inline w-25"
-            :class="{ 'border-danger': verstka === 2 }"
+            :class="{ 'border-danger': verstka === 2 && countPage < 1 }"
             v-model.number="countPage"
             :disabled="verstka != 2"
           />
@@ -116,7 +114,7 @@ export default {
 
 <style scoped>
 .calc {
-  max-height: 183px;
+  max-height: 183px; /* 183 для трех строк элементов для выбора */
 }
 
 .price-block {
@@ -127,7 +125,11 @@ export default {
   transition: 0.3s;
 }
 
-.fw-500 {
-  font-weight: 500;
+.border-purpur {
+  border-color: #673ab7;
+}
+
+.border-purpur-outline {
+  border: 1px solid #673ab7;
 }
 </style>
