@@ -78,6 +78,10 @@ a:active {
   cursor: default;
 }
 
+.cursor-point {
+  cursor: pointer;
+}
+
 .fw-500 {
   font-weight: 600;
 }
