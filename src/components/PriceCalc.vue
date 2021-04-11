@@ -121,7 +121,7 @@ export default {
   cursor: pointer;
   user-select: none;
   /* border-top: 3px solid #dee2e6; */
-  border-top: 3px solid rgba(0, 0, 0, 0);
+  border-top: 3px solid rgba(103, 58, 183, 0.08);
   transition: 0.3s;
 }
 

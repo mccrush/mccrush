@@ -1,88 +1,90 @@
 <template>
-  <div class="row mt-4">
-    <div class="col-12">
-      <div class="row text-center p-5 jimbo">
-        <div class="col-12">
-          <h6 class="fw-500 display-6">
-            Качественная разработка
-            <br />приложений
-          </h6>
-          <p class="description pt-2">
-            Современные сайты&shy; и веб-приложения
-            <abbr
-              data-original-title="Single-page application"
-              class="initialism"
-              title="Single Page Application"
-              >SPA</abbr
-            >,
-            <abbr
-              data-original-title="Progressive Web Apps"
-              class="initialism"
-              title="Progressive Web Applications"
-              >PWA</abbr
-            >, <br />с адаптивным дизайном и офлайн-доступом
-          </p>
+  <div class="container-lg">
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="jimbo row text-center vh-100 p-5">
+          <div class="col-12">
+            <h6 class="fw-500 display-6">
+              Качественная разработка
+              <br />приложений
+            </h6>
+            <p class="description pt-2">
+              Современные сайты&shy; и веб-приложения
+              <abbr
+                data-original-title="Single-page application"
+                class="initialism"
+                title="Single Page Application"
+                >SPA</abbr
+              >,
+              <abbr
+                data-original-title="Progressive Web Apps"
+                class="initialism"
+                title="Progressive Web Applications"
+                >PWA</abbr
+              >, <br />с адаптивным дизайном и офлайн-доступом
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- <hr /> -->
+        <!-- <hr /> -->
 
-      <div class="row text-center pb-5">
-        <div class="col-12">
-          <h5 class="mt-4 mb-4">Предлагаем услуги</h5>
+        <div class="row text-center pb-5">
+          <div class="col-12">
+            <h5 class="mt-4 mb-4">Предлагаем услуги</h5>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <h6 class="box-tech shadow-sm rounded p-3 m-0">
+              Разработка веб-сайтов
+              <br />и веб-приложений
+            </h6>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 mt-3 mt-sm-0">
+            <h6 class="box-tech shadow-sm rounded p-3 m-0">
+              Администри&shy;рование
+              <br />веб-сайтов
+            </h6>
+          </div>
+          <div class="col-12 col-md-4 mt-3 mt-md-0">
+            <h6 class="box-tech shadow-sm rounded p-3 m-0">
+              Поддержка
+              <br />веб-приложений
+            </h6>
+          </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <h6 class="box-tech shadow-sm rounded p-3 m-0">
-            Разработка веб-сайтов
-            <br />и веб-приложений
-          </h6>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 mt-3 mt-sm-0">
-          <h6 class="box-tech shadow-sm rounded p-3 m-0">
-            Администри&shy;рование
-            <br />веб-сайтов
-          </h6>
-        </div>
-        <div class="col-12 col-md-4 mt-3 mt-md-0">
-          <h6 class="box-tech shadow-sm rounded p-3 m-0">
-            Поддержка
-            <br />веб-приложений
-          </h6>
-        </div>
-      </div>
 
-      <div class="row text-center pb-5">
-        <PriceCalc />
-      </div>
+        <div class="row text-center pb-5">
+          <PriceCalc />
+        </div>
 
-      <div class="row text-center pb-2">
-        <div class="col-12">
-          <h5 class="mt-5 mb-4">
-            Стоимость услуг администрирования и поддержки
-          </h5>
-        </div>
-        <div class="col-6">
-          <h6 class="box-tech shadow-sm rounded p-3 m-0">
-            На регулярной основе
-            <br />от 7500 р/месяц
-          </h6>
-        </div>
-        <div class="col-6">
-          <h6 class="box-tech shadow-sm rounded p-3 m-0">
-            Сдельная работа
-            <br />от 750 р/час
-          </h6>
+        <div class="row text-center pb-2">
+          <div class="col-12">
+            <h5 class="mt-5 mb-4">
+              Стоимость услуг администрирования и поддержки
+            </h5>
+          </div>
+          <div class="col-6">
+            <h6 class="box-tech shadow-sm rounded p-3 m-0">
+              На регулярной основе
+              <br />от 7500 р/месяц
+            </h6>
+          </div>
+          <div class="col-6">
+            <h6 class="box-tech shadow-sm rounded p-3 m-0">
+              Сдельная работа
+              <br />от 750 р/час
+            </h6>
+          </div>
         </div>
       </div>
+      <p class="bez-sdel">
+        Для «безопасных сделок» используется сервис
+        <a
+          href="https://kwork.ru/website-development/624937/razrabotka-veb-prilozheniya-spa-pwa?ref=656"
+          title="Ссылка на сайт Kwork"
+          target="_blank"
+          >Kwork</a
+        >
+      </p>
     </div>
-    <p class="bez-sdel">
-      Для «безопасных сделок» используется сервис
-      <a
-        href="https://kwork.ru/website-development/624937/razrabotka-veb-prilozheniya-spa-pwa?ref=656"
-        title="Ссылка на сайт Kwork"
-        target="_blank"
-        >Kwork</a
-      >
-    </p>
   </div>
 </template>
 
