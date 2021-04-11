@@ -1,7 +1,7 @@
 <template>
   <div class="col-12 p-0">
     <nav class="navbar">
-      <div id="navbar-container" class="container-lg pt-1">
+      <div class="container-960 container-lg pt-1">
         <div class="cursor-def navbar-brand">
           <img
             src="/img/logo_2021.png"
@@ -37,13 +37,3 @@
     </nav>
   </div>
 </template>
-
-<style scoped>
-#navbar-container {
-  max-width: 960px;
-}
-
-.cursor-def {
-  cursor: default;
-}
-</style>

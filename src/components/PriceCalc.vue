@@ -1,55 +1,57 @@
 <template>
-  <div class="col-12">
-    <h5 class="mt-5 mb-4">Расчет стоимости разработки</h5>
-    <div class="row">
-      <div class="col-12 col-sm-8 col-md-9 text-left">
-        <div
-          v-for="(price, index) in prices"
-          :key="'pr' + index"
-          class="price-block d-inline-block small shadow-sm me-2 mb-2 pt-2 pb-2 ps-3 pe-3 rounded-1"
-          @click="toggleCard(price.id)"
-          :class="price.select ? 'border-purpur' : ''"
-        >
-          <span class="fw-500">{{ price.title }}</span>
-          <br />
-          <span class="small">{{ price.description }}</span>
-        </div>
-      </div>
-      <div
-        class="calc col-12 col-sm-4 col-md-3 d-flex flex-column align-items-start small"
-      >
-        <div class="w-100 overflow-auto mb-auto">
+  <div class="col-12 pt-5 pb-5">
+    <div class="container-960 price-calc container-lg">
+      <h5 class="text-center mb-5">Расчет стоимости разработки</h5>
+      <div class="row">
+        <div class="col-12 col-sm-8 col-md-9 text-left">
           <div
-            v-for="(price, index) in selectedPrice"
+            v-for="(price, index) in prices"
             :key="'pr' + index"
-            class="text-left small border-purpur-outline mb-2 p-0 ps-2 pe-2 rounded-1"
+            class="price-block d-inline-block small shadow-sm me-2 mb-2 pt-2 pb-2 ps-3 pe-3 rounded-1"
+            @click="toggleCard(price.id)"
+            :class="price.select ? 'border-purpur' : ''"
           >
-            <span>{{ price.title }}</span>
+            <span class="fw-500">{{ price.title }}</span>
             <br />
-            <span v-if="price.id !== 2" class="">{{ price.price }}</span>
-            <span v-else class="">1200</span>
+            <span class="small">{{ price.description }}</span>
           </div>
         </div>
-        <div class="w-100 border-top border-light pt-1 pb-1">
-          <span class="d-inline-block w-75 ps-1 pe-1 text-left small"
-            >количество страниц</span
-          >
-          <input
-            type="number"
-            min="0"
-            max="9"
-            step="1"
-            class="form-control form-control-sm d-inline w-25"
-            :class="{ 'border-danger': verstka === 2 && countPage < 1 }"
-            v-model.number="countPage"
-            :disabled="verstka != 2"
-          />
-        </div>
-        <div class="w-100 border-top border-light pt-1">
-          <span class="d-inline-block w-50 text-right pe-1">итого:</span>
-          <span class="fw-500 d-inline-block w-50 text-left">
-            {{ itogSumm }}
-          </span>
+        <div
+          class="calc col-12 col-sm-4 col-md-3 d-flex flex-column align-items-start border rounded small p-0"
+        >
+          <div class="w-100 overflow-auto mb-auto p-1">
+            <div
+              v-for="(price, index) in selectedPrice"
+              :key="'pr' + index"
+              class="text-left small border-purpur-outline mb-1 p-0 ps-2 pe-2 rounded-1"
+            >
+              <span>{{ price.title }}</span>
+              <br />
+              <span v-if="price.id !== 2" class="">{{ price.price }}</span>
+              <span v-else class="">1200</span>
+            </div>
+          </div>
+          <div class="w-100 border-top p-1">
+            <span class="d-inline-block w-75 ps-1 pe-1 text-left small"
+              >количество страниц</span
+            >
+            <input
+              type="number"
+              min="0"
+              max="9"
+              step="1"
+              class="form-control d-inline small w-25 pt-0 pb-0 pe-1"
+              :class="{ 'border-danger': verstka === 2 && countPage < 1 }"
+              v-model.number="countPage"
+              :disabled="verstka != 2"
+            />
+          </div>
+          <div class="w-100 border-top ps-2 pt-1">
+            <span class="d-inline-block text-right pe-1">итого:</span>
+            <span class="fw-500 d-inline-block text-left ps-1">
+              {{ itogSumm }} ₽
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -113,6 +115,9 @@ export default {
 </script>
 
 <style scoped>
+.price-calc {
+  color: #fff;
+}
 .calc {
   max-height: 183px; /* 183 для трех строк элементов для выбора */
 }
@@ -121,15 +126,15 @@ export default {
   cursor: pointer;
   user-select: none;
   /* border-top: 3px solid #dee2e6; */
-  border-top: 3px solid rgba(103, 58, 183, 0.08);
+  border-top: 3px solid rgba(255, 255, 255, 0.2);
   transition: 0.3s;
 }
 
 .border-purpur {
-  border-color: #673ab7;
+  border-color: #ffffff;
 }
 
 .border-purpur-outline {
-  border: 1px solid #673ab7;
+  border: 1px solid #ffffff;
 }
 </style>
