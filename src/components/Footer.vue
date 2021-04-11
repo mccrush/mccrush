@@ -11,21 +11,6 @@
         <span class="small showem" @click="showEmail">{{ email }}</span>
       </p>
     </div>
-    <!-- <div class="col-6">
-      <p class="small">
-        Страницы сайта:
-        <br />
-        <span v-if="$route.path != '/home'">
-          <router-link to="/" tag="a">Главная</router-link>
-          <br />
-        </span>
-        <router-link to="/app" tag="a">Приложения</router-link>
-        <br />
-        <router-link to="/dev" tag="a">Разработка</router-link>
-        <br />
-        <router-link to="/gtd" tag="a">GTD</router-link>
-      </p>
-    </div>-->
   </footer>
 </template>
 

@@ -1,9 +1,7 @@
 <template>
   <div id="apps" class="container-md">
     <Navbar />
-    <transition appear name="fade" mode="out-in">
-      <router-view />
-    </transition>
+    <Index />
     <Footer />
   </div>
 </template>
@@ -11,12 +9,14 @@
 <script>
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from '@/components/Navbar'
+import Navbar from '@/views/Index'
 import Footer from '@/components/Footer'
 
 export default {
   name: 'app',
   components: {
     Navbar,
+    Index,
     Footer
   }
 }
