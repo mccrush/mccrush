@@ -10,52 +10,12 @@
           class="mb-0 mb-sm-1"
         />
       </router-link>
-      <!-- <h4 class="d-sm-none m-0">mccrush.ru</h4> -->
       <span class="d-sm-none m-0 pt-1">
-        <!-- <img
-          src="img/whatsapp.svg"
-          width="24"
-          height="24"
-          class="pb-1"
-          alt="whatsapp"
-        /> -->
         <strong>WA: 89069404069</strong>
       </span>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-0">
-          <li class="nav-item mt-1">
-            <router-link to="/apps" tag="a" class="nav-link"
-              >Приложения</router-link
-            >
-          </li>
-          <!-- <li class="nav-item mt-1">
-            <router-link to="/dev" tag="a" class="nav-link">Разработка</router-link>
-          </li>-->
-          <li class="nav-item mt-1">
-            <router-link to="/gtd" tag="a" class="nav-link">GTD</router-link>
-          </li>
-        </ul>
-      </div>
+
       <div class="d-none d-sm-flex justify-content-between">
         <div class="phone d-none d-sm-block pt-1 me-2">
-          <!-- <img
-            src="img/whatsapp.svg"
-            width="24"
-            height="24"
-            class="pb-1"
-            alt="whatsapp"
-          /> -->
           <span class="fw-500">WA: 89069404069</span>
         </div>
 

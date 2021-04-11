@@ -1,9 +1,5 @@
 <template>
   <div class="row mt-3">
-    <vueHeadful
-      title="Качественная разработка приложений"
-      description="Современные сайты и веб-приложения (SPA, PWA*), с адаптивным дизайном и офлайн-доступом"
-    />
     <div class="col-12">
       <div class="row text-center p-5 jimbo">
         <div class="col-12">
@@ -91,24 +87,13 @@
 </template>
 
 <script>
-import vueHeadful from 'vue-headful'
-//import LazyLoad from 'vanilla-lazyload'
 import PriceCalc from '@/components/index/PriceCalc'
 
 export default {
   name: 'index',
   components: {
-    vueHeadful,
     PriceCalc
   }
-  // mounted() {
-  //   const lazyContent = new LazyLoad({
-  //     elements_selector: 'img.lazy',
-  //     use_native: true, // <-- there you go
-  //     threshold: 150,
-  //     container: document.getElementById('imgRow'),
-  //   })
-  // },
 }
 </script>
 <style scoped>

@@ -9,7 +9,7 @@
 <script>
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from '@/components/Navbar'
-import Navbar from '@/views/Index'
+import Index from '@/views/Index'
 import Footer from '@/components/Footer'
 
 export default {
