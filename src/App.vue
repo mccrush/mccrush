@@ -1,7 +1,7 @@
 <template>
   <div id="container" class="container-fluid">
     <div class="header row vh-100">
-      <Navbar @change-bg="changeBg" />
+      <Navbar />
       <Jimbo />
     </div>
     <div class="bg-deep-blue row">
@@ -27,11 +27,6 @@ export default {
     Jimbo,
     PriceCalc,
     Footer
-  },
-  methods: {
-    changeBg() {
-      console.log('ChBg')
-    }
   }
 }
 </script>

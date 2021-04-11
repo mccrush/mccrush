@@ -19,7 +19,7 @@
         >PWA</abbr
       >, <br />с адаптивным дизайном и офлайн-доступом
     </p>
-    <div v-if="showArrow" class="arrows fixed-bottom">
+    <div class="arrows fixed-bottom" :class="{ 'd-none': showArrow == false }">
       <div class="arrow"></div>
       <div class="arrow"></div>
       <div class="arrow"></div>
@@ -36,9 +36,12 @@ export default {
   },
   mounted() {
     window.addEventListener('scroll', function (e) {
+      console.log(window.scrollY)
       if (window.scrollY > 96) {
         this.showArrow = false
+        console.log('B this.showArrow = ', this.showArrow)
       } else {
+        console.log('S this.showArrow = ', this.showArrow)
         this.showArrow = true
       }
     })
