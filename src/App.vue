@@ -25,7 +25,7 @@ export default {
 
 <style>
 #app {
-  background: #ffc107;
+  background: #ca9800;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;

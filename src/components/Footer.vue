@@ -1,5 +1,5 @@
 <template>
-  <footer class="row footer mt-0 pt-3">
+  <footer class="footer row mt-0 pt-3">
     <div class="col-12 text-center">
       <hr />
       <p>
@@ -33,14 +33,14 @@
 export default {
   data() {
     return {
-      email: 'Показать email',
+      email: 'Показать email'
     }
   },
   methods: {
     showEmail() {
       this.email = 'mccrush@mail.ru'
-    },
-  },
+    }
+  }
 }
 </script>
 
