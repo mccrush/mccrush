@@ -7,7 +7,7 @@
           <div
             v-for="(price, index) in prices"
             :key="'pr' + index"
-            class="price-block d-inline-block small shadow-sm me-2 mb-2 pt-2 pb-2 ps-3 pe-3 rounded-1"
+            class="price-block bg-purpur d-inline-block small shadow-sm me-2 mb-2 pt-2 pb-2 ps-3 pe-3 rounded-1"
             @click="toggleCard(price.id)"
             :class="price.select ? 'border-purpur' : ''"
           >
@@ -23,7 +23,7 @@
             <div
               v-for="(price, index) in selectedPrice"
               :key="'pr' + index"
-              class="text-left small border-purpur-outline mb-1 p-0 ps-2 pe-2 rounded-1"
+              class="bg-purpur border-purpur-outline text-left small mb-1 p-0 ps-2 pe-2 rounded-1"
             >
               <span>{{ price.title }}</span>
               <br />
@@ -31,7 +31,7 @@
               <span v-else class="">1200</span>
             </div>
           </div>
-          <div class="w-100 border-top p-1">
+          <div class="bg-purpur border-top w-100 p-1">
             <span class="d-inline-block w-75 ps-1 pe-1 text-left small"
               >количество страниц</span
             >
@@ -46,7 +46,7 @@
               :disabled="verstka != 2"
             />
           </div>
-          <div class="w-100 border-top ps-2 pt-1">
+          <div class="bg-purpur border-top rounded-bottom w-100 ps-2 pt-1">
             <span class="d-inline-block text-right pe-1">итого:</span>
             <span class="fw-500 d-inline-block text-left ps-1">
               {{ itogSumm }} ₽

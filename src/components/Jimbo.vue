@@ -1,8 +1,9 @@
 <template>
   <div class="col-12 text-center">
-    <h6 class="fw-500 display-6">
-      Качественная разработка
-      <br />приложений
+    <h6 class="fw-500 margin-64 display-6">
+      <span class="text-blue">Качественная </span>
+      <span class="text-deep-blue">разработка</span>
+      <br /><span class="text-purpur">приложений</span>
     </h6>
     <p class="pt-2">
       Современные сайты&shy; и веб-приложения
@@ -19,39 +20,53 @@
         >PWA</abbr
       >, <br />с адаптивным дизайном и офлайн-доступом
     </p>
-    <div class="arrows fixed-bottom" :class="{ 'd-none': showArrow == false }">
+    <!-- <div class="arrows fixed-bottom" :class="{ 'd-none': showArrow == false }">
       <div class="arrow"></div>
       <div class="arrow"></div>
       <div class="arrow"></div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      showArrow: true
-    }
-  },
-  mounted() {
-    window.addEventListener('scroll', function (e) {
-      console.log(window.scrollY)
-      if (window.scrollY > 96) {
-        this.showArrow = false
-        console.log('B this.showArrow = ', this.showArrow)
-      } else {
-        console.log('S this.showArrow = ', this.showArrow)
-        this.showArrow = true
-      }
-    })
-  }
-}
+// export default {
+//   data() {
+//     return {
+//       showArrow: true
+//     }
+//   },
+//   mounted() {
+//     window.addEventListener('scroll', function (e) {
+//       console.log(window.scrollY)
+//       if (window.scrollY > 96) {
+//         this.showArrow = false
+//         console.log('B this.showArrow = ', this.showArrow)
+//       } else {
+//         console.log('S this.showArrow = ', this.showArrow)
+//         this.showArrow = true
+//       }
+//     })
+//   }
+// }
 </script>
 
 
 <style scoped>
-.arrows {
+.margin-64 {
+  margin-top: -64px;
+}
+.text-blue {
+  color: #2196f3;
+}
+
+.text-deep-blue {
+  color: #3f51b5;
+}
+
+.text-purpur {
+  color: #673ab7;
+}
+/* .arrows {
   margin-bottom: 32px;
   display: flex;
   flex-direction: column;
@@ -92,5 +107,5 @@ export default {
   to {
     opacity: 0.8;
   }
-}
+} */
 </style>

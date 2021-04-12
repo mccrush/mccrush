@@ -1,19 +1,19 @@
 <template>
   <div id="container" class="container-fluid">
-    <div class="header row vh-100">
+    <div class="header bg-pattern-brl row vh-100">
       <Navbar />
       <Jimbo />
     </div>
 
-    <div class="bg-deep-blue row">
+    <div class="bg-deep-blue bg-pattern-brl row">
       <Uslugi />
     </div>
 
-    <div class="bg-purpur row">
+    <div class="bg-purpur bg-pattern-brl row">
       <PriceCalc />
     </div>
 
-    <div class="bg-deep-blue row">
+    <div class="bg-deep-blue bg-pattern-brl row">
       <Price />
     </div>
 
@@ -103,6 +103,14 @@ a:active {
 .bg-deep-blue {
   background-color: #3f51b5;
   color: #ffffff;
+}
+
+.bg-pattern {
+  background-image: url('/img/so-white.png');
+}
+
+.bg-pattern-brl {
+  background-image: url('/img/brilliant.png');
 }
 
 .fade-enter-active,

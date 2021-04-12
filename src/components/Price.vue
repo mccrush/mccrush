@@ -8,13 +8,13 @@
           </h5>
         </div>
         <div class="col-6">
-          <h6 class="box-tech shadow-sm rounded p-3 m-0">
-            На регулярной основе
+          <h6 class="box-tech bg-deep-blue shadow-sm rounded p-3 m-0">
+            На регуляр&shy;ной основе
             <br />от 7500 р/месяц
           </h6>
         </div>
         <div class="col-6">
-          <h6 class="box-tech shadow-sm rounded p-3 m-0">
+          <h6 class="box-tech bg-deep-blue shadow-sm rounded p-3 m-0">
             Сдельная работа
             <br />от 750 р/час
           </h6>
@@ -48,5 +48,11 @@ export default {}
 
 .box-tech:hover {
   box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.15) !important;
+}
+
+a,
+a:hover,
+a:active {
+  color: #ffffff;
 }
 </style>
