@@ -3,9 +3,9 @@
     <nav class="navbar bg-light">
       <div class="container-960 container-lg pt-1">
         <div class="cursor-def d-sm-none navbar-brand text-center w-100 me-0">
-          <span class="fw-500 text-deep-blue"
-            ><span class="text-deep-blue">mccrush </span>
-            <span class="text-purpur">apps</span></span
+          <span class="fw-500"
+            ><span class="text-blue">mccrush </span>
+            <span class="text-deep-blue">apps</span></span
           >
         </div>
 

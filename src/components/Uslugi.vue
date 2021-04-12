@@ -17,8 +17,8 @@
             <br />веб-сайтов
           </h6>
         </div>
-        <div class="box-tech bg-blue col-12 col-md-4 mt-3 mt-md-0">
-          <h6 class="shadow-sm rounded p-3 m-0">
+        <div class="col-12 col-md-4 mt-3 mt-md-0">
+          <h6 class="box-tech bg-blue shadow-sm rounded p-3 m-0">
             Поддержка
             <br />веб-приложений
           </h6>
