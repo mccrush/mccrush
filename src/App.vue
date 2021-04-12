@@ -4,10 +4,20 @@
       <Navbar />
       <Jimbo />
     </div>
+
     <div class="bg-deep-blue row">
+      <Uslugi />
+    </div>
+
+    <div class="bg-purpur row">
       <PriceCalc />
     </div>
-    <div class="row">
+
+    <div class="bg-deep-blue row">
+      <Price />
+    </div>
+
+    <div class="row bg-dark">
       <Footer />
     </div>
   </div>
@@ -17,7 +27,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from '@/components/Navbar'
 import Jimbo from '@/components/Jimbo'
+import Uslugi from '@/components/Uslugi'
 import PriceCalc from '@/components/PriceCalc'
+import Price from '@/components/Price'
 import Footer from '@/components/Footer'
 
 export default {
@@ -25,7 +37,9 @@ export default {
   components: {
     Navbar,
     Jimbo,
+    Uslugi,
     PriceCalc,
+    Price,
     Footer
   }
 }
@@ -81,8 +95,14 @@ a:active {
   font-weight: 600;
 }
 
+.bg-purpur {
+  background-color: #673ab7;
+  color: #ffffff;
+}
+
 .bg-deep-blue {
   background-color: #3f51b5;
+  color: #ffffff;
 }
 
 .fade-enter-active,

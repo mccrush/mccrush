@@ -1,11 +1,11 @@
 <template>
-  <footer class="col-12 border-top text-center pt-3">
-    <p class="small">
-      &copy; {{ new Date().getFullYear() }} mccrush.ru&nbsp;&nbsp;
-      <small>|</small>&nbsp;&nbsp;
-      <span class="cursor-point" @click="email = 'mccrush@mail.ru'">{{
-        email
-      }}</span>
+  <footer class="col-12 text-center text-white pt-2 pb-2">
+    <p class="small m-0">
+      <small>&copy; {{ new Date().getFullYear() }} mccrush.ru</small
+      >&nbsp;&nbsp; <small>|</small>&nbsp;&nbsp;
+      <span class="cursor-point" @click="email = 'mccrush@mail.ru'"
+        ><small>{{ email }}</small></span
+      >
     </p>
   </footer>
 </template>

@@ -1,7 +1,7 @@
 <template>
-  <div class="col-12 pt-5 pb-5">
+  <div class="col-12 mb-5 pt-5 pb-5">
     <div class="container-960 price-calc container-lg">
-      <h5 class="text-center mb-5">Расчет стоимости разработки</h5>
+      <h5 class="text-center mt-5 mb-5">Расчет стоимости разработки</h5>
       <div class="row">
         <div class="col-12 col-sm-8 col-md-9 text-left">
           <div
