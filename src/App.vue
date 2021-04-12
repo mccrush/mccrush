@@ -140,6 +140,10 @@ a.a-price:active {
   background-image: url('/img/brilliant.png');
 }
 
+.opc-08 {
+  opacity: 0.8;
+}
+
 .box-tech {
   cursor: default;
   border-top: 3px solid #ffffff;

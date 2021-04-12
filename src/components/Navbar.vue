@@ -11,7 +11,7 @@
 
         <div class="cursor-def d-none d-sm-block navbar-brand">
           <img
-            src="/img/logo_2021.png"
+            src="/img/logo.svg"
             width="32"
             height="32"
             alt="Logo mccrush.ru"
@@ -45,12 +45,12 @@
             target="_blank"
           >
             <img
-              src="/img/github_32.png"
+              src="/img/github.svg"
               width="32"
               height="32"
               alt="Github/mccrush"
               title="Github/mccrush"
-              class="mb-1"
+              class="opc-08 mb-1"
             />
           </a>
         </div>
