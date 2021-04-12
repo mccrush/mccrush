@@ -5,15 +5,15 @@
       <Jimbo />
     </div>
 
-    <div class="bg-deep-blue bg-pattern-brl row">
+    <div class="bg-blue bg-pattern-brl row">
       <Uslugi />
     </div>
 
-    <div class="bg-purpur bg-pattern-brl row">
+    <div class="bg-deep-blue bg-pattern-brl row">
       <PriceCalc />
     </div>
 
-    <div class="bg-deep-blue bg-pattern-brl row">
+    <div class="bg-purpur bg-pattern-brl row">
       <Price />
     </div>
 
@@ -75,6 +75,12 @@ a:active {
   color: rgba(31, 31, 33, 0.87);
 }
 
+a.a-price,
+a.a-price:hover,
+a.a-price:active {
+  color: #ffffff;
+}
+
 .btn:focus,
 .form-control:focus,
 .form-select:focus,
@@ -98,6 +104,7 @@ a:active {
 .margin-64 {
   margin-top: -64px;
 }
+
 .text-blue {
   color: #2196f3;
 }
@@ -110,13 +117,18 @@ a:active {
   color: #673ab7;
 }
 
-.bg-purpur {
-  background-color: #673ab7;
+.bg-blue {
+  background-color: #2196f3;
   color: #ffffff;
 }
 
 .bg-deep-blue {
   background-color: #3f51b5;
+  color: #ffffff;
+}
+
+.bg-purpur {
+  background-color: #673ab7;
   color: #ffffff;
 }
 
@@ -126,6 +138,16 @@ a:active {
 
 .bg-pattern-brl {
   background-image: url('/img/brilliant.png');
+}
+
+.box-tech {
+  cursor: default;
+  border-top: 3px solid #ffffff;
+  transition: 0.3s;
+}
+
+.box-tech:hover {
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.15) !important;
 }
 
 .fade-enter-active,
