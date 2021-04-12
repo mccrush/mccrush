@@ -31,7 +31,7 @@
               <span v-else class="">1200</span>
             </div>
           </div>
-          <div class="bg-deep-blue border-top w-100 p-1">
+          <div v-if="verstka === 2" class="bg-deep-blue border-top w-100 p-1">
             <span class="d-inline-block w-75 ps-1 pe-1 text-left small"
               >количество страниц</span
             >
@@ -41,7 +41,9 @@
               max="9"
               step="1"
               class="form-control d-inline small w-25 pt-0 pb-0 pe-1"
-              :class="{ 'border-danger': verstka === 2 && countPage < 1 }"
+              :class="{
+                'border-danger': verstka === 2 && countPage < 1
+              }"
               v-model.number="countPage"
               :disabled="verstka != 2"
             />
