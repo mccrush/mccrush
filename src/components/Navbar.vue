@@ -1,8 +1,15 @@
 <template>
   <div class="col-12 p-0">
-    <nav class="navbar">
+    <nav class="navbar bg-light">
       <div class="container-960 container-lg pt-1">
-        <div class="cursor-def navbar-brand">
+        <div class="cursor-def d-sm-none navbar-brand text-center w-100 me-0">
+          <span class="fw-500 text-deep-blue"
+            ><span class="text-deep-blue">mccrush </span>
+            <span class="text-purpur">apps</span></span
+          >
+        </div>
+
+        <div class="cursor-def d-none d-sm-block navbar-brand">
           <img
             src="/img/logo_2021.png"
             width="32"
@@ -13,7 +20,21 @@
           <span class="fw-500">mccrush apps</span>
         </div>
 
-        <div class="d-flex justify-content-between">
+        <div class="d-sm-none d-flex justify-content-center w-100 mb-1">
+          <div class="text-end me-2" title="Пишите нам в WhatsApp">
+            <span class="cursor-def fw-500">WA: 89069404069</span>
+          </div>
+          <span class="cursor-def fw-500"> | </span>
+          <a
+            class="fw-500 d-block ms-2 me-0"
+            href="https://github.com/mccrush/"
+            target="_blank"
+          >
+            Github
+          </a>
+        </div>
+
+        <div class="d-none d-sm-flex justify-content-between">
           <div class="text-end pt-2 me-3" title="Пишите нам в WhatsApp">
             <span class="cursor-def fw-500">WA: 89069404069</span>
           </div>

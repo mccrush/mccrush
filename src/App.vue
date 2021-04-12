@@ -72,7 +72,7 @@ a,
 a:hover,
 a:active {
   /* color: #fff; */
-  color: #212529;
+  color: rgba(31, 31, 33, 0.87);
 }
 
 .btn:focus,
@@ -93,6 +93,21 @@ a:active {
 
 .fw-500 {
   font-weight: 600;
+}
+
+.margin-64 {
+  margin-top: -64px;
+}
+.text-blue {
+  color: #2196f3;
+}
+
+.text-deep-blue {
+  color: #3f51b5;
+}
+
+.text-purpur {
+  color: #673ab7;
 }
 
 .bg-purpur {
