@@ -30,6 +30,16 @@
               >Kwork</a
             >
           </p>
+          <p>
+            Курсы по программированию
+            <a
+              class="a-price"
+              href="https://ru.hexlet.io/?ref=107231"
+              title="Ссылка на сайт Hexlet"
+              target="_blank"
+              >Hexlet</a
+            >
+          </p>
         </div>
       </div>
     </div>
