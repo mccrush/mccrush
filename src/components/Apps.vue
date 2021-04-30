@@ -55,24 +55,23 @@ export default {
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 576px) {
   .h-256 {
     height: calc((100vw - 24px) / 3.236);
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 960px) {
+@media screen and (min-width: 768px) {
   .h-256 {
     height: calc((100vw - 24px) / 4.854);
   }
 }
 
-/* 
 @media screen and (min-width: 960px) {
   .h-256 {
-    height: 190px; 
+    height: 190px;
   }
-} */
+}
 
 .app-link {
   text-decoration: none;
