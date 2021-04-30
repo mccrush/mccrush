@@ -6,14 +6,17 @@
           <h5 class="mt-5 mb-5">Open sourse проекты</h5>
         </div>
         <div
-          v-for="n in 6"
-          :key="'id' + n"
-          class="app-card h-256 col-4 d-flex flex-column justify-content-center bg-light position-relative"
+          v-for="app in apps"
+          :key="'id' + app.id"
+          class="app-card h-256 col-12 col-sm-6 col-md-4 d-flex flex-column justify-content-center bg-light position-relative"
         >
-          <a href="#" class="app-link d-block stretched-link"
-            ><h6>Go somewhere</h6></a
+          <a
+            :href="app.href"
+            target="_blank"
+            class="app-link d-block stretched-link"
+            ><h5>{{ app.title }}</h5></a
           >
-          <small>Description app for all ages peoples and girls</small>
+          <small>{{ app.description }}</small>
         </div>
       </div>
     </div>
@@ -46,17 +49,30 @@ export default {
   z-index: 3;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 576px) {
   .h-256 {
-    height: calc(100vw / 3 - 16px);
+    height: calc((100vw - 24px) / 1.618);
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
   .h-256 {
-    height: 308px;
+    height: calc((100vw - 24px) / 3.236);
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  .h-256 {
+    height: calc((100vw - 24px) / 4.854);
+  }
+}
+
+/* 
+@media screen and (min-width: 960px) {
+  .h-256 {
+    height: 190px; 
+  }
+} */
 
 .app-link {
   text-decoration: none;
