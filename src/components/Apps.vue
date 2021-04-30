@@ -8,7 +8,7 @@
         <div
           v-for="app in apps"
           :key="'id' + app.id"
-          class="app-card h-256 col-12 col-sm-6 col-md-4 d-flex flex-column justify-content-center bg-light position-relative"
+          class="app-card h-256 col-12 col-sm-6 col-md-4 d-flex flex-column justify-content-center bg-light position-relative ps-3 pe-3"
         >
           <a
             :href="app.href"
