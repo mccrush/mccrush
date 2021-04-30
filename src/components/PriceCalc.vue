@@ -61,7 +61,7 @@
 </template>
 
 <script>
-import prices from '@/scripts/price'
+import prices from '@/data/price'
 
 export default {
   data() {
@@ -72,7 +72,6 @@ export default {
       verstka: 0
     }
   },
-  mounted() {},
   computed: {
     itogSumm() {
       if (this.selectedPrice.length) {

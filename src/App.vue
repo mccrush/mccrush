@@ -5,6 +5,10 @@
       <Jimbo />
     </div>
 
+    <div class="bg-light bg-pattern-brl row">
+      <Apps />
+    </div>
+
     <div class="bg-blue bg-pattern-brl row">
       <Uslugi />
     </div>
@@ -27,6 +31,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from '@/components/Navbar'
 import Jimbo from '@/components/Jimbo'
+import Apps from '@/components/Apps'
 import Uslugi from '@/components/Uslugi'
 import PriceCalc from '@/components/PriceCalc'
 import Price from '@/components/Price'
@@ -37,6 +42,7 @@ export default {
   components: {
     Navbar,
     Jimbo,
+    Apps,
     Uslugi,
     PriceCalc,
     Price,
