@@ -3,7 +3,7 @@
     <div class="container-960 container-lg">
       <div class="row text-center">
         <div class="col-12">
-          <h5 class="mt-5 mb-5">Open sourse проекты</h5>
+          <h5 class="mt-5 mb-5">Open source проекты</h5>
         </div>
         <div
           v-for="app in apps"
