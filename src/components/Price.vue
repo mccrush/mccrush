@@ -24,11 +24,18 @@
             Для «безопасных сделок» используется сервис
             <a
               class="a-price"
-              href="https://kwork.ru/website-development/624937/razrabotka-veb-prilozheniya-spa-pwa?ref=656"
+              href="https://kwork.ru/website-development/14552529/razrabotka-veb-prilozheniya?ref=656"
               title="Ссылка на сайт Kwork"
               target="_blank"
               >Kwork</a
             >
+            <!-- <a
+              class="a-price"
+              href="https://kwork.ru/website-development/624937/razrabotka-veb-prilozheniya-spa-pwa?ref=656"
+              title="Ссылка на сайт Kwork"
+              target="_blank"
+              >Kwork</a
+            > -->
           </p>
           <p>
             Курсы по программированию
