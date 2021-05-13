@@ -2,6 +2,8 @@
   "name": "mccrush",
   "version": "4.1.0",
   "private": true,
+  "description": "mccrush.ru - личный сайт",
+  "author": "mccrush.ru",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
@@ -28,5 +30,22 @@
     "jsxBracketSameLine": true,
     "arrowParens": "avoid",
     "trailingComma": "none"
+  },
+  "bugs": {
+    "url": "https://github.com/mccrush/mccrush/issues"
+  },
+  "homepage": "https://github.com/mccrush/mccrush",
+  "keywords": [
+    "сайт",
+    "javascript",
+    "vue.js",
+    "программирование",
+    "development",
+    "web apps"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mccrush/mccrush.git"
   }
 }
