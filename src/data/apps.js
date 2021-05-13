@@ -6,6 +6,12 @@ export default [
     href: 'https://mccrush.github.io/info/',
   },
   {
+    id: 21,
+    title: 'ATIOP',
+    description: 'сервис управления задачами',
+    href: 'https://atiop.ru',
+  },
+  {
     id: 2,
     title: 'Electro ⚡ Shit',
     description: 'справочник Электрика',
